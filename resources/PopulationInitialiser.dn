@@ -52,7 +52,7 @@ interface PopulationInitialiser {
 	int evaluateConfig(GiaConfig config, GiaConfig allConfigs[], int numConfigs)
 	
 	//prints out the values in the given lGiaConfig'
-	void printConfig(GiaConfig c)
+	//void printConfig(GiaConfig c)
 	
-	dec roundTo2DP(dec d)
+	//dec roundTo2DP(dec d)
 }

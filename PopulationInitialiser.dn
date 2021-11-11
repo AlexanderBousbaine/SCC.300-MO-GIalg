@@ -1,5 +1,5 @@
 
-component provides PopulationInitialiser requires util.Random rand, io.Output out, data.DecUtil du, data.IntUtil iu, data.adt.List list, util.Math math{
+component provides PopulationInitialiser requires util.Random rand, io.Output out, data.DecUtil du, data.IntUtil iu, util.Math math{
 	
 	/*
 		APPROACH 1:
@@ -25,10 +25,11 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 		GiaConfig configs[] = new GiaConfig[10]()
 		
 		while(numGoodConfigs < 10) {
-			dec mutPerc = roundTo2DP(rand.getDec(ConfigDomains.MUTPERC_LOWER, ConfigDomains.MUTPERC_UPPER))
-			out.println("mp: $mutPerc")
+			//out.print("MP: ")
+			dec mutPerc = rand.getDec(ConfigDomains.MUTPERC_LOWER, ConfigDomains.MUTPERC_UPPER)
+			//out.println("$mutPerc")
 			
-			dec hgtPerc = roundTo2DP(rand.getDec(ConfigDomains.HGTPERC_LOWER, ConfigDomains.HGTPERC_UPPER))
+			dec hgtPerc = rand.getDec(ConfigDomains.HGTPERC_LOWER, ConfigDomains.HGTPERC_UPPER)
 			//0 to 15
 			int elites = rand.getInt(ConfigDomains.ELITES_UPPER+1)
 			//1 to 15
@@ -66,11 +67,6 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 		}
 		
 		return configs
-	}
-	
-	dec PopulationInitialiser:roundTo2DP(dec d){
-	
-		return (math.round(d*100)/100)
 	}
 	
 	int PopulationInitialiser:evaluateConfig(GiaConfig config, GiaConfig allConfigs[], int numConfigs) {
@@ -113,7 +109,7 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 		return score
 	}
 	
-	void PopulationInitialiser:printConfig(GiaConfig c) {
+	//void PopulationInitialiser:printConfig(GiaConfig c) {
 	/*
 		out.println("mutPercentage: $c.mutationPercentage")
 		out.println("hgtPercentage: $c.hgtPercentage")
@@ -121,6 +117,12 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 		out.println("mutationLimit: $c.mutationLimit")
 		out.println("mutation Weights: $c.mutWeights")
 		out.println("operation Weights: $c.opWeights")
-	//*/
 	}
+	//*/
+	
+	/*
+	dec PopulationInitialiser:roundTo2DP(dec d){
+		return (math.round(d*100)/100)
+	}
+	*/
 }
