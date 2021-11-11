@@ -1,14 +1,26 @@
 
 
-component provides App requires io.Output out, PopulationInitialiser popInit, data.DecUtil du, data.IntUtil iu{
+component provides App requires io.Output out, PopulationInitialiser popInit, data.DecUtil du, data.IntUtil iu, os.Run run{
+	
+	int populationSize = 16
+	
 	int App:main(AppParam params[])
 	{
 		
-		GiaConfig configs[] = popInit.generateInitialPopConfigs()
+		//create configurations
+		GiaConfig configs[] = popInit.generateInitialPopConfigs(populationSize)
 		
-		for(int i = 0; i < 10; i++) {
-			//popInit.printConfig(configs[i])
+		out.println("")
+		
+		for(int i = 0; i < populationSize; i++) {
+			out.println("Config: $i")
+			popInit.printConfig(configs[i])
+			out.println("")
+			out.println("")
 		}
+		
+		//pass configurations into various instances of GIalgorithm
+
 		
 		return 0
 	}

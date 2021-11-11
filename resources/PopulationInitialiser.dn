@@ -9,7 +9,7 @@ data GiaConfig {
 	dec opWeights[]
 }
 
-// Contain the domains for each of the changeable variables described in GiaConfig.
+// Contain the domains for each of the changeable variables described in GiaConfig.	
 data ConfigDomains {
 // CHANGE DOMAINS TO ARRAYS OF DISCRETE VALUES ONCE I FIND OUT WHY IT WON'T LET ME DECLARE const ARRAYS
 //*
@@ -33,7 +33,6 @@ data ConfigDomains {
 
 //*/
 /*
-
 	const dec MUTPERC[] = new dec[](0.001, 1.0)
 	const dec HGPERC[] = new dec[](0.001, 1.0)
 	const int ELITES[] = new int[](0, 15)
@@ -46,13 +45,13 @@ data ConfigDomains {
 
 interface PopulationInitialiser {
 	//returns an array of 'p' GiaConfig data objects containing the configuration of all membres of the population.
-	GiaConfig[] generateInitialPopConfigs()
+	GiaConfig[] generateInitialPopConfigs(int popSize)
 	
 	//returns the diversity score of 'config' in relation to all the GiaConfigs in 'allConfigs'.
 	int evaluateConfig(GiaConfig config, GiaConfig allConfigs[], int numConfigs)
 	
 	//prints out the values in the given lGiaConfig'
-	//void printConfig(GiaConfig c)
+	void printConfig(GiaConfig c)
 	
-	//dec roundTo2DP(dec d)
+	dec roundTo2DP(dec d)
 }

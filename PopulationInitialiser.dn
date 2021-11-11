@@ -1,5 +1,5 @@
 
-component provides PopulationInitialiser requires util.Random rand, io.Output out, data.DecUtil du, data.IntUtil iu, util.Math math{
+component provides PopulationInitialiser requires util.Random rand, io.Output out, data.DecUtil du, data.IntUtil iu, util.Math math, time.Calendar cal{
 	
 	/*
 		APPROACH 1:
@@ -15,21 +15,22 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 	
 	*/
 	
-	GiaConfig[] PopulationInitialiser:generateInitialPopConfigs() {
-		rand.setSeed(1)
+	GiaConfig[] PopulationInitialiser:generateInitialPopConfigs(int popSize) {
+		DateTime time = cal.getTime()
+		rand.setSeed(time.minute + time.second + time.millisecond)
+		
 		int numGoodConfigs = 0
 		int totalConfigs = 0
 		//maximum score is 18*num_configs, pass score is 9-num_configs?
 		int passValue = 9
 		int evalVal = 0
-		GiaConfig configs[] = new GiaConfig[10]()
+		GiaConfig configs[] = new GiaConfig[popSize]()
 		
-		while(numGoodConfigs < 10) {
-			//out.print("MP: ")
-			dec mutPerc = rand.getDec(ConfigDomains.MUTPERC_LOWER, ConfigDomains.MUTPERC_UPPER)
-			//out.println("$mutPerc")
+		while(numGoodConfigs < popSize) {
+		
+			dec mutPerc = roundTo2DP(rand.getDec(ConfigDomains.MUTPERC_LOWER, ConfigDomains.MUTPERC_UPPER))
 			
-			dec hgtPerc = rand.getDec(ConfigDomains.HGTPERC_LOWER, ConfigDomains.HGTPERC_UPPER)
+			dec hgtPerc = roundTo2DP(rand.getDec(ConfigDomains.HGTPERC_LOWER, ConfigDomains.HGTPERC_UPPER))
 			//0 to 15
 			int elites = rand.getInt(ConfigDomains.ELITES_UPPER+1)
 			//1 to 15
@@ -38,12 +39,12 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 			int a
 			dec mutWeights[] = new dec[4]
 			for(a = 0; a < 4; a++) {
-				mutWeights[a] = rand.getDec(ConfigDomains.MUTWEIGHT_LOWER, ConfigDomains.MUTWEIGHT_UPPER)
+				mutWeights[a] = roundTo2DP(rand.getDec(ConfigDomains.MUTWEIGHT_LOWER, ConfigDomains.MUTWEIGHT_UPPER))
 			}
 
 			dec opWeights[] = new dec[10]
 			for(a = 0; a < 10; a++) {
-				opWeights[a] = rand.getDec(ConfigDomains.OPWEIGHT_LOWER, ConfigDomains.OPWEIGHT_UPPER)
+				opWeights[a] = roundTo2DP(rand.getDec(ConfigDomains.OPWEIGHT_LOWER, ConfigDomains.OPWEIGHT_UPPER))
 			}
 			
 			GiaConfig c = new GiaConfig(mutPerc, hgtPerc, elites, mutLim, mutWeights, opWeights)
@@ -53,13 +54,13 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 			
 			//pass value should decrease with every successful 
 			if(evalVal < passValue){
-				out.println("Config Passes")
+				//out.println("Config Passes")
 				configs[numGoodConfigs] = c
 				numGoodConfigs++
-				passValue -= numGoodConfigs
+				//passValue -= numGoodConfigs
 			}
 			else{
-				out.println("Config Fails")
+				//out.println("Config Fails")
 			}
 			
 			totalConfigs++
@@ -69,6 +70,7 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 		return configs
 	}
 	
+	///*
 	int PopulationInitialiser:evaluateConfig(GiaConfig config, GiaConfig allConfigs[], int numConfigs) {
 		int score = 0
 		
@@ -90,39 +92,65 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 				}
 				
 				int a
+				dec temp1[] = config:.4
+				dec temp2[] = compareFig:.4
 				//iterate through mutWeights
 				for(a = 0; a < 4; a++){
-					if(config:.4[a] == compareFig:.4[a]) {
+					if(temp1[a] == temp2[a]) {
 						score++
 					}
 				}
-
+				
+				temp1 = config:.5
+				temp2 = compareFig:.5
 				//iterate through opWeights
 				for(a = 0; a < 10; a++){
-					if(config:.5[a] == compareFig:.5[a]) {
+					if(temp1[a] == temp2[a]) {
 						score++
 					}
 				}				
 			}
 		}
-		
 		return score
-	}
-	
-	//void PopulationInitialiser:printConfig(GiaConfig c) {
-	/*
-		out.println("mutPercentage: $c.mutationPercentage")
-		out.println("hgtPercentage: $c.hgtPercentage")
-		out.println("elites: $c.numElites")
-		out.println("mutationLimit: $c.mutationLimit")
-		out.println("mutation Weights: $c.mutWeights")
-		out.println("operation Weights: $c.opWeights")
 	}
 	//*/
 	
-	/*
+	//*
+	void PopulationInitialiser:printConfig(GiaConfig c) {
+	
+		dec v1 = c.mutationPercentage
+		dec v2 = c.hgtPercentage
+		int v3 = c.numElites
+		int v4 = c.mutationLimit
+		dec v5[] = c.mutWeights
+		dec v6[] = c.opWeights
+		int i
+		dec t
+		
+		out.println("mutPercentage: $v1")
+		out.println("hgtPercentage: $v2")
+		out.println("elites: $v3")
+		out.println("mutationLimit: $v4")
+		
+		out.print("mutation Weights: ")
+		for(i = 0; i < 4; i++){
+			t = v5[i]
+			out.print("$t ")
+		}
+		out.println("")
+		
+		out.print("operation Weights: ")
+		for(i = 0; i < 10; i++) {
+			t = v6[i]
+			out.print("$t ")
+		}
+		out.println("")
+	}
+	//*/
+	
+	//*
 	dec PopulationInitialiser:roundTo2DP(dec d){
 		return (math.round(d*100)/100)
 	}
-	*/
+	//*/
 }
