@@ -2,7 +2,9 @@
 
 component provides App requires io.Output out, PopulationInitialiser popInit, data.DecUtil du, data.IntUtil iu, os.Run run{
 	
-	int populationSize = 16
+	int populationSize = 9
+	int activeInstances = 0
+	int fulfilledInstances = 0
 	
 	int App:main(AppParam params[])
 	{
@@ -20,8 +22,29 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 		}
 		
 		//pass configurations into various instances of GIalgorithm
-
+		while(fulfilledInstances < populationSize) {
+			//RunStatus stati[] = new RunStatus[4]()
+			if(activeInstances < 4) {
+				asynch::runInstance(configs[1])
+				activeInstances++
+				fulfilledInstances++
+			}
+		}
 		
 		return 0
 	}
+	
+	void runInstance(GiaConfig c) {
+		//run.execute("cd GIalgorithm")
+		run.execute("start cmd.exe /c \"dnc test.dn && dana test\" ")
+		activeInstances--
+	}
+	
+	/*
+	void runTmuxInstance(GiaConfig c, RunStatus stati[]) {
+		run.execute("tmux new-window")
+		run.execute("cd GIalgorithm")
+		stati[i] = run.execute("dana Main ")
+	}
+	*/
 }
