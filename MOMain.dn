@@ -1,10 +1,10 @@
+//uses io.FileSystem.FileEntry
 
-
-component provides App requires io.Output out, PopulationInitialiser popInit, data.DecUtil du, data.IntUtil iu, os.Run run{
+component provides App requires io.Output out, io.Input in, PopulationInitialiser popInit, data.DecUtil du, data.IntUtil iu, os.Run run, time.Timer time, io.FileSystem fs {
 	
-	int populationSize = 9
-	int activeInstances = 0
-	int fulfilledInstances = 0
+	int populationSize = 16
+	char confirmPath[] = "\"C:/Users/atbou/Documents/Alexander's Work/University Stuff/Modules/SCC.300 - 3rd Year Project/Code/SCC.300-MO-GIalg/CompletionConfirmation\""
+	char GIalgorithmPath[] = "C:/Users/atbou/Downloads/GIalgorithm-main/GIalgorithm-main"
 	
 	int App:main(AppParam params[])
 	{
@@ -12,32 +12,41 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 		//create configurations
 		GiaConfig configs[] = popInit.generateInitialPopConfigs(populationSize)
 		
-		out.println("")
-		
-		for(int i = 0; i < populationSize; i++) {
-			out.println("Config: $i")
-			popInit.printConfig(configs[i])
-			out.println("")
-			out.println("")
-		}
-		
 		//pass configurations into various instances of GIalgorithm
-		while(fulfilledInstances < populationSize) {
-			//RunStatus stati[] = new RunStatus[4]()
-			if(activeInstances < 4) {
-				asynch::runInstance(configs[1])
-				activeInstances++
-				fulfilledInstances++
+		// - make GIalg write to some disk space when it's done or something
+		// - check every 10mins? for that thing 
+		int i = 0
+		FileEntry compDir[]
+		
+		
+		if(fs.delete("$confirmPath/*")){
+			out.println("Folder reset")
+		}
+		//*
+		while(i < populationSize) {
+			out.println("doing")
+			run.execute("start cmd.exe /c \"dnc test.dn & dana test $i $confirmPath\"")		
+			i++
+			
+			if(i % 4 == 0) {
+				while(true){
+					time.sleep(1000)
+					out.println("trying")
+					compDir = fs.getDirectoryContents("./CompletionConfirmation")
+					if(compDir.arrayLength % 4 == 0) {
+					out.println("restarting")
+						break
+					}
+				}
 			}
 		}
-		
+		//*/
 		return 0
 	}
 	
 	void runInstance(GiaConfig c) {
 		//run.execute("cd GIalgorithm")
-		run.execute("start cmd.exe /c \"dnc test.dn && dana test\" ")
-		activeInstances--
+		run.execute("start cmd.exe /k \"cd $GIalgorithmPath & dnc . & dana Main 1 1\"")
 	}
 	
 	/*

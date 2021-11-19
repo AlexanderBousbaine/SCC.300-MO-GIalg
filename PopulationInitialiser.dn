@@ -50,7 +50,7 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 			GiaConfig c = new GiaConfig(mutPerc, hgtPerc, elites, mutLim, mutWeights, opWeights)
 			
 			evalVal = evaluateConfig(c, configs, numGoodConfigs)
-			out.println("Config Evaluation Value: $evalVal")
+			//out.println("Config Evaluation Value: $evalVal")
 			
 			//pass value should decrease with every successful 
 			if(evalVal < passValue){
@@ -64,7 +64,7 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 			}
 			
 			totalConfigs++
-			out.println("Config attempt $totalConfigs")
+			//out.println("Config attempt $totalConfigs")
 		}
 		
 		return configs
