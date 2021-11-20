@@ -54,4 +54,6 @@ interface PopulationInitialiser {
 	void printConfig(GiaConfig c)
 	
 	dec roundTo2DP(dec d)
+	
+	char[] stringify(GiaConfig c)
 }

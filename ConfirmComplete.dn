@@ -6,7 +6,7 @@ component provides App requires data.DecUtil du, data.IntUtil iu, io.File{
 		int run_number = iu.intFromString(params[0].string)
 		char path[] = params[1].string
 		
-		File tracker = new File("$path/cf $(run_number)", File.CREATE)
+		File tracker = new File("$path/$(run_number)", File.CREATE)
 		tracker.close()
 		
 		return 0

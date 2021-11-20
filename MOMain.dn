@@ -1,16 +1,29 @@
-//uses io.FileSystem.FileEntry
 
 component provides App requires io.Output out, io.Input in, PopulationInitialiser popInit, data.DecUtil du, data.IntUtil iu, os.Run run, time.Timer time, io.FileSystem fs {
 	
 	int populationSize = 16
-	char confirmPath[] = "\"C:/Users/atbou/Documents/Alexander's Work/University Stuff/Modules/SCC.300 - 3rd Year Project/Code/SCC.300-MO-GIalg/CompletionConfirmation\""
-	char GIalgorithmPath[] = "C:/Users/atbou/Downloads/GIalgorithm-main/GIalgorithm-main"
+	int moGenerations = 10
+	dec mutationChance = 0.8
+	dec crossoverChance = 0.2
+	int elites = 2
+	
+	char confirmPath[] = "./CompletionConfirmation"
+	char GIalgorithmPath[] = "/home/abousbaine/GIalgorithm-main"
+	
+	//holds the parameters to be passed to the GIAlgorithm
+	char paramString[] = ""
+	
+	//run a configuration 12 times by running the following sequentially - Egg Layer 2
+	char runCommand1[] = "tmux new-session 'cd $GIalgorithmPath && dana Main 1 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 2 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 3 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 4 MOGI $paramString' \\; detach-client"
+	char runCommand2[] = "tmux new-session 'cd $GIalgorithmPath && dana Main 5 MOGI' \\; new-window 'cd $GIalgorithmPath && dana Main 6 MOGI' \\; new-window 'cd $GIalgorithmPath && dana Main 7 MOGI' \\; new-window 'cd $GIalgorithmPath && dana Main 8 MOGI' \\; detach-client"
+	char runCommand3[] = "tmux new-session 'cd $GIalgorithmPath && dana Main 9 MOGI' \\; new-window 'cd $GIalgorithmPath && dana Main 10 MOGI' \\; new-window 'cd $GIalgorithmPath && dana Main 11 MOGI' \\; new-window 'cd $GIalgorithmPath && dana Main 12 MOGI' \\; detach-client"
 	
 	int App:main(AppParam params[])
 	{
 		
 		//create configurations
 		GiaConfig configs[] = popInit.generateInitialPopConfigs(populationSize)
+		int configFitness[] = new int[populationSize]
 		
 		//pass configurations into various instances of GIalgorithm
 		// - make GIalg write to some disk space when it's done or something
@@ -18,42 +31,81 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 		int i = 0
 		FileEntry compDir[]
 		
+		compilePopBase()
 		
 		if(fs.delete("$confirmPath/*")){
 			out.println("Folder reset")
 		}
-		//*
-		while(i < populationSize) {
-			out.println("doing")
-			run.execute("start cmd.exe /c \"dnc test.dn & dana test $i $confirmPath\"")		
-			i++
+		
+		//Egg Layer 4
+		//For every generation of the meta-optimiser
+		for(int moGen = 0; moGen < moGenerations; moGen++) {
+			//empty confirmation folder
+		
+		
+			//Egg Layer 3
+			//For every population member of each generation - execute 
+			for(int pops = 0; pops < populationSize; pops++) {
+
+				//Egg Layer 2
+				//Execute each configuration 12 times
+				
+				//set current members parameters to be passed in with runCommands
+				paramString = toString(configs[pops])
+				
+				//run first 4
+				//create subFolder of CompletionConfirmation
+				run.execute(runCommand1)
+				//check for completion of runCommand1
+				//search for 4 files in the subfolder created above
+				
+				//when first 4 have been completed, run next 4
+				//create subFolder of CompletionConfirmation
+				run.execute(runCommand2)
+				//check for completion of runCommand2
+				//search for 4 files in the subfolder created above
+				
+				//when next 4 have been completed, run last 4
+				//create subFolder of CompletionConfirmation
+				run.execute(runCommand3)
+				//check for completion of runCommand2
+				//search for 4 files in the subfolder created above
+				
+				//call evaluation script
+				//read in fitness
+				//configFitness[pops] = ???.readInFitness()
+			}
 			
-			if(i % 4 == 0) {
-				while(true){
-					time.sleep(1000)
-					out.println("trying")
-					compDir = fs.getDirectoryContents("./CompletionConfirmation")
-					if(compDir.arrayLength % 4 == 0) {
-					out.println("restarting")
-						break
+			//create new population for next generation
+			//-> Outsource to PopulationInitialiser
+			for(int i = 0; i < populationSize; i++) {
+				if(i - elites < 0) {
+					//configs[i] = configs[best_fitness_score]
+				}
+				else {
+					DateTime time = cal.getTime()
+					rand.setSeed(time.minute + time.second + time.millisecond)
+					
+					//GiaConfig candidate = new GiaConfig()
+					
+					//select parents - Roulette Wheel
+					if(rand.getDec(0, 1) > crossoverChance) {
+						//do crossover - uniform crossover
 					}
+					
+					if(rand.getDec(0, 1) > mutationChance) {
+						//do mutation - simply select random variable and generate random valid value
+					}
+					
+					//configs[i] = candidate
 				}
 			}
 		}
-		//*/
+		
 		return 0
 	}
 	
-	void runInstance(GiaConfig c) {
-		//run.execute("cd GIalgorithm")
-		run.execute("start cmd.exe /k \"cd $GIalgorithmPath & dnc . & dana Main 1 1\"")
+	void compilePopBase() {
+		run.execute("cd $GIalgorithmPath && dnc .")
 	}
-	
-	/*
-	void runTmuxInstance(GiaConfig c, RunStatus stati[]) {
-		run.execute("tmux new-window")
-		run.execute("cd GIalgorithm")
-		stati[i] = run.execute("dana Main ")
-	}
-	*/
 }
