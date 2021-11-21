@@ -116,10 +116,7 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 					out.println("Could not confirm completion of runCommand1.\nExiting Program.")
 					return 0
 				}
-				
-				//when first 4 have been completed, run next 4
-				//create subFolder of CompletionConfirmation
-				run.execute(runCommand2)
+
 				//wait for half an hour then begin checking for completion
 				if(!checkBatchAfter(2, 1800000)) {
 					out.println("Could not confirm completion of runCommand2.\nExiting Program.")
@@ -134,6 +131,7 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 				}
 
 				out.println("\nPop $pops of $populationSize in Generation $moGen Complete")
+
 				
 				//call evaluation script
 				//read in fitness
@@ -165,7 +163,6 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 				}
 			}
 		}
-		//*/
 		
 		return 0
 	}
