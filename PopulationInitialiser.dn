@@ -153,4 +153,37 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 		return (math.round(d*100)/100)
 	}
 	//*/
+	
+	char[] PopulationInitialiser:stringify(GiaConfig c) {
+		char result[] = ""
+	
+		dec v1 = c.mutationPercentage
+		dec v2 = c.hgtPercentage
+		int v3 = c.numElites
+		int v4 = c.mutationLimit
+		dec v5[] = c.mutWeights
+		dec v6[] = c.opWeights
+		
+		result = "$v1 $v2 $v3 $v4 $(v5[0]) $(v5[1]) $(v5[2]) $(v5[3]) $(v6[0]) $(v6[1]) $(v6[2]) $(v6[3]) $(v6[4]) $(v6[5]) $(v6[6]) $(v6[7]) $(v6[8]) $(v6[9])"
+		
+		return result
+		
+	}
+	
+	char[] PopulationInitialiser:stringifyCommad(GiaConfig c) {
+		char result[] = ""
+	
+		dec v1 = c.mutationPercentage
+		dec v2 = c.hgtPercentage
+		int v3 = c.numElites
+		int v4 = c.mutationLimit
+		dec v5[] = c.mutWeights
+		dec v6[] = c.opWeights
+		
+		result = "$v1, $v2, $v3, $v4, $(v5[0]), $(v5[1]), $(v5[2]), $(v5[3]), $(v6[0]), $(v6[1]), $(v6[2]), $(v6[3]), $(v6[4]), $(v6[5]), $(v6[6]), $(v6[7]), $(v6[8]), $(v6[9])"
+		
+		return result
+		
+	}
+
 }
