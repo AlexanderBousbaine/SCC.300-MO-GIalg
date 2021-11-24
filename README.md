@@ -2,8 +2,6 @@
 
 Contains the code for the Meta-Optimisation Algorithm that I am creating for SCC.300.
 
-ConfirmComplete.dn and associated interface definition in resources should be put in with the GIalgorithm's Main.dn
-
 Calculating the size of the search space:\
 There are a total of 18 genes in my algorithm. 16 of these genes have allele domains with 100 values and 2 have domains with 15 values.\
 The combined search space of the 16 100-value genes is ~1.50e19.\

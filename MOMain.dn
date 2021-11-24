@@ -1,7 +1,7 @@
 
-component provides App requires io.Output out, io.Input in, PopulationInitialiser popInit, data.DecUtil du, data.IntUtil iu, os.Run run, time.Timer time, io.FileSystem fs, time.Calendar cal, util.Random rand, io.File {
+component provides App requires io.Output out, io.Input in, PopulationInitialiser popInit, data.DecUtil du, data.IntUtil iu, os.Run run, time.Timer time, io.FileSystem fs, time.Calendar cal, util.Random rand, io.File, net.Stream stm {
 	
-	int populationSize = 16
+	int populationSize = 12
 	int moGenerations = 10
 	dec mutationChance = 0.8
 	dec crossoverChance = 0.2
@@ -14,20 +14,26 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 	char paramString[] = ""
 	
 	//run a configuration 12 times by running the following sequentially - Egg Layer 2
-	char runCommand1[] = "tmux new-session 'cd $GIalgorithmPath && dana Main 1 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 2 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 3 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 4 MOGI $paramString' \\; detach-client"
-	char runCommand2[] = "tmux new-session 'cd $GIalgorithmPath && dana Main 5 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 6 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 7 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 8 MOGI $paramString' \\; detach-client"
-	char runCommand3[] = "tmux new-session 'cd $GIalgorithmPath && dana Main 9 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 10 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 11 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 12 MOGI $paramString' \\; detach-client"
+	char runCommand1[] = ""
+	char runCommand2[] = ""
+	char runCommand3[] = ""
+	
+	//kills all windows but the 0th window in which the control script runs
+	char killCommand[] = "tmux kill-window -a -t 0"
 	
 	int App:main(AppParam params[])
 	{		
+		
 		//create configurations
 		GiaConfig configs[] = popInit.generateInitialPopConfigs(populationSize)
-		int configFitness[] = new int[populationSize]
+		dec configFitness[] = new dec[populationSize]
 		
 		//pass configurations into various instances of GIalgorithm
 		// - make GIalg write to some disk space when it's done or something
 		// - check every 10mins? for that thing 
 		FileEntry compDir[]
+		
+		if(!resetGIalgOutput()) { return 0 }
 		
 		out.println("compiling")
 		compilePopBase()
@@ -35,66 +41,24 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 		//THE GAME LOOP - SEE LATER
 		//Egg Layer 4
 		//For every generation of the meta-optimiser
-		for(int moGen = 0; moGen < moGenerations; moGen++) {
+		for(int moGen = 0; moGen < 1/*moGenerations*/; moGen++) {
 			out.println("----------------------------------------------------------------")
 			out.println("STARTING GENERATION: $moGen")
 			out.println("----------------------------------------------------------------")
-			
-			writeConfigsToFile(configs)
-		
-			//empty confirmation folder
-			if(fs.deleteDirectory("$confirmPath")){
-				if(!fs.createDirectory("$confirmPath")) {
-					out.println("failed to recreate cc folder")
-					return 0
-				}
-			}
-			else {
-				out.println("failed to reset cc folder")
-				return 0
-			}
-
-			//empty result folder from GIalgorithm
-			/*
-			bool b = fs.exists("$GIalgorithmPath/test_files/MOGI")
-			FileEntry entries[] = fs.getDirectoryContents("$GIalgorithmPath/test_files/MOGI")
-			if(b) {
-				for(int a = 0; a < entries.arrayLength; a++) {
-					out.println("Entry $a : $(entries[a].name)")
-				}
-			}
-			
-			//Won't delete for some reason \__('~')__/
-			// --> try iterating through MOGI's subfolders and deleting them all
-			
-			if(fs.deleteDirectory("$GIalgorithmPath/test_files/MOGI")){
-				out.println("GIalgorithm output folder deleted")
-				
-				bool created = true
-				if(fs.createDirectory("$GIalgorithmPath/test_files/MOGI")) {
-					for(int f = 1; f <= 12; f++) {
-						if(!fs.createDirectory("$GIalgorithmPath/test_files/MOGI/$f")) {
-							created = false
-						}
-					}
-				}
-				else {
-					created = false
-				}
-				if(!created) {
-					out.println("failed to recreate GIAlgorithm output folder")
-					return 0
-				}
-			}
-			else {
-				out.println("failed to reset GIalg's output folder")
-				return 0
-			}
-			*/
 		
 			//Egg Layer 3
 			//For every population member of each generation - execute 
 			for(int pops = 0; pops < populationSize; pops++) {
+			
+				//empty confirmation folder
+				run.execute("rm -r $confirmPath")
+				if(!fs.createDirectory("$confirmPath")) {
+					out.println("failed to reset cc folder")
+					return 0
+			}	
+			
+				//empty result folder from GIalgorithm
+				if(!resetGIalgOutput()) { return 0 }
 
 				out.println("Config number: $pops")
 
@@ -112,41 +76,76 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 				//run first 4
 				run.execute(runCommand1)
 				//wait for half an hour then begin checking for completion
-				if(!checkBatchAfter(1, 1800000)) {
+				if(!checkBatchAfter(4, 1200000)) {
 					out.println("Could not confirm completion of runCommand1.\nExiting Program.")
-					return 0
+					//kill all running processes and move on - don't just kill the program
+					run.execute(killCommand)
 				}
-
-				//wait for half an hour then begin checking for completion
-				if(!checkBatchAfter(2, 1800000)) {
-					out.println("Could not confirm completion of runCommand2.\nExiting Program.")
-					return 0
-				}
+				out.println("finished p1")
 				
-				run.execute(runCommand3)
+				//when first 4 have been completed, run next 4
+				//create subFolder of CompletionConfirmation
+				run.execute(runCommand2)
 				//wait for half an hour then begin checking for completion
-				if(!checkBatchAfter(3, 1800000)) {
-					out.println("Could not confirm completion of runCommand3.\nExiting Program.")
-					return 0
+				if(!checkBatchAfter(8, 1200000)) {
+					out.println("Could not confirm completion of runCommand2.\nExiting Program.")
+					//kill all running processes and move on - don't just kill the program
+					run.execute(killCommand)
 				}
+				out.println("finished p2")
+				
+				//when next 4 have been completed, run last 4
+//				run.execute(runCommand3)
+				//wait for half an hour then begin checking for completion
+//				if(!checkBatchAfter(3, 1800000)) {
+//					out.println("Could not confirm completion of runCommand3.\nExiting Program.")
+					//kill all running processes and move on - don't just kill the program
+//					run.execute(killCommand)
+//				}
 
 				out.println("\nPop $pops of $populationSize in Generation $moGen Complete")
-
 				
 				//call evaluation script
+				run.execute("python3 $GIalgorithmPath/csv_script.py")
+				run.execute("python3 Fitness_Extraction.py $GIalgorithmPath/test_files/MOGI")
+				
 				//read in fitness
-				//configFitness[pops] = ???.readInFitness()
+				File file = new File("./fitness.txt", File.READ)
+				byte fit[] = file.read(file.getSize())
+				dec fitness = du.decFromString(fit)
+				configFitness[pops] = fitness
+				
+				fs.delete("./fitness.txt")
+				
 			}
 			
+			//write configs to file
+			//include fitness values
+			out.println("config and fitness written")
+			writeConfigsToFile(configs, configFitness)
+			
+			dec cfCopy[] = clone configFitness
 			//create new population for next generation
 			//-> Outsource to PopulationInitialiser
 			for(int i = 0; i < populationSize; i++) {
 				if(i - elites < 0) {
-					//configs[i] = configs[best_fitness_score]
+				
+					int idx = 0
+					dec fittest = 1.0
+					for(int f = 0; f < cfCopy.arrayLength; f++) {
+						if(cfCopy[f] < fittest) {
+							fittest = cfCopy[f]
+							idx = f
+						}
+					}
+					
+					configs[i] = configs[idx]
+					cfCopy[idx] = 1.0
 				}
 				else {
 					DateTime dt = cal.getTime()
 					rand.setSeed(dt.minute + dt.second + dt.millisecond)
+					rand.getDec(0, 1)
 					
 					//GiaConfig candidate = new GiaConfig()
 					
@@ -163,8 +162,45 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 				}
 			}
 		}
+		//*/
 		
 		return 0
+	}
+	
+	bool resetGIalgOutput() {
+		bool deleted = true
+		FileEntry entries[] = fs.getDirectoryContents("$GIalgorithmPath/test_files/MOGI")
+		for(int a = 0; a < entries.arrayLength; a++) {
+			//out.println("To delete: $GIalgorithmPath/test_files/MOGI/$(entries[a].name)")
+			//use bash command as FileSystem wasn't cutting it - couldn't recursively delete contents of folders
+			RunStatus r = run.execute("rm -r $GIalgorithmPath/test_files/MOGI/$(entries[a].name)")
+			deleted = r.executed
+			if(!deleted) {
+				out.println("Failed to delete current contents of GIalg's output folders")
+				return false
+			}
+		}
+		if(deleted){
+			out.println("GIalgorithm output folder deleted")
+			
+			bool created = true
+			for(int f = 1; f <= 12; f++) {
+				if(!fs.createDirectory("$GIalgorithmPath/test_files/MOGI/$f")) {
+					created = false
+				}
+			}
+			if(!created) {
+				out.println("failed to recreate GIAlgorithm output folder")
+				return false
+			}
+		}
+		else {
+			out.println("failed to reset GIalg's output folder")
+			return false
+		}
+		
+		out.println("GIalg output folders successfully prepared")
+		return true
 	}
 	
 	void compilePopBase() {
@@ -172,12 +208,12 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 	}
 	
 	void updateRunCommands() {
-		runCommand1 = "tmux new-session 'cd $GIalgorithmPath && dana Main 1 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 2 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 3 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 4 MOGI $paramString' \\; detach-client"
-		runCommand2 = "tmux new-session 'cd $GIalgorithmPath && dana Main 5 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 6 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 7 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 8 MOGI $paramString' \\; detach-client"
-		runCommand3 = "tmux new-session 'cd $GIalgorithmPath && dana Main 9 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 10 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 11 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 12 MOGI $paramString' \\; detach-client"
+		runCommand1 = "tmux new-window 'cd $GIalgorithmPath && dana Main 1 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 2 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 3 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 4 MOGI $paramString' \\; detach-client"
+		runCommand2 = "tmux new-window 'cd $GIalgorithmPath && dana Main 5 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 6 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 7 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 8 MOGI $paramString' \\; detach-client"
+		runCommand3 = "tmux new-window 'cd $GIalgorithmPath && dana Main 9 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 10 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 11 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 12 MOGI $paramString' \\; detach-client"
 	}
 	
-	void writeConfigsToFile(GiaConfig configs[]) {
+	void writeConfigsToFile(GiaConfig configs[], dec fitness[]) {
 		DateTime dt = cal.getTime()
 		int yr = dt.year
 		int mn = dt.month
@@ -191,8 +227,8 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 		File configFile = new File("./Configurations/$fName.csv", File.WRITE)
 		
 		for(int i = 0; i < configs.arrayLength; i++) {
-			configFile.write(popInit.stringifyCommad(configs[i]))
-			configFile.write("\n")
+			configFile.write("$(popInit.stringifyCommad(configs[i])), $(fitness[i])\n")
+			// configFile.write(popInit.stringifyCommad(configs[i]))
 		}
 		
 		configFile.close()
@@ -200,18 +236,22 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 	
 	//return true if completion was found, otherwise false
 	//will wait at least an hour + input time (millisec)
-	bool checkBatchAfter(int batchNo, int waitTime) {
+	//with an input of 20mins (1200000) entire wait time will be 1.5 hrs
+	bool checkBatchAfter(int complThresh, int waitTime) {
 		int fivesWaited = 0
 		while(true) {
 			time.sleep(waitTime)
 			
 			if(fivesWaited >= 12) {
-				out.println("Checked an hour's worth of five minute increments.\n Giving up waiting.")
+				out.println("Checked an hour's worth of five minute increments.\nGiving up and moving on.")
 				return false
 			}
 			
 			FileEntry contents[] = fs.getDirectoryContents("$confirmPath")
-			if(contents.arrayLength == 4*batchNo){
+			out.println("Files Found: $(contents.arrayLength) of $complThresh")
+			bool b = contents.arrayLength >= complThresh
+			out.println("Bool: $b")
+			if(contents.arrayLength >= complThresh){
 				out.println("Batch Finished")
 				return true
 			}

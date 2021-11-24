@@ -1,9 +1,14 @@
-component provides ConfirmComplete requires data.IntUtil iu, io.File{
+component provides App requires data.DecUtil du, data.IntUtil iu, io.File{
 	
 	//should take in two parameters, one being the number of the completed run and the other being the path to save completion file at.
-	void ConfirmComplete:generateCompletionFile(int run_number, char path[])
-	{	
+	int App:main(AppParam params[])
+	{
+		int run_number = iu.intFromString(params[0].string)
+		char path[] = params[1].string
+		
 		File tracker = new File("$path/$(run_number)", File.CREATE)
 		tracker.close()
+		
+		return 0
 	}
 }
