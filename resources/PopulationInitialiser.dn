@@ -53,9 +53,12 @@ interface PopulationInitialiser {
 	//prints out the values in the given lGiaConfig'
 	void printConfig(GiaConfig c)
 	
+	//rounds input decimal value to 2 decimal places
 	dec roundTo2DP(dec d)
 	
+	//turns a given GiaConfig into a string of values separated by spaces
 	char[] stringify(GiaConfig c)
 	
+	//turns a given GiaConfig into a string of values separated by commas
 	char[] stringifyCommad(GiaConfig c)
 }

@@ -7,6 +7,8 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 	dec crossoverChance = 0.2
 	int elites = 2
 	
+	int numRuns = 8
+	
 	char confirmPath[] = "./CompletionConfirmation"
 	char GIalgorithmPath[] = "/home/abousbaine/GIalgorithm-main"
 	
@@ -22,7 +24,7 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 	char killCommand[] = "tmux kill-window -a -t 0"
 	
 	int App:main(AppParam params[])
-	{		
+	{
 		
 		//create configurations
 		GiaConfig configs[] = popInit.generateInitialPopConfigs(populationSize)
@@ -41,7 +43,7 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 		//THE GAME LOOP - SEE LATER
 		//Egg Layer 4
 		//For every generation of the meta-optimiser
-		for(int moGen = 0; moGen < 1/*moGenerations*/; moGen++) {
+		for(int moGen = 0; moGen < moGenerations; moGen++) {
 			out.println("----------------------------------------------------------------")
 			out.println("STARTING GENERATION: $moGen")
 			out.println("----------------------------------------------------------------")
@@ -55,7 +57,7 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 				if(!fs.createDirectory("$confirmPath")) {
 					out.println("failed to reset cc folder")
 					return 0
-			}	
+				}	
 			
 				//empty result folder from GIalgorithm
 				if(!resetGIalgOutput()) { return 0 }
@@ -109,14 +111,21 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 				run.execute("python3 $GIalgorithmPath/csv_script.py")
 				run.execute("python3 Fitness_Extraction.py $GIalgorithmPath/test_files/MOGI")
 				
+				dec fitness
 				//read in fitness
-				File file = new File("./fitness.txt", File.READ)
-				byte fit[] = file.read(file.getSize())
-				dec fitness = du.decFromString(fit)
+				if(fs.exists("./fitness.txt")){
+					File file = new File("./fitness.txt", File.READ)
+					byte fit[] = file.read(file.getSize())
+					fitness = du.decFromString(fit)
+					
+					fs.delete("./fitness.txt")
+				}
+				else {
+					out.println("Could not find resultant fitness, assuming dud")
+					fitness = 1.0
+				}
+				
 				configFitness[pops] = fitness
-				
-				fs.delete("./fitness.txt")
-				
 			}
 			
 			//write configs to file
@@ -125,11 +134,11 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 			writeConfigsToFile(configs, configFitness)
 			
 			dec cfCopy[] = clone configFitness
+			GiaConfig newConfigs[] = new GiaConfig[populationSize]
 			//create new population for next generation
 			//-> Outsource to PopulationInitialiser
 			for(int i = 0; i < populationSize; i++) {
 				if(i - elites < 0) {
-				
 					int idx = 0
 					dec fittest = 1.0
 					for(int f = 0; f < cfCopy.arrayLength; f++) {
@@ -139,32 +148,163 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 						}
 					}
 					
-					configs[i] = configs[idx]
+					newConfigs[i] = configs[idx]
 					cfCopy[idx] = 1.0
 				}
 				else {
 					DateTime dt = cal.getTime()
 					rand.setSeed(dt.minute + dt.second + dt.millisecond)
-					rand.getDec(0, 1)
-					
-					//GiaConfig candidate = new GiaConfig()
+					rand.getDec(0, 1)		
 					
 					//select parents - Roulette Wheel
-					if(rand.getDec(0, 1) > crossoverChance) {
-						//do crossover - uniform crossover
+					//calculate cumulative fitness
+					dec cumulativeFitness[] = new dec[configFitness.arrayLength]
+					dec cumFit = 0
+					for(int a = 0; a < configFitness.arrayLength; a++) {
+						cumFit += configFitness[a]
+						cumulativeFitness[i] = cumFit
 					}
 					
-					if(rand.getDec(0, 1) > mutationChance) {
-						//do mutation - simply select random variable and generate random valid value
+					//Select parent configs
+					GiaConfig p1
+					GiaConfig p2
+					for(int b = 0; b < 2; b++) {
+						dec val = rand.getDec(0, cumFit)
+						int idx = 0
+						for(int j = 0; j < configFitness.arrayLength; j++) {
+							if(val < cumulativeFitness[j]) {
+								idx = j
+								//set so that the index cannot be chosen again -> can't breed with oneself
+								cumulativeFitness[j] = -1.0
+								break
+							}
+						}
+						if(b == 0) {
+							p1 = clone configs[idx]
+						}
+						if(b == 1) {
+							p2 = clone configs[idx]
+						}
+					}
+		
+					//do crossover - uniform crossover
+					bool crossed
+					//go through all genes
+					for(int v = 0; v < 18; v++) {
+						crossed = false
+						//if chance achieved, perform crossover
+						if(rand.getDec(0, 1) < crossoverChance) {
+							if(v < 2 && !crossed) {
+								//clone to prevent read-only errors
+								dec temp1 = clone p1:.v
+								dec temp2 = clone p2:.v
+								p1:.v = temp2
+								p2:.v = temp1
+								crossed = true
+							}
+							if(v < 4 && !crossed) {
+								int temp1 = clone p1:.v
+								int temp2 = clone p2:.v
+								p1:.v = temp2
+								p2:.v = temp1
+								crossed = true
+							}
+							if(v < 8 & & !crossed) {
+								dec tempArr1[] = clone p1.mutWeights
+								dec tempVal1 = tempArr1[v-4]
+								
+								dec tempArr2[] = clone p2.mutWeights
+								dec tempVal2 = tempArr2[v-4]
+								
+								tempArr1[v-4] = tempVal2
+								tempArr2[v-4] = tempVal1
+								
+								p1.mutWeights = tempArr1
+								p2.mutWeights = tempArr2
+								crossed = true
+							}
+							if(!crossed) {
+								dec tempArr1[] = clone p1.opWeights
+								dec tempVal1 = tempArr1[v-8]
+								
+								dec tempArr2[] = clone p2.opWeights
+								dec tempVal2 = tempArr2[v-8]
+								
+								tempArr1[v-8] = tempVal2
+								tempArr2[v-8] = tempVal1
+								
+								p1.opWeights = tempArr1
+								p2.opWeights = tempArr2
+								crossed = true
+							}
+						}
 					}
 					
-					//configs[i] = candidate
+					p1 = mutate(p1)
+					p2 = mutate(p2)
+					
+					//add into new generation
+					newConfigs[i] = p1
+					//if not at the end of the list
+					if(i+1 < populationSize) {
+						//add another population member
+						newConfigs[i+1] = p2
+						i++
+					}
 				}
 			}
+			configs = newConfigs
 		}
 		//*/
 		
 		return 0
+	}
+	
+	GiaConfig mutate(GiaConfig c) {
+		GiaConfig conf = clone c
+		if(rand.getDec(0, 1) < mutationChance) {
+			//do mutation - simply select random variable and generate random valid value
+			int varNum = rand.getInt(18)
+			bool mutated = false
+			
+			out.println("mutating $varNum")
+						
+			//0 to 15 inclusive
+			int validInt1 = rand.getInt(ConfigDomains.ELITES_UPPER+1)
+			//1 to 15 inclusive
+			int validInt2 = rand.getInt(ConfigDomains.MUTLIM_UPPER)+1
+			//0.01 to 1
+			dec validDec1 = popInit.roundTo2DP(rand.getDec(ConfigDomains.MUTPERC_LOWER, ConfigDomains.MUTPERC_UPPER))
+			//0 to 1
+			dec validDec2 = popInit.roundTo2DP(rand.getDec(ConfigDomains.MUTWEIGHT_LOWER, ConfigDomains.MUTWEIGHT_UPPER))
+					
+			if(varNum < 2 && !mutated) {
+				conf:.varNum = validDec1
+				mutated = true
+			}
+			if(varNum == 2 && !mutated) {
+				conf.numElites = validInt1
+				mutated = true
+			}
+			if(varNum == 3 && !mutated) {
+				conf.mutationLimit = validInt2
+				mutated = true
+			}
+			if(varNum < 8 && !mutated) {
+				dec tempArr1[] = clone conf.mutWeights							
+				tempArr1[varNum-4] = validDec2
+				conf.mutWeights = tempArr1
+				mutated = true
+			}
+			if(!mutated) {
+				dec tempArr1[] = clone conf.opWeights
+				tempArr1[varNum-8] = validDec2
+				conf.opWeights = tempArr1
+				mutated = true
+			}
+		}
+		
+		return conf
 	}
 	
 	bool resetGIalgOutput() {
@@ -184,7 +324,7 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 			out.println("GIalgorithm output folder deleted")
 			
 			bool created = true
-			for(int f = 1; f <= 12; f++) {
+			for(int f = 1; f <= numRuns; f++) {
 				if(!fs.createDirectory("$GIalgorithmPath/test_files/MOGI/$f")) {
 					created = false
 				}
@@ -208,6 +348,7 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 	}
 	
 	void updateRunCommands() {
+		//change so that don't issue tmux commands and so it blocks
 		runCommand1 = "tmux new-window 'cd $GIalgorithmPath && dana Main 1 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 2 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 3 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 4 MOGI $paramString' \\; detach-client"
 		runCommand2 = "tmux new-window 'cd $GIalgorithmPath && dana Main 5 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 6 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 7 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 8 MOGI $paramString' \\; detach-client"
 		runCommand3 = "tmux new-window 'cd $GIalgorithmPath && dana Main 9 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 10 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 11 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 12 MOGI $paramString' \\; detach-client"
@@ -242,24 +383,23 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 		while(true) {
 			time.sleep(waitTime)
 			
-			if(fivesWaited >= 12) {
-				out.println("Checked an hour's worth of five minute increments.\nGiving up and moving on.")
+			if(fivesWaited >= 6) {
+				out.println("Checked an (half) hour's worth of five minute increments.\nGiving up and moving on.")
 				return false
 			}
 			
 			FileEntry contents[] = fs.getDirectoryContents("$confirmPath")
 			out.println("Files Found: $(contents.arrayLength) of $complThresh")
-			bool b = contents.arrayLength >= complThresh
-			out.println("Bool: $b")
+			
 			if(contents.arrayLength >= complThresh){
 				out.println("Batch Finished")
 				return true
 			}
 			else {
 				out.println("Batch not finished after $(waitTime / 60000) mins")
-				waitTime = 1
+				waitTime = waitTime/2
 				
-				if(waitTime < 300000){ //if wait time is less than 5 mins
+				if(waitTime <= 300000){ //if wait time is less than 5 mins
 					waitTime = 300000
 					fivesWaited++
 				}

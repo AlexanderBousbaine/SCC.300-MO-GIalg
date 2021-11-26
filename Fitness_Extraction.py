@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 import sys
 import os
 
+# adapted from GIalgorithm graph producing code
 
 def load(files):
     li = []
@@ -43,7 +44,7 @@ if __name__ == '__main__':
     # Load data in and add relative fitness and performance columns and remove the id 0 individuals
     
     outFolder = sys.argv[1]
-    fullData = load(outFolder+"/*/phylolog.csv")
+    fullData = load(outFolder+"/*/phyloLog.csv")
     
     # Find number of folders in the output folder
     numRuns = len(next(os.walk(outFolder))[1])

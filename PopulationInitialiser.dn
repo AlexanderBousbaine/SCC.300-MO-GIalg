@@ -22,7 +22,7 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 		int numGoodConfigs = 0
 		int totalConfigs = 0
 		//maximum score is 18*num_configs, pass score is 9-num_configs?
-		int passValue = 9
+		int passValue = 2
 		int evalVal = 0
 		GiaConfig configs[] = new GiaConfig[popSize]()
 		
@@ -31,9 +31,9 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 			dec mutPerc = roundTo2DP(rand.getDec(ConfigDomains.MUTPERC_LOWER, ConfigDomains.MUTPERC_UPPER))
 			
 			dec hgtPerc = roundTo2DP(rand.getDec(ConfigDomains.HGTPERC_LOWER, ConfigDomains.HGTPERC_UPPER))
-			//0 to 15
+			//0 to 15 (inclusive)
 			int elites = rand.getInt(ConfigDomains.ELITES_UPPER+1)
-			//1 to 15
+			//1 to 15 (inclusive)
 			int mutLim = rand.getInt(ConfigDomains.MUTLIM_UPPER)+1
 			
 			int a
@@ -70,7 +70,6 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 		return configs
 	}
 	
-	///*
 	int PopulationInitialiser:evaluateConfig(GiaConfig config, GiaConfig allConfigs[], int numConfigs) {
 		int score = 0
 		
@@ -113,9 +112,7 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 		}
 		return score
 	}
-	//*/
 	
-	//*
 	void PopulationInitialiser:printConfig(GiaConfig c) {
 	
 		dec v1 = c.mutationPercentage
@@ -146,13 +143,10 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 		}
 		out.println("")
 	}
-	//*/
 	
-	//*
 	dec PopulationInitialiser:roundTo2DP(dec d){
 		return (math.round(d*100)/100)
 	}
-	//*/
 	
 	char[] PopulationInitialiser:stringify(GiaConfig c) {
 		char result[] = ""
@@ -180,7 +174,7 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 		dec v5[] = c.mutWeights
 		dec v6[] = c.opWeights
 		
-		result = "$v1, $v2, $v3, $v4, $(v5[0]), $(v5[1]), $(v5[2]), $(v5[3]), $(v6[0]), $(v6[1]), $(v6[2]), $(v6[3]), $(v6[4]), $(v6[5]), $(v6[6]), $(v6[7]), $(v6[8]), $(v6[9])"
+		result = "$v1,$v2,$v3,$v4,$(v5[0]),$(v5[1]),$(v5[2]),$(v5[3]),$(v6[0]),$(v6[1]),$(v6[2]),$(v6[3]),$(v6[4]),$(v6[5]),$(v6[6]),$(v6[7]),$(v6[8]),$(v6[9])"
 		
 		return result
 		
