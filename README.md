@@ -1,7 +1,7 @@
 # SCC.300-MO-GIalg
 
-Contains the code for the Meta-Optimisation Algorithm that I am creating for SCC.300.
-ConfirmComplete goes into GIalgorithm folder.
+Contains the code for the Meta-Optimisation Algorithm that I am creating for SCC.300.\
+ConfirmComplete and interface go into GIalgorithm folder.
 
 ##### Calculating the size of the search space
 The algorithm contains 18 genes. 16 of these genes have allele domains with 100 values and 2 have domains with 15 values.\
