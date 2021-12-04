@@ -6,7 +6,6 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 	dec mutationChance = 0.8
 	dec crossoverChance = 0.2
 	int elites = 2
-	
 	int numRuns = 8
 	
 	char confirmPath[] = "./CompletionConfirmation"
