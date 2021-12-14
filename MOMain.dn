@@ -1,15 +1,17 @@
 
-component provides App requires io.Output out, io.Input in, PopulationInitialiser popInit, data.DecUtil du, data.IntUtil iu, os.Run run, time.Timer time, io.FileSystem fs, time.Calendar cal, util.Random rand, io.File, net.Stream stm {
+component provides App requires io.Output out, PopulationInitialiser popInit, data.DecUtil du, data.IntUtil iu, os.Run run, time.Timer time, io.FileSystem fs, time.Calendar cal, util.Random rand, io.File, net.Stream stm, lang.Thread {
 	
 	int populationSize = 12
 	int moGenerations = 10
 	dec mutationChance = 0.8
 	dec crossoverChance = 0.2
 	int elites = 2
-	int numRuns = 8
+
+	//must be a multiple of 3 for simplicity
+	int numRuns = 9
 	
 	char confirmPath[] = "./CompletionConfirmation"
-	char GIalgorithmPath[] = "/home/abousbaine/GIalgorithm-main"
+	char GIalgorithmPath[] = "/home/abousbaine/GIalgorithm"
 	
 	//holds the parameters to be passed to the GIAlgorithm
 	char paramString[] = ""
@@ -24,7 +26,7 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 	
 	int App:main(AppParam params[])
 	{
-		
+
 		//create configurations
 		GiaConfig configs[] = popInit.generateInitialPopConfigs(populationSize)
 		dec configFitness[] = new dec[populationSize]
@@ -36,7 +38,7 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 		
 		if(!resetGIalgOutput()) { return 0 }
 		
-		out.println("compiling")
+		out.println("compiling GIalgorithm codebase")
 		compilePopBase()
 		
 		//THE GAME LOOP - SEE LATER
@@ -61,23 +63,62 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 				//empty result folder from GIalgorithm
 				if(!resetGIalgOutput()) { return 0 }
 
-				out.println("Config number: $pops")
+				out.println("Pop number: $(pops+1) / $populationSize")
+				
+				/*
+				out.println("Writing pre-config")
+				char fName[] = "gen $moGen preConfig $(pops+1)"
+				File configFile = new File("./Configurations/$fName.csv", File.WRITE)
+				configFile.write("$(popInit.stringifyCommad(configs[pops]))\n")
+				configFile.close()
+				*/
 
 				//Egg Layer 2
 				//Execute each configuration 12 times
 				
 				//set current members parameters to be passed in with runCommands
 				paramString = popInit.stringify(configs[pops])
-				//out.println("$paramString")
+				out.println("Param String: $paramString")
 				
 				updateRunCommands()
 				
-				//out.println("Runnig: $runCommand")
+				//out.println("Running: $runCommand1")
 				
+				//NEW METHOD
+				if(numRuns%3 != 0) {
+					out.println("setting num runs to 9")
+					numRuns = 9
+				}
+				
+				out.println("Starting GIalgorithm execution")
+				
+				Thread executions[] = new Thread[3]
+				
+				//run 3 threads at a time
+				for(int r = 1; r <= numRuns; r+=3) {
+					out.println("Running threads:")
+					out.println("MainModular $(r)")
+					out.println("MainModular $(r+1)")
+					out.println("MainModular $(r+2)")
+					executions[0] = asynch::runCommand("cd $GIalgorithmPath && dana MainModular $(r) MOGI $paramString >logfileMO$(r).txt 2>errorfileMO1$(r).txt")
+					executions[1] = asynch::runCommand("cd $GIalgorithmPath && dana MainModular $(r+1) MOGI $paramString >logfileMO$(r+1).txt 2>errorfileMO1$(r+1).txt")
+					executions[2] = asynch::runCommand("cd $GIalgorithmPath && dana MainModular $(r+2) MOGI $paramString >logfileMO$(r+2).txt 2>errorfileMO1$(r+2).txt")
+				
+					out.println("Joining threads")
+					executions[0].join()
+					executions[1].join()
+					executions[2].join()
+				}
+				
+				out.println("GIalgorithm execution finished")
+				
+				//OLD METHOD
+				/*
 				//run first 4
 				run.execute(runCommand1)
 				//wait for half an hour then begin checking for completion
-				if(!checkBatchAfter(4, 1200000)) {
+				//if(!checkBatchAfter(4, 1200000)) {
+				if(!checkBatchAfter(4, 1800000)) {
 					out.println("Could not confirm completion of runCommand1.\nExiting Program.")
 					//kill all running processes and move on - don't just kill the program
 					run.execute(killCommand)
@@ -88,7 +129,7 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 				//create subFolder of CompletionConfirmation
 				run.execute(runCommand2)
 				//wait for half an hour then begin checking for completion
-				if(!checkBatchAfter(8, 1200000)) {
+				if(!checkBatchAfter(8, 1800000)) {
 					out.println("Could not confirm completion of runCommand2.\nExiting Program.")
 					//kill all running processes and move on - don't just kill the program
 					run.execute(killCommand)
@@ -98,17 +139,19 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 				//when next 4 have been completed, run last 4
 //				run.execute(runCommand3)
 				//wait for half an hour then begin checking for completion
-//				if(!checkBatchAfter(3, 1800000)) {
+//				if(!checkBatchAfter(12, 1800000)) {
 //					out.println("Could not confirm completion of runCommand3.\nExiting Program.")
 					//kill all running processes and move on - don't just kill the program
 //					run.execute(killCommand)
 //				}
+				*/
 
-				out.println("\nPop $pops of $populationSize in Generation $moGen Complete")
+				out.println("\nPop $(pops+1) of $populationSize in Generation $(moGen+1) Complete")
 				
+				out.println("Executing analysis script.")
 				//call evaluation script
 				run.execute("python3 $GIalgorithmPath/csv_script.py")
-				run.execute("python3 Fitness_Extraction.py $GIalgorithmPath/test_files/MOGI")
+				run.execute("python3 Fitness_Extraction.py $GIalgorithmPath/output_files/MOGI")
 				
 				dec fitness
 				//read in fitness
@@ -116,28 +159,32 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 					File file = new File("./fitness.txt", File.READ)
 					byte fit[] = file.read(file.getSize())
 					fitness = du.decFromString(fit)
+					file.close()
 					
 					fs.delete("./fitness.txt")
 				}
 				else {
 					out.println("Could not find resultant fitness, assuming dud")
-					fitness = 1.0
+					fitness = 10.0
 				}
 				
+				out.println("Setting fitness")
 				configFitness[pops] = fitness
+				out.println("pop cycle ended")
 			}
 			
 			//write configs to file
 			//include fitness values
+			writeConfigsToFile(configs, configFitness, moGen)
 			out.println("config and fitness written")
-			writeConfigsToFile(configs, configFitness)
 			
+			out.println("Mutation and Crossover")
 			dec cfCopy[] = clone configFitness
 			GiaConfig newConfigs[] = new GiaConfig[populationSize]
 			//create new population for next generation
 			//-> Outsource to PopulationInitialiser
 			for(int i = 0; i < populationSize; i++) {
-				if(i - elites < 0) {
+				if(i < elites) {
 					int idx = 0
 					dec fittest = 1.0
 					for(int f = 0; f < cfCopy.arrayLength; f++) {
@@ -149,6 +196,13 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 					
 					newConfigs[i] = configs[idx]
 					cfCopy[idx] = 1.0
+					out.println("Elite set!")
+					
+					/*
+					File eFile = new File("./elites/elite$(i)_Gen$(moGen).txt", File.CREATE)
+					eFile.write(popInit.stringifyCommad(newConfigs[i]))
+					eFile.close()
+					*/
 				}
 				else {
 					DateTime dt = cal.getTime()
@@ -167,7 +221,7 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 					//Select parent configs
 					GiaConfig p1
 					GiaConfig p2
-					for(int b = 0; b < 2; b++) {
+					for(int p = 0; p < 2; p++) {
 						dec val = rand.getDec(0, cumFit)
 						int idx = 0
 						for(int j = 0; j < configFitness.arrayLength; j++) {
@@ -178,10 +232,10 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 								break
 							}
 						}
-						if(b == 0) {
+						if(p == 0) {
 							p1 = clone configs[idx]
 						}
-						if(b == 1) {
+						if(p == 1) {
 							p2 = clone configs[idx]
 						}
 					}
@@ -259,6 +313,10 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 		return 0
 	}
 	
+	void runCommand(char cmd[]) {
+		run.execute(cmd)
+	}
+	
 	GiaConfig mutate(GiaConfig c) {
 		GiaConfig conf = clone c
 		if(rand.getDec(0, 1) < mutationChance) {
@@ -308,11 +366,11 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 	
 	bool resetGIalgOutput() {
 		bool deleted = true
-		FileEntry entries[] = fs.getDirectoryContents("$GIalgorithmPath/test_files/MOGI")
+		FileEntry entries[] = fs.getDirectoryContents("$GIalgorithmPath/output_files/MOGI")
 		for(int a = 0; a < entries.arrayLength; a++) {
-			//out.println("To delete: $GIalgorithmPath/test_files/MOGI/$(entries[a].name)")
+			//out.println("To delete: $GIalgorithmPath/output_files/MOGI/$(entries[a].name)")
 			//use bash command as FileSystem wasn't cutting it - couldn't recursively delete contents of folders
-			RunStatus r = run.execute("rm -r $GIalgorithmPath/test_files/MOGI/$(entries[a].name)")
+			RunStatus r = run.execute("rm -r $GIalgorithmPath/output_files/MOGI/$(entries[a].name)")
 			deleted = r.executed
 			if(!deleted) {
 				out.println("Failed to delete current contents of GIalg's output folders")
@@ -324,7 +382,8 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 			
 			bool created = true
 			for(int f = 1; f <= numRuns; f++) {
-				if(!fs.createDirectory("$GIalgorithmPath/test_files/MOGI/$f")) {
+				if(!fs.createDirectory("$GIalgorithmPath/output_files/MOGI/$f")) {
+				out.println("Didn't create folder $f")
 					created = false
 				}
 			}
@@ -348,12 +407,12 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 	
 	void updateRunCommands() {
 		//change so that don't issue tmux commands and so it blocks
-		runCommand1 = "tmux new-window 'cd $GIalgorithmPath && dana Main 1 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 2 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 3 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 4 MOGI $paramString' \\; detach-client"
-		runCommand2 = "tmux new-window 'cd $GIalgorithmPath && dana Main 5 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 6 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 7 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 8 MOGI $paramString' \\; detach-client"
-		runCommand3 = "tmux new-window 'cd $GIalgorithmPath && dana Main 9 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 10 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 11 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana Main 12 MOGI $paramString' \\; detach-client"
+		runCommand1 = "tmux new-window 'cd $GIalgorithmPath && dana MainModular 1 MOGI $paramString >logfileMO1.txt 2>errorfileMO1.txt' \\; new-window 'cd $GIalgorithmPath && dana MainModular 2 MOGI $paramString >logfileMO2.txt 2>errorfileMO2.txt' \\; new-window 'cd $GIalgorithmPath && dana MainModular 3 MOGI $paramString >logfileMO3.txt 2>errorfileMO3.txt' \\; new-window 'cd $GIalgorithmPath && dana MainModular 4 MOGI $paramString >logfileMO4.txt 2>errorfileMO4.txt' \\; detach-client"
+		runCommand2 = "tmux new-window 'cd $GIalgorithmPath && dana MainModular 5 MOGI $paramString >logfileMO5.txt 2>errorfileMO5.txt' \\; new-window 'cd $GIalgorithmPath && dana MainModular 6 MOGI $paramString >logfileMO6.txt 2>errorfileMO6.txt' \\; new-window 'cd $GIalgorithmPath && dana MainModular 7 MOGI $paramString >logfileMO7.txt 2>errorfileMO7.txt' \\; new-window 'cd $GIalgorithmPath && dana MainModular 8 MOGI $paramString >logfileMO8.txt 2>errorfileMO8.txt' \\; detach-client"
+		runCommand3 = "tmux new-window 'cd $GIalgorithmPath && dana MainModular 9 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana MainModular 10 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana MainModular 11 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana MainModular 12 MOGI $paramString' \\; detach-client"
 	}
 	
-	void writeConfigsToFile(GiaConfig configs[], dec fitness[]) {
+	void writeConfigsToFile(GiaConfig configs[], dec fitness[], int genNum) {
 		DateTime dt = cal.getTime()
 		int yr = dt.year
 		int mn = dt.month
@@ -362,7 +421,7 @@ component provides App requires io.Output out, io.Input in, PopulationInitialise
 		int sec = dt.second
 		int min = dt.minute
 		int hr = dt.hour
-		char fName[] = "configGroup $hr$min$sec$milsec - $yr $mn $day"
+		char fName[] = "gen $genNum $hr$min$sec$milsec - $yr $mn $day"
 		
 		File configFile = new File("./Configurations/$fName.csv", File.WRITE)
 		

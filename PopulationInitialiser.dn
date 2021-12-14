@@ -14,6 +14,7 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 		Repeat.
 	
 	*/
+	int numOpWeights = 15
 	
 	GiaConfig[] PopulationInitialiser:generateInitialPopConfigs(int popSize) {
 		DateTime time = cal.getTime()
@@ -24,6 +25,7 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 		//maximum score is 18*num_configs, pass score is 9-num_configs?
 		int passValue = 2
 		int evalVal = 0
+		
 		GiaConfig configs[] = new GiaConfig[popSize]()
 		
 		while(numGoodConfigs < popSize) {
@@ -42,8 +44,8 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 				mutWeights[a] = roundTo2DP(rand.getDec(ConfigDomains.MUTWEIGHT_LOWER, ConfigDomains.MUTWEIGHT_UPPER))
 			}
 
-			dec opWeights[] = new dec[10]
-			for(a = 0; a < 10; a++) {
+			dec opWeights[] = new dec[numOpWeights]
+			for(a = 0; a < numOpWeights; a++) {
 				opWeights[a] = roundTo2DP(rand.getDec(ConfigDomains.OPWEIGHT_LOWER, ConfigDomains.OPWEIGHT_UPPER))
 			}
 			
@@ -53,14 +55,14 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 			//out.println("Config Evaluation Value: $evalVal")
 			
 			//pass value should decrease with every successful 
-			if(evalVal < passValue){
+			if(evalVal <= passValue){
 				//out.println("Config Passes")
 				configs[numGoodConfigs] = c
 				numGoodConfigs++
 				//passValue -= numGoodConfigs
 			}
 			else{
-				//out.println("Config Fails")
+				out.println("Config fails; with $evalVal similar values")
 			}
 			
 			totalConfigs++
@@ -103,7 +105,7 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 				temp1 = config:.5
 				temp2 = compareFig:.5
 				//iterate through opWeights
-				for(a = 0; a < 10; a++){
+				for(a = 0; a < numOpWeights; a++){
 					if(temp1[a] == temp2[a]) {
 						score++
 					}
@@ -158,7 +160,7 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 		dec v5[] = c.mutWeights
 		dec v6[] = c.opWeights
 		
-		result = "$v1 $v2 $v3 $v4 $(v5[0]) $(v5[1]) $(v5[2]) $(v5[3]) $(v6[0]) $(v6[1]) $(v6[2]) $(v6[3]) $(v6[4]) $(v6[5]) $(v6[6]) $(v6[7]) $(v6[8]) $(v6[9])"
+		result = "$v1 $v2 $v3 $v4 $(v5[0]) $(v5[1]) $(v5[2]) $(v5[3]) $(v6[0]) $(v6[1]) $(v6[2]) $(v6[3]) $(v6[4]) $(v6[5]) $(v6[6]) $(v6[7]) $(v6[8]) $(v6[9]) $(v6[10]) $(v6[11]) $(v6[12]) $(v6[13]) $(v6[14])"
 		
 		return result
 		
@@ -174,7 +176,7 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 		dec v5[] = c.mutWeights
 		dec v6[] = c.opWeights
 		
-		result = "$v1,$v2,$v3,$v4,$(v5[0]),$(v5[1]),$(v5[2]),$(v5[3]),$(v6[0]),$(v6[1]),$(v6[2]),$(v6[3]),$(v6[4]),$(v6[5]),$(v6[6]),$(v6[7]),$(v6[8]),$(v6[9])"
+		result = "$v1,$v2,$v3,$v4,$(v5[0]),$(v5[1]),$(v5[2]),$(v5[3]),$(v6[0]),$(v6[1]),$(v6[2]),$(v6[3]),$(v6[4]),$(v6[5]),$(v6[6]),$(v6[7]),$(v6[8]),$(v6[9]),$(v6[10]),$(v6[11]),$(v6[12]),$(v6[13]),$(v6[14])"
 		
 		return result
 		

@@ -9,6 +9,15 @@ import os
 
 # adapted from GIalgorithm graph producing code
 
+def makeCsv(files):
+    li = []
+    all_files = glob.glob(files)
+    for filename in all_files:
+        # print(filename)
+        pre, ext = os.path.splitext(filename)
+        os.rename(filename, pre + ".csv")
+        df = pd.read_csv(pre + ".csv")
+
 def load(files):
     li = []
     all_files = glob.glob(files)
@@ -43,7 +52,10 @@ def best_data(data):
 if __name__ == '__main__':
     # Load data in and add relative fitness and performance columns and remove the id 0 individuals
     
-    outFolder = sys.argv[1]
+    makeCsv("/home/abousbaine/GIalgorithm/output_files/MOGI/*/phyloLog")
+    
+    outFolder ="/home/abousbaine/GIalgorithm/output_files/MOGI"
+    
     fullData = load(outFolder+"/*/phyloLog.csv")
     
     # Find number of folders in the output folder
@@ -71,7 +83,3 @@ if __name__ == '__main__':
     fFile = open("fitness.txt", "w")
     fFile.write(str(avg5Fitness))
     fFile.close()
-
-    # sys.stdout.write(str(avg5Fitness))
-    # print(relevantData)
-    # print(fitnessVals)

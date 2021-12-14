@@ -22,6 +22,7 @@ data ConfigDomains {
 	const int ELITES_UPPER = 15
 	const int ELITES_LOWER = 0
 	
+	//lowered limit
 	const int MUTLIM_UPPER = 15
 	const int MUTLIM_LOWER = 0
 	
