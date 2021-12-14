@@ -1,3 +1,0 @@
-interface confirmComplete {
-	void generateCompletionFile(int run_number, char path[])
-}
