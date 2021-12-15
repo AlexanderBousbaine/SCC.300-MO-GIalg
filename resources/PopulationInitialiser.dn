@@ -24,7 +24,7 @@ data ConfigDomains {
 	
 	//lowered limit
 	const int MUTLIM_UPPER = 15
-	const int MUTLIM_LOWER = 0
+	const int MUTLIM_LOWER = 1
 	
 	const dec MUTWEIGHT_UPPER = 1.0
 	const dec MUTWEIGHT_LOWER = 0.0
