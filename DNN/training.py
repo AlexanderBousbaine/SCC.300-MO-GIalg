@@ -76,6 +76,8 @@ if __name__ == '__main__':
 
         dataFile.close()
 
+    #TODO: Normalise 'fitness' to the range 0-1, discard values > 2
+
     # Normalise 'elite' AND 'limit'
     dataArray['elite'] = dataArray['elite'].apply(normaliseElite)
     dataArray['limit'] = dataArray['limit'].apply(normaliseLimit)
@@ -157,7 +159,7 @@ if __name__ == '__main__':
         print("Evaluation")
         print(f"Size of testing set: {len(testingSet)}")
         
-        predictionFrame = pandas.DataFrame(columns = ["label", "p1", "p2", "p3", "p4", "p5"])
+        predictionFrame = pandas.DataFrame(columns = ["label", "p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11", "p12", "p13", "p14", "p15", "p16", "p17", "p18", "p19", "p20"])
         metaEval = pandas.DataFrame(columns = ["label", "avgPrediction", "minPrediction", "maxPrediction", "rangeOfPred", "min_devFromLabel", "max_dFL", "avg_dFL", "tendency"])
         
         with torch.no_grad():
@@ -168,7 +170,7 @@ if __name__ == '__main__':
                 
             mlp.eval()    
             
-            for col in ["p1", "p2", "p3", "p4", "p5"]:
+            for col in ["p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11", "p12", "p13", "p14", "p15", "p16", "p17", "p18", "p19", "p20"]:
                 print(f"Prediction round: {col}")
                 for batchNo, data in enumerate(evaluationLoader):
                     
