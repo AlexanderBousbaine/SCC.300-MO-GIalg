@@ -44,18 +44,18 @@ class MultiLayerPerceptron(nn.Module):
         return self.layers(x)
         
         
-# To normalise the 'elite' variables who have a max value of 15 and min of 0
+# To normalise the 'elite' variables which have a max value of 15 and min of 0
 def normaliseElite(num):
     return num/15
     
 
-# To normalise the 'limit' variables who have a max value of 15 and min of 1    
+# To normalise the 'limit' variables which have a max value of 15 and min of 1    
 def normaliseLimit(num):
     return (num - 1)/14
 
 if __name__ == '__main__':
 
-    dataPath = "C:/Users/atbou/Documents/Alexander's Work/University Stuff/Modules/SCC.300 - 3rd Year Project/Code/SCC.300-MO-GIalg/DNN/data/*"
+    dataPath = "./data/*"
 
     print("in model script")
     
