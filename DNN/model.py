@@ -16,6 +16,7 @@ class QueryDataset(Dataset):
         return torch.tensor(fullData)
 
 
+
 class ResultDataset(Dataset):
 
     def __init__(self, giData):
@@ -45,7 +46,6 @@ class MultiLayerPerceptron(nn.Module):
         nn.ReLU(),
         nn.Linear(32, 1)
     )
-
 
     def forward(self, x):
         #Forward pass
