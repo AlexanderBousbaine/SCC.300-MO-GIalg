@@ -3,6 +3,7 @@ import model
 import glob
 import csv
 import pandas
+from sklearn.model_selection import KFold
 from csv import reader
 from torch import nn
 from torch.utils.data import Dataset
@@ -49,6 +50,11 @@ if __name__ == '__main__':
     train = False
     loadModel = False
     evaluate = True
+    crossValidate = True
+    
+    if(crossValidate):
+        train = False
+        evaluate = False
 
     dataPath = "./data/*"
 
@@ -76,14 +82,15 @@ if __name__ == '__main__':
 
         dataFile.close()
 
-    #TODO: Normalise 'fitness' to the range 0-1, discard values > 2
-
     # Normalise 'elite' AND 'limit'
     dataArray['elite'] = dataArray['elite'].apply(normaliseElite)
     dataArray['limit'] = dataArray['limit'].apply(normaliseLimit)
+    
+    # Remove all rows where fitness values are greater than 1
+    dataArray = dataArray[dataArray.fitness >= 1.0];
+    print(f"Size {dataArray.size}")
         
     # Create Dataset and DataLoader instances
-    # TODO: Carve up into fifths and do the shuffle thing (1 fifth testing, 4 fifths training)
     resultDataset = model.ResultDataset(dataArray)
     setSize = len(resultDataset)
     
@@ -99,8 +106,13 @@ if __name__ == '__main__':
     # May change once I can see how the data looks
     lossFunc = nn.SmoothL1Loss()
     
-    # Adam said to be most common optimisation algorithm - so why deviate from the norm?
+    # Adam said to be most common optimisation algorithm - haha sheep go baaa
     optimiser = torch.optim.Adam(mlp.parameters(), lr=0.0001)
+    
+    # Do 5-Fold Cross Validation
+    if(crossValidate):
+        print("Performing cross validation")
+    
     
     if(train):
         print("Training")

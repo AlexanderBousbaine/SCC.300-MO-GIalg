@@ -18,7 +18,7 @@ def load(files):
 
 if __name__ == "__main__":
     # Read in results
-    filesPath = "./Results/*/*"
+    filesPath = "./Results/Run2/*"
     
     # Loads fitness columns from all files
     # Gives dataframe with 10 columns and 12 rows - each column is a generation
