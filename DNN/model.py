@@ -26,7 +26,7 @@ class ResultDataset(Dataset):
         return len(self.giDataFrame)
     
     def __getitem__(self, index):
-        fullData = list(self.giDataFrame.loc[index])
+        fullData = list(self.giDataFrame.iloc[index])
         # Take label off the end of the row and return it as a separate value
         labels = fullData.pop()
         # Return as pytorch tensors
@@ -39,8 +39,8 @@ class MultiLayerPerceptron(nn.Module):
     def __init__(self):
         super().__init__()
         self.layers = nn.Sequential(
-        #nn.Linear(23, 64),
-        nn.Linear(18, 64),
+        nn.Linear(23, 64),
+        #nn.Linear(18, 64),
         nn.ReLU(),
         nn.Linear(64, 32),
         nn.ReLU(),
