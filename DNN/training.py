@@ -87,8 +87,7 @@ if __name__ == '__main__':
     dataArray['limit'] = dataArray['limit'].apply(normaliseLimit)
     
     # Remove all rows where fitness values are greater than 1
-    dataArray = dataArray[dataArray.fitness >= 1.0];
-    print(f"Size {dataArray.size}")
+    dataArray = dataArray[dataArray.fitness <= 1.0];
         
     # Create Dataset and DataLoader instances
     resultDataset = model.ResultDataset(dataArray)
@@ -109,9 +108,11 @@ if __name__ == '__main__':
     # Adam said to be most common optimisation algorithm - haha sheep go baaa
     optimiser = torch.optim.Adam(mlp.parameters(), lr=0.0001)
     
+    segments = 5
+    
     # Do 5-Fold Cross Validation
     if(crossValidate):
-        print("Performing cross validation")
+        print(f"Performing {segments}-fold cross validation")
     
     
     if(train):
