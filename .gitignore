@@ -1,6 +1,9 @@
 #Results folder
 Results/
 
+#Saved Models
+DNN/*.pt
+
 #dana object files
 *.o
 
