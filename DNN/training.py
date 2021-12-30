@@ -3,6 +3,7 @@ import model
 import glob
 import csv
 import pandas
+import statistics
 from sklearn.model_selection import KFold
 from csv import reader
 from torch import nn
@@ -24,7 +25,8 @@ def analysePredictions(dfRow):
     values = list(dfRow)
     fit = values.pop(0)
     
-    avgPred = sum(values)/len(values)
+    avgPred = statistics.mean(values)
+    medPred = statistics.median_high(values)
     minPred = min(values)
     maxPred = max(values)
     
@@ -35,7 +37,7 @@ def analysePredictions(dfRow):
     tendencies = ["high" if val > fit else "low" for val in values]
     tendency = max(set(tendencies), key=tendencies.count)
     
-    metaEval.loc[len(metaEval)] = [fit, avgPred, minPred, maxPred, valRange, min(dev), max(dev), avgDev, tendency]
+    metaEval.loc[len(metaEval)] = [fit, avgPred, medPred, minPred, maxPred, valRange, min(dev), max(dev), avgDev, tendency]
     
     '''
     print(f"Label: {round(fit, 4)}")
@@ -44,13 +46,13 @@ def analysePredictions(dfRow):
     print(f"Average deviation from label: {round(avgDev, 4)}\n")
     '''
 
-
+#TODO: Command line arguments
 if __name__ == '__main__':
 
     train = True
     loadModel = False
     evaluate = True
-    crossValidate = True
+    crossValidate = False
     crossTrain = False
     
     if(crossValidate):
@@ -108,7 +110,7 @@ if __name__ == '__main__':
     if(not crossValidate and not crossTrain):
         setSize = len(resultDataset)
         
-        trainingSet, evaluationSet = torch.utils.data.random_split(resultDataset, [int((4*setSize/5)), int(setSize/5)])
+        trainingSet, evaluationSet = torch.utils.data.random_split(resultDataset, [int((9*setSize/10)), int(setSize/10)])
         
         trainingLoader = DataLoader(trainingSet, batch_size=4, shuffle=True, num_workers=1)
         evaluationLoader = DataLoader(evaluationSet, batch_size=1, shuffle=True, num_workers=1)
@@ -224,7 +226,7 @@ if __name__ == '__main__':
             print(f"Size of testing set: {len(evaluationSet)}")
             
             predictionFrame = pandas.DataFrame(columns = ["label", "p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11", "p12", "p13", "p14", "p15", "p16", "p17", "p18", "p19", "p20"])
-            metaEval = pandas.DataFrame(columns = ["label", "avgPrediction", "minPrediction", "maxPrediction", "rangeOfPred", "min_devFromLabel", "max_dFL", "avg_dFL", "tendency"])
+            metaEval = pandas.DataFrame(columns = ["label", "avgPred", "medPred", "minPred", "maxPred", "rangeOfPred", "min_devFromLabel", "max_dFL", "avg_dFL", "tendency"])
             
             with torch.no_grad():
                 

@@ -11,7 +11,7 @@ class QueryDataset(Dataset):
         return len(self.giDataFrame)
     
     def __getitem__(self, index):
-        fullData = list(self.giDataFrame.loc[index])
+        fullData = list(self.giDataFrame.iloc[index])
         # Return as pytorch tensor
         return torch.tensor(fullData)
 
