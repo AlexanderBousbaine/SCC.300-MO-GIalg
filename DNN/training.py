@@ -37,7 +37,10 @@ def analysePredictions(dfRow):
     tendencies = ["high" if val > fit else "low" for val in values]
     tendency = max(set(tendencies), key=tendencies.count)
     
-    metaEval.loc[len(metaEval)] = [fit, avgPred, medPred, minPred, maxPred, valRange, min(dev), max(dev), avgDev, tendency]
+    pLow = (minPred - fit)
+    pUp = (maxPred - fit)
+    
+    metaEval.loc[len(metaEval)] = [fit, avgPred, medPred, str(round(minPred,6))+" ("+str(round((100*pLow),2))+"%)", str(round(maxPred,6))+", ("+str(round((100*pUp),2))+"%)", valRange, min(dev), max(dev), avgDev, tendency]
     
     '''
     print(f"Label: {round(fit, 4)}")
@@ -46,7 +49,9 @@ def analysePredictions(dfRow):
     print(f"Average deviation from label: {round(avgDev, 4)}\n")
     '''
 
-#TODO: Command line arguments
+#TODO: Command line arguments.
+#      Try using SKLearn LinearRegression.
+#      Try making distribution of input fitnesses more even.
 if __name__ == '__main__':
 
     train = True
@@ -54,6 +59,8 @@ if __name__ == '__main__':
     evaluate = True
     crossValidate = False
     crossTrain = False
+    
+    epochs = 30
     
     if(crossValidate):
         train = True
@@ -65,7 +72,7 @@ if __name__ == '__main__':
         train = True
         evaluate = True
 
-    dataPath = "../Results/*/*"
+    dataPath = "../Results/*/*.csv"
 
     print("in model script")
     
@@ -74,6 +81,8 @@ if __name__ == '__main__':
     numFiles = len(filePaths)
     # DataFrame definition for new data
     dataArray = pandas.DataFrame(columns = ["mp", "hgt", "elite", "limit", "mw1", "mw2", "mw3", "mw4", "ow1", "ow2", "ow3", "ow4", "ow5", "ow6", "ow7", "ow8", "ow9", "ow10", "ow11", "ow12", "ow13", "ow14", "ow15", "fitness"]) 
+    
+    #Old data dataframe
     # dataArray = pandas.DataFrame(columns = ["mp", "hgt", "elite", "limit", "mw1", "mw2", "mw3", "mw4", "ow1", "ow2", "ow3", "ow4", "ow5", "ow6", "ow7", "ow8", "ow9", "ow10", "fitness"]) 
     print("got "+str(numFiles)+" files")
     
@@ -110,7 +119,10 @@ if __name__ == '__main__':
     if(not crossValidate and not crossTrain):
         setSize = len(resultDataset)
         
-        trainingSet, evaluationSet = torch.utils.data.random_split(resultDataset, [int((9*setSize/10)), int(setSize/10)])
+        tSize = int((9*setSize/10))
+        eSize = setSize - tSize
+        
+        trainingSet, evaluationSet = torch.utils.data.random_split(resultDataset, [tSize, eSize])
         
         trainingLoader = DataLoader(trainingSet, batch_size=4, shuffle=True, num_workers=1)
         evaluationLoader = DataLoader(evaluationSet, batch_size=1, shuffle=True, num_workers=1)
@@ -123,7 +135,6 @@ if __name__ == '__main__':
         print(f"Size of evaluation set: {len(evaluationSet)}")
     
     folds = 1
-    epochs = 30
     allEvals = []
     losses = []
     
@@ -155,18 +166,19 @@ if __name__ == '__main__':
         trainingLoader = tLoaders[f]
         evaluationLoader = eLoaders[f]
         
+        # In cross-validation, model is discarded and remade with every interation
         if(f == 0 or crossValidate):
             print("Init Model")
             # Model resets with every fold
             mlp = model.MultiLayerPerceptron()
             #move model onto GPU now if need be
         
-            # Mix of MSE (MSELoss) - which is sensitive to outliers - and MAE (L1Loss) - which works best with lots of outliers
+            # SmoothL1Loss is a mix of MSE (MSELoss) - which is sensitive to outliers - and MAE (L1Loss) - which works best with lots of outliers
             # May change once I can see how the data looks
             lossFunc = nn.SmoothL1Loss()
         
             # Adam said to be most common optimisation algorithm - haha sheep go baaa
-            optimiser = torch.optim.Adam(mlp.parameters(), lr=0.0001)
+            optimiser = torch.optim.Adam(mlp.parameters(), lr=0.001)
     
         if(train):
             print("Training")
@@ -220,7 +232,8 @@ if __name__ == '__main__':
             torch.save(mlp.state_dict(), "./TrainedModel.pt")
             torch.save(optimiser.state_dict(), "./ModelOptimiser.pt")
         
-        #Do n (5) training loops over the same data - check the variation in fitness predictions across the loops
+        # Does 20 prediction loops over the same data - checks the variation in fitness predictions across the loops
+        # Increase batch size
         if(evaluate):
             print("Evaluation")
             print(f"Size of testing set: {len(evaluationSet)}")

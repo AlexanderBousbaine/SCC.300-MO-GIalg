@@ -36,15 +36,16 @@ class ResultDataset(Dataset):
 
 class MultiLayerPerceptron(nn.Module):
     #Multilayer Perceptron for regression.
+    # More layers =ed longer time with no noticeable improvement
+    # 2x input nodes gave less variation across predictions than 3x
     def __init__(self):
         super().__init__()
         self.layers = nn.Sequential(
-        nn.Linear(23, 64),
-        #nn.Linear(18, 64),
+        nn.Linear(23, 46),
         nn.ReLU(),
-        nn.Linear(64, 32),
+        nn.Linear(46, 23),
         nn.ReLU(),
-        nn.Linear(32, 1)
+        nn.Linear(23, 1)
     )
 
     def forward(self, x):
