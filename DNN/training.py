@@ -54,13 +54,14 @@ def analysePredictions(dfRow):
 #      Try making distribution of input fitnesses more even.
 if __name__ == '__main__':
 
-    train = True
-    loadModel = False
+    train = False
+    loadModel = True
     evaluate = True
     crossValidate = False
     crossTrain = False
     
     epochs = 30
+    folds = 2
     
     if(crossValidate):
         train = True
@@ -70,7 +71,7 @@ if __name__ == '__main__':
         
     if(crossTrain):
         train = True
-        evaluate = True
+        evaluate = False
 
     dataPath = "../Results/*/*.csv"
 
@@ -114,52 +115,38 @@ if __name__ == '__main__':
     resultDataset = model.ResultDataset(dataArray)
         
     tLoaders = []
-    eLoaders = []
-    
-    if(not crossValidate and not crossTrain):
-        setSize = len(resultDataset)
-        
-        tSize = int((9*setSize/10))
-        eSize = setSize - tSize
-        
-        trainingSet, evaluationSet = torch.utils.data.random_split(resultDataset, [tSize, eSize])
-        
-        trainingLoader = DataLoader(trainingSet, batch_size=4, shuffle=True, num_workers=1)
-        evaluationLoader = DataLoader(evaluationSet, batch_size=1, shuffle=True, num_workers=1)
-    
-        tLoaders.append(trainingLoader)
-        eLoaders.append(evaluationLoader)
-        
-        print(f"Size of total set: {len(resultDataset)}")
-        print(f"Size of training set: {len(trainingSet)}")
-        print(f"Size of evaluation set: {len(evaluationSet)}")
-    
-    folds = 1
+    eLoaders = []  
     allEvals = []
     losses = []
     
-    # Do 5-Fold Cross Validation
     if(crossValidate or crossTrain):
         # 10 be good number apparently
         folds = 10
         print(f"Performing {folds}-fold cross validation")
-        
-        kf = KFold(n_splits = folds)
-
-        for trainIdcs, evalIdcs in kf.split(resultDataset):
-            # Create dataloaders for the indicies.
-            #print(f"Taining Idices {trainIdcs}")
-            #print(f"Evaluation Indicies {evalIdcs}")
-            
-            trainingSet = model.ResultDataset(dataArray.iloc[trainIdcs])
-            evaluationSet = model.ResultDataset(dataArray.iloc[evalIdcs])
-            
-            print(f"Len idcs: {len(trainIdcs)}, len set: {len(trainingSet)}")
-            
-            tLoaders.append(DataLoader(trainingSet, batch_size=4, shuffle=True, num_workers=1))
-            eLoaders.append(DataLoader(evaluationSet, batch_size=1, shuffle=True, num_workers=1))
-        
     
+        
+    kf = KFold(n_splits = (10 if folds < 10 else folds))
+
+    for trainIdcs, evalIdcs in kf.split(resultDataset):
+        # Create dataloaders for the indicies.
+        #print(f"Taining Idices {trainIdcs}")
+        #print(f"Evaluation Indicies {evalIdcs}")
+        
+        trainingSet = model.ResultDataset(dataArray.iloc[trainIdcs])
+        evaluationSet = model.ResultDataset(dataArray.iloc[evalIdcs])
+        
+        '''
+        print(f"Size of total set: {len(resultDataset)}")
+        print(f"Size of training set: {len(trainingSet)}")
+        print(f"Size of evaluation set: {len(evaluationSet)}")   
+        '''
+        
+        tLoaders.append(DataLoader(trainingSet, batch_size=4, shuffle=True, num_workers=1))
+        eLoaders.append(DataLoader(evaluationSet, batch_size=4, shuffle=True, num_workers=1))
+        
+    if(folds == 2):
+        folds = 1 
+        
     for f in range(folds):
         print(f"Starting fold: {f+1}")
         # Load in appropriate dataloaders
@@ -179,6 +166,9 @@ if __name__ == '__main__':
         
             # Adam said to be most common optimisation algorithm - haha sheep go baaa
             optimiser = torch.optim.Adam(mlp.parameters(), lr=0.001)
+            
+            #Scheduler to change the learning rate of the optimiser every n epochs
+            scheduler = torch.optim.lr_scheduler.StepLR(optimiser, step_size = epochs, gamma = 0.1, verbose = False)
     
         if(train):
             print("Training")
@@ -225,12 +215,16 @@ if __name__ == '__main__':
                     #'''
                     
                             
-                print(f"Sum loss of epoch {epoch}: {epochLoss}")
+                print(f"Sum loss of epoch {epoch}: {round(epochLoss,5)}")
+                print(f"Average loss {round((epochLoss/len(trainingLoader)), 6)}")
+                
+                scheduler.step()
             
             losses.append(epochLoss)
             print("Training Finished")    
             torch.save(mlp.state_dict(), "./TrainedModel.pt")
             torch.save(optimiser.state_dict(), "./ModelOptimiser.pt")
+            print("Model Saved")
         
         # Does 20 prediction loops over the same data - checks the variation in fitness predictions across the loops
         # Increase batch size
@@ -253,7 +247,6 @@ if __name__ == '__main__':
                 for col in ["p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11", "p12", "p13", "p14", "p15", "p16", "p17", "p18", "p19", "p20"]:
                     print(f"Prediction round: {col}")
                     for batchNo, data in enumerate(evaluationLoader):
-                        
                         inputs, labels = data
                         # Double check float tensor
                         inputs, labels = inputs.float(), labels.float()
@@ -262,13 +255,10 @@ if __name__ == '__main__':
                         # Get prediction
                         prediction = mlp(inputs)
                         
-                        predFloat = round(prediction.item(), 3)
-                        actFloat = round(labels.item(), 3)
-                        
-                        # print(f"Pred: {predFloat}\nActual: {actFloat}")
-                        
-                        predictionFrame.at[batchNo, "label"] = labels.item()
-                        predictionFrame.at[batchNo, col] = prediction.item()
+                        counter = 0
+                        for i in range(prediction.size(dim=0)):
+                            predictionFrame.at[(4*batchNo)+i, col] = prediction[i].item()
+                            predictionFrame.at[(4*batchNo)+i, "label"] = labels[i].item()  
                         
                 # print(predictionFrame)
                 predictionFrame.apply(analysePredictions, axis=1)

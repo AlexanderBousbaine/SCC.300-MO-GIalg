@@ -41,12 +41,12 @@ class MultiLayerPerceptron(nn.Module):
     def __init__(self):
         super().__init__()
         self.layers = nn.Sequential(
-        nn.Linear(23, 46),
-        nn.ReLU(),
-        nn.Linear(46, 23),
-        nn.ReLU(),
-        nn.Linear(23, 1)
-    )
+            nn.Linear(23, 46),
+            nn.ReLU(),
+            nn.Linear(46, 23),
+            nn.ReLU(),
+            nn.Linear(23, 1)
+        )
 
     def forward(self, x):
         #Forward pass
