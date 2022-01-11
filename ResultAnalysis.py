@@ -3,6 +3,7 @@ import glob
 import os
 import matplotlib.pyplot as plt
 import numpy as np
+from sklearn.linear_model import LinearRegression
 
 def load(files):
     li = []
@@ -37,7 +38,20 @@ if __name__ == "__main__":
                 bfit = fitnesses.iloc[:, v].min()
                 bestFitnesses.loc[len(bestFitnesses)] = [v+1, bfit]
             
-            bestFitnesses.plot(x="Generation", y="Fitness",grid=True,title="Best Fitness from each Generation of the MOalg")
+            bestFitnesses.plot(x="Generation", y="Fitness",grid=True,title="Best Fitness from each Generation of the MOalg in "+folder)
+            
+            model = LinearRegression()
+            xData = np.array(bestFitnesses['Generation'])
+            yData = np.array(bestFitnesses['Fitness'])
+            
+            xData = xData.reshape(len(bestFitnesses), 1)
+            yData = yData.reshape(len(bestFitnesses), 1)
+            
+            model.fit(xData, yData)
+            bfl = model.predict(xData)
+            
+            plt.plot(xData, bfl, 'r')
+            
             plt.show()
             
             #plotData = pandas.DataFrame(columns = ["Generation", "Fitness_Values"])

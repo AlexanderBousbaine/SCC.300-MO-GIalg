@@ -4,11 +4,14 @@ import glob
 import csv
 import pandas
 import statistics
+import numpy as np
 from sklearn.model_selection import KFold
 from csv import reader
 from torch import nn
 from torch.utils.data import Dataset
 from torch.utils.data import DataLoader
+from sklearn.neural_network import MLPRegressor
+from sklearn.neural_network import MLPClassifier
 
 
 # To normalise the 'elite' variables which have a max value of 15 and min of 0
@@ -19,7 +22,6 @@ def normaliseElite(num):
 # To normalise the 'limit' variables which have a max value of 15 and min of 1    
 def normaliseLimit(num):
     return (num - 1)/14
-
 
 def analysePredictions(dfRow):
     values = list(dfRow)
@@ -119,6 +121,9 @@ if __name__ == '__main__':
     allEvals = []
     losses = []
     
+    trainingSet = []
+    evaluationSet = []
+    
     if(crossValidate or crossTrain):
         # 10 be good number apparently
         folds = 10
@@ -132,8 +137,8 @@ if __name__ == '__main__':
         #print(f"Taining Idices {trainIdcs}")
         #print(f"Evaluation Indicies {evalIdcs}")
         
-        trainingSet = model.ResultDataset(dataArray.iloc[trainIdcs])
-        evaluationSet = model.ResultDataset(dataArray.iloc[evalIdcs])
+        trainingSet = dataArray.iloc[trainIdcs]
+        evaluationSet = dataArray.iloc[evalIdcs]
         
         '''
         print(f"Size of total set: {len(resultDataset)}")
@@ -141,8 +146,8 @@ if __name__ == '__main__':
         print(f"Size of evaluation set: {len(evaluationSet)}")   
         '''
         
-        tLoaders.append(DataLoader(trainingSet, batch_size=4, shuffle=True, num_workers=1))
-        eLoaders.append(DataLoader(evaluationSet, batch_size=4, shuffle=True, num_workers=1))
+        tLoaders.append(trainingSet)
+        eLoaders.append(evaluationSet)
         
     if(folds == 2):
         folds = 1 
@@ -157,124 +162,62 @@ if __name__ == '__main__':
         if(f == 0 or crossValidate):
             print("Init Model")
             # Model resets with every fold
-            mlp = model.MultiLayerPerceptron()
+            mlp = MLPClassifier(max_iter=1000, learning_rate = 'adaptive', early_stopping = True, n_iter_no_change = 40)
             #move model onto GPU now if need be
         
             # SmoothL1Loss is a mix of MSE (MSELoss) - which is sensitive to outliers - and MAE (L1Loss) - which works best with lots of outliers
             # May change once I can see how the data looks
-            lossFunc = nn.SmoothL1Loss()
+            #lossFunc = nn.SmoothL1Loss()
         
             # Adam said to be most common optimisation algorithm - haha sheep go baaa
-            optimiser = torch.optim.Adam(mlp.parameters(), lr=0.001)
+            #optimiser = torch.optim.Adam(mlp.parameters(), lr=0.001)
             
             #Scheduler to change the learning rate of the optimiser every n epochs
-            scheduler = torch.optim.lr_scheduler.StepLR(optimiser, step_size = epochs, gamma = 0.1, verbose = False)
-    
-        if(train):
-            print("Training")
-            mlp.train()
+            #scheduler = torch.optim.lr_scheduler.StepLR(optimiser, step_size = epochs, gamma = 0.1, verbose = False)
+           
+        if(train):  
+            trainingData = trainingLoader
+            labels = trainingData.pop('fitness')
+            labels = labels * 1000000
             
-            if(loadModel):
-                print("Loading model and optimiser states")
-                mlp.load_state_dict(torch.load("./TrainedModel.pt"))
-                optimiser.load_state_dict(torch.load("./ModelOptimiser.pt"))
-            
-            # Training loop
-            for epoch in range(epochs):
-            
-                print("Epoch: "+str(epoch))
-                
-                # To keep track of loss
-                epochLoss = 0.0
-            
-                for batchNo, data in enumerate(trainingLoader):
-                    
-                    inputData, labels = data
-                    # Make doubly sure all values are 32 bit float tensors
-                    inputData, labels = inputData.float(), labels.float()
-                    # Reshape labels tensor to match the shape of the model output
-                    labels = labels.reshape((labels.shape[0], 1))
-                    
-                    #'''
-                    # Reset gradients
-                    optimiser.zero_grad()
-                    
-                    # Get prediction from current model
-                    outputData = mlp(inputData)
-                    
-                    # Get loss from prediction
-                    loss = lossFunc(outputData, labels)
-                    
-                    # Perform backward pass
-                    loss.backward()
-
-                    # Optimise weights
-                    optimiser.step()
-                    
-                    epochLoss += loss.item()
-                    #'''
-                    
-                            
-                print(f"Sum loss of epoch {epoch}: {round(epochLoss,5)}")
-                print(f"Average loss {round((epochLoss/len(trainingLoader)), 6)}")
-                
-                scheduler.step()
-            
-            losses.append(epochLoss)
-            print("Training Finished")    
-            torch.save(mlp.state_dict(), "./TrainedModel.pt")
-            torch.save(optimiser.state_dict(), "./ModelOptimiser.pt")
-            print("Model Saved")
+            mlp.fit(trainingData.to_numpy(dtype='float'), labels.to_numpy(dtype='int'))
         
         # Does 20 prediction loops over the same data - checks the variation in fitness predictions across the loops
         # Increase batch size
         if(evaluate):
-            print("Evaluation")
-            print(f"Size of testing set: {len(evaluationSet)}")
-            
+
             predictionFrame = pandas.DataFrame(columns = ["label", "p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11", "p12", "p13", "p14", "p15", "p16", "p17", "p18", "p19", "p20"])
             metaEval = pandas.DataFrame(columns = ["label", "avgPred", "medPred", "minPred", "maxPred", "rangeOfPred", "min_devFromLabel", "max_dFL", "avg_dFL", "tendency"])
             
-            with torch.no_grad():
+            evalData = evaluationLoader
+            trueLabels = evalData.pop('fitness')
+            #print(trueLabels)
+            
+            for col in ["p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11", "p12", "p13", "p14", "p15", "p16", "p17", "p18", "p19", "p20"]:
+                print(f"Prediction round: {col}")
                 
-                # If model has not just been trained, load in a model
-                if(not train):
-                    print("Load model before evaluating")
-                    mlp.load_state_dict(torch.load("./TrainedModel.pt"))
+                if(train):
+                    mlp.fit(trainingData.to_numpy(dtype='float'), labels.to_numpy(dtype='int'))
                     
-                mlp.eval()    
+                results = mlp.predict(evalData.to_numpy(dtype="float"))
                 
-                for col in ["p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11", "p12", "p13", "p14", "p15", "p16", "p17", "p18", "p19", "p20"]:
-                    print(f"Prediction round: {col}")
-                    for batchNo, data in enumerate(evaluationLoader):
-                        inputs, labels = data
-                        # Double check float tensor
-                        inputs, labels = inputs.float(), labels.float()
-                        labels = labels.reshape((labels.shape[0], 1))
+                predictionFrame['label'] = trueLabels
+                predictionFrame[col] = results/1000000
 
-                        # Get prediction
-                        prediction = mlp(inputs)
-                        
-                        counter = 0
-                        for i in range(prediction.size(dim=0)):
-                            predictionFrame.at[(4*batchNo)+i, col] = prediction[i].item()
-                            predictionFrame.at[(4*batchNo)+i, "label"] = labels[i].item()  
-                        
-                # print(predictionFrame)
-                predictionFrame.apply(analysePredictions, axis=1)
-                
-                allEvals.append(metaEval)
-                #print(f"Evaluation of fold: {f}")
-                #print(metaEval)
+                    
+            # print(predictionFrame)
+            predictionFrame.apply(analysePredictions, axis=1)
+            
+            allEvals.append(metaEval)
+            #print(f"Evaluation of fold: {f}")
+            #print(metaEval)
                 
     
     print("Showing results")
+    
     for i in range(len(allEvals)):
         oneEval = allEvals[i]
     
-        print(f"Fold {i}")
-        print(allEvals[i])
-        
         print(f"Fold {i}")
         print(oneEval)    
 
