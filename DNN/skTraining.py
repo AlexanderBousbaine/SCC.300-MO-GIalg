@@ -4,6 +4,7 @@ import glob
 import csv
 import pandas
 import statistics
+import joblib
 import numpy as np
 from sklearn.model_selection import KFold
 from csv import reader
@@ -76,6 +77,7 @@ if __name__ == '__main__':
         evaluate = False
 
     dataPath = "../Results/*/*.csv"
+    modelName = "skModel.pkl"
 
     print("in model script")
     
@@ -162,18 +164,7 @@ if __name__ == '__main__':
         if(f == 0 or crossValidate):
             print("Init Model")
             # Model resets with every fold
-            mlp = MLPClassifier(max_iter=1000, learning_rate = 'adaptive', early_stopping = True, n_iter_no_change = 40)
-            #move model onto GPU now if need be
-        
-            # SmoothL1Loss is a mix of MSE (MSELoss) - which is sensitive to outliers - and MAE (L1Loss) - which works best with lots of outliers
-            # May change once I can see how the data looks
-            #lossFunc = nn.SmoothL1Loss()
-        
-            # Adam said to be most common optimisation algorithm - haha sheep go baaa
-            #optimiser = torch.optim.Adam(mlp.parameters(), lr=0.001)
-            
-            #Scheduler to change the learning rate of the optimiser every n epochs
-            #scheduler = torch.optim.lr_scheduler.StepLR(optimiser, step_size = epochs, gamma = 0.1, verbose = False)
+            mlp = MLPClassifier(max_iter = 1000, learning_rate = 'adaptive', early_stopping = True, n_iter_no_change = 100, tol = 1e-3)
            
         if(train):  
             trainingData = trainingLoader
@@ -185,6 +176,10 @@ if __name__ == '__main__':
         # Does 20 prediction loops over the same data - checks the variation in fitness predictions across the loops
         # Increase batch size
         if(evaluate):
+        
+            if(not train):
+                # Load model
+                mlp = joblib.load("./"+modelName)
 
             predictionFrame = pandas.DataFrame(columns = ["label", "p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11", "p12", "p13", "p14", "p15", "p16", "p17", "p18", "p19", "p20"])
             metaEval = pandas.DataFrame(columns = ["label", "avgPred", "medPred", "minPred", "maxPred", "rangeOfPred", "min_devFromLabel", "max_dFL", "avg_dFL", "tendency"])
@@ -196,8 +191,8 @@ if __name__ == '__main__':
             for col in ["p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11", "p12", "p13", "p14", "p15", "p16", "p17", "p18", "p19", "p20"]:
                 print(f"Prediction round: {col}")
                 
-                if(train):
-                    mlp.fit(trainingData.to_numpy(dtype='float'), labels.to_numpy(dtype='int'))
+                #if(train):
+                    #mlp.fit(trainingData.to_numpy(dtype='float'), labels.to_numpy(dtype='int'))
                     
                 results = mlp.predict(evalData.to_numpy(dtype="float"))
                 
@@ -212,7 +207,11 @@ if __name__ == '__main__':
             #print(f"Evaluation of fold: {f}")
             #print(metaEval)
                 
-    
+    if(train):
+        # save model
+        joblib.dump(mlp, modelName)
+        print("Model Saved")
+        
     print("Showing results")
     
     for i in range(len(allEvals)):

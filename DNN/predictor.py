@@ -26,8 +26,8 @@ if __name__ == "__main__":
     filePaths = glob.glob(queryPath)
     numFiles = len(filePaths)
     # DataFrame definition for new data
-    # dataArray = pandas.DataFrame(columns = ["mp", "hgt", "elite", "limit", "mw1", "mw2", "mw3", "mw4", "ow1", "ow2", "ow3", "ow4", "ow5", "ow6", "ow7", "ow8", "ow9", "ow10", "ow11", "ow12", "ow13", "ow14", "ow15", "fitness"]) 
-    dataArray = pandas.DataFrame(columns = ["mp", "hgt", "elite", "limit", "mw1", "mw2", "mw3", "mw4", "ow1", "ow2", "ow3", "ow4", "ow5", "ow6", "ow7", "ow8", "ow9", "ow10", "fitness"]) 
+    dataArray = pandas.DataFrame(columns = ["mp", "hgt", "elite", "limit", "mw1", "mw2", "mw3", "mw4", "ow1", "ow2", "ow3", "ow4", "ow5", "ow6", "ow7", "ow8", "ow9", "ow10", "ow11", "ow12", "ow13", "ow14", "ow15", "fitness"]) 
+    # dataArray = pandas.DataFrame(columns = ["mp", "hgt", "elite", "limit", "mw1", "mw2", "mw3", "mw4", "ow1", "ow2", "ow3", "ow4", "ow5", "ow6", "ow7", "ow8", "ow9", "ow10", "fitness"]) 
     predictionFrame = pandas.DataFrame(columns = ["prediction"]) 
     
     print("got "+str(numFiles)+" files")
@@ -49,6 +49,12 @@ if __name__ == "__main__":
     # Normalise 'elite' AND 'limit'
     dataArray['elite'] = dataArray['elite'].apply(normaliseElite)
     dataArray['limit'] = dataArray['limit'].apply(normaliseLimit)
+    
+    # Remove all rows where fitness values are greater than 1
+    bef = dataArray.size
+    dataArray = dataArray[dataArray.fitness <= 1.0];
+    aft = dataArray.size
+    print(f"Removed {bef - aft} rows")
         
     # Create Dataset and DataLoader instances on query data
     # Use model.QueryDataset for csvs without attached on the end
