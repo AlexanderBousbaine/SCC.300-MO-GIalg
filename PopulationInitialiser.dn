@@ -72,6 +72,29 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 		return configs
 	}
 	
+	GiaConfig PopulationInitialiser:generateSingleConfig() {
+		dec mutPerc = roundTo2DP(rand.getDec(ConfigDomains.MUTPERC_LOWER, ConfigDomains.MUTPERC_UPPER))
+			
+		dec hgtPerc = roundTo2DP(rand.getDec(ConfigDomains.HGTPERC_LOWER, ConfigDomains.HGTPERC_UPPER))
+		//0 to 15 (inclusive)
+		int elites = rand.getInt(ConfigDomains.ELITES_UPPER+1)
+		//1 to 15 (inclusive)
+		int mutLim = rand.getInt(ConfigDomains.MUTLIM_UPPER)+1
+		
+		int a
+		dec mutWeights[] = new dec[4]
+		for(a = 0; a < 4; a++) {
+			mutWeights[a] = roundTo2DP(rand.getDec(ConfigDomains.MUTWEIGHT_LOWER, ConfigDomains.MUTWEIGHT_UPPER))
+		}
+
+		dec opWeights[] = new dec[numOpWeights]
+		for(a = 0; a < numOpWeights; a++) {
+			opWeights[a] = roundTo2DP(rand.getDec(ConfigDomains.OPWEIGHT_LOWER, ConfigDomains.OPWEIGHT_UPPER))
+		}
+		
+		return new GiaConfig(mutPerc, hgtPerc, elites, mutLim, mutWeights, opWeights)
+	}
+	
 	int PopulationInitialiser:evaluateConfig(GiaConfig config, GiaConfig allConfigs[], int numConfigs) {
 		int score = 0
 		

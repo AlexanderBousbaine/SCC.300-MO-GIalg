@@ -67,7 +67,8 @@ if __name__ == "__main__":
     # Add predictions on the end of the data that was fed in
     dataArray = dataArray.assign(prediction=predictionFrame["prediction"])
     print("Finished predicting, writing results")
-    dataArray.to_csv("./predictions/predictedFitness.csv")
+    #dataArray.to_csv("./predictions/predictedFitness.csv")
+    predictionFrame.to_csv("./predictions/predictedFitness.csv", header=False, index=False, line_terminator=',')
             
         
         

@@ -26,6 +26,50 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 	
 	int App:main(AppParam params[])
 	{
+	
+		int tempSize = (populationSize + populationSize/2)
+	
+		//read in fitness predictions
+		if(fs.exists("./DNN/predictions/predictedFitness.csv")){
+			File file = new File("./DNN/predictions/predictedFitness.csv", File.READ)
+			char predictionChars[] = file.read(file.getSize())
+			char prediction[] = new char[15]
+			dec predictions[] = new dec[tempSize]
+			int cCounter = 0
+			int pCounter = 0
+				
+			//go through the string and extract the predictions
+			for(int ch = 0; ch < predictionChars.arrayLength; ch++) {
+				if(predictionChars[ch] != ",") {
+					prediction[cCounter] = predictionChars[ch]
+					cCounter++
+				}
+				else {
+					predictions[pCounter] = du.decFromString(prediction)
+					
+					prediction = new char[15]
+					cCounter = 0
+					pCounter++
+				}
+			}
+			
+			out.println("Results")
+			for(int pred = 0; pred < predictions.arrayLength; pred++) {
+				out.println("$(predictions[pred])")
+			}
+			
+			
+			file.close()
+			
+			fs.delete("./DNN/predictions/predictedFitness.csv")
+		}
+		else {
+			out.println("Could not find predicted fitness, using pure GI")
+		}
+	
+	
+		return 0
+	
 
 		//create configurations
 		GiaConfig configs[] = popInit.generateInitialPopConfigs(populationSize)
@@ -64,26 +108,13 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 				if(!resetGIalgOutput()) { return 0 }
 
 				out.println("Pop number: $(pops+1) / $populationSize")
-				
-				/*
-				out.println("Writing pre-config")
-				char fName[] = "gen $moGen preConfig $(pops+1)"
-				File configFile = new File("./Configurations/$fName.csv", File.WRITE)
-				configFile.write("$(popInit.stringifyCommad(configs[pops]))\n")
-				configFile.close()
-				*/
 
 				//Egg Layer 2
 				//Execute each configuration 12 times
-				
 				//set current members parameters to be passed in with runCommands
 				paramString = popInit.stringify(configs[pops])
 				out.println("Param String: $paramString")
-				
-				updateRunCommands()
-				
-				//out.println("Running: $runCommand1")
-				
+
 				//NEW METHOD
 				if(numRuns%3 != 0) {
 					out.println("setting num runs to 9")
@@ -111,40 +142,6 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 				}
 				
 				out.println("GIalgorithm execution finished")
-				
-				//OLD METHOD
-				/*
-				//run first 4
-				run.execute(runCommand1)
-				//wait for half an hour then begin checking for completion
-				//if(!checkBatchAfter(4, 1200000)) {
-				if(!checkBatchAfter(4, 1800000)) {
-					out.println("Could not confirm completion of runCommand1.\nExiting Program.")
-					//kill all running processes and move on - don't just kill the program
-					run.execute(killCommand)
-				}
-				out.println("finished p1")
-				
-				//when first 4 have been completed, run next 4
-				//create subFolder of CompletionConfirmation
-				run.execute(runCommand2)
-				//wait for half an hour then begin checking for completion
-				if(!checkBatchAfter(8, 1800000)) {
-					out.println("Could not confirm completion of runCommand2.\nExiting Program.")
-					//kill all running processes and move on - don't just kill the program
-					run.execute(killCommand)
-				}
-				out.println("finished p2")
-				
-				//when next 4 have been completed, run last 4
-//				run.execute(runCommand3)
-				//wait for half an hour then begin checking for completion
-//				if(!checkBatchAfter(12, 1800000)) {
-//					out.println("Could not confirm completion of runCommand3.\nExiting Program.")
-					//kill all running processes and move on - don't just kill the program
-//					run.execute(killCommand)
-//				}
-				*/
 
 				out.println("\nPop $(pops+1) of $populationSize in Generation $(moGen+1) Complete")
 				
@@ -179,11 +176,17 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 			out.println("config and fitness written")
 			
 			out.println("Mutation and Crossover")
+			
+			//array to hold elites so that they can pass through proceeding processes untouched
+			GiaConfig eliteConfigs[] = new GiaConfig[elites]()
+			
 			dec cfCopy[] = clone configFitness
 			GiaConfig newConfigs[] = new GiaConfig[populationSize]
+			
 			//create new population for next generation
 			//-> Outsource to PopulationInitialiser
 			for(int i = 0; i < populationSize; i++) {
+				//Set elites in first 'elites' positions of array
 				if(i < elites) {
 					int idx = 0
 					dec fittest = 1.0
@@ -195,15 +198,12 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 					}
 					
 					newConfigs[i] = configs[idx]
+					eliteConfigs[i] = configs[idx]
 					cfCopy[idx] = 1.0
 					out.println("Elite set!")
-					
-					/*
-					File eFile = new File("./elites/elite$(i)_Gen$(moGen).txt", File.CREATE)
-					eFile.write(popInit.stringifyCommad(newConfigs[i]))
-					eFile.close()
-					*/
+
 				}
+				//crossover first for the rest.
 				else {
 					DateTime dt = cal.getTime()
 					rand.setSeed(dt.minute + dt.second + dt.millisecond)
@@ -293,6 +293,7 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 						}
 					}
 					
+					//now mutate
 					p1 = mutate(p1)
 					p2 = mutate(p2)
 					
@@ -306,7 +307,90 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 					}
 				}
 			}
+				
+			//feed configs into predictor with fresh set of new ones.
+			//int tempSize = (populationSize + populationSize/2)
+			GiaConfig forPrediction[] = new GiaConfig[tempSize]()
+			
+			for(int pc = 0; pc < forPrediction.arrayLength; pc++) {
+				if(pc < newConfigs.arrayLength) {
+					forPrediction[pc] = newConfigs[pc]
+				}
+				else {
+					forPrediction[pc] = popInit.generateSingleConfig()
+				}
+			}
+			
+			out.println("Attempting fitness prediction")
+			
+			writeConfigsForPrediction(forPrediction, moGen)
+			
+			run.execute("cd DNN && python3 skPredictor.py")
+			//run.execute("cd DNN & python skPredictor.py")
+			
+			//read in fitness predictions
+			if(fs.exists("./DNN/predictions/predictedFitness.csv")){
+				File file = new File("./DNN/predictions/predictedFitness.csv", File.READ)
+				char predictionChars[] = file.read(file.getSize())
+				char prediction[] = new char[15]
+				dec predictions[] = new dec[tempSize]
+				int cCounter = 0
+				int pCounter = 0
+					
+				//go through the string and extract the predictions
+				for(int ch = 0; ch < predictionChars.arrayLength; ch++) {
+					if(predictionChars[ch] != ",") {
+						prediction[cCounter] = predictionChars[ch]
+						cCounter++
+					}
+					else {
+						predictions[pCounter] = du.decFromString(prediction)
+						
+						prediction = new char[15]
+						cCounter = 0
+						pCounter++
+					}
+				}
+				
+				/*
+				out.println("Results")
+				for(int pred = 0; pred < predictions.arrayLength; pred++) {
+					out.println("$(predictions[pred])")
+				}
+				*/
+				
+				file.close()
+				
+				fs.delete("./DNN/predictions/predictedFitness.csv")
+				
+				//we have fitness predictions, now to extract the 'populationSize - elites' best predictions
+				
+				//first, add in the elites.
+				for(int e = 0; e < elites; e++) {
+					newConfigs[e] = eliteConfigs[e]
+				}
+				
+				//then add in the best fitness predictions
+				for(int i = elites; i < populationSize-elites; i++) {
+					bestFit = 0
+					idxBestFit = 0
+					for(int f = 0; f < predictions.arrayLength; p++) {
+						if(predictions[f] > bestFit){
+							bestFit = predictions[f]
+							idxBestFit = f
+						}
+					}
+					
+					newConfigs[i] = forPrediction[f]
+				}
+			}
+			else {
+				out.println("Could not find predicted fitness, using pure GI")
+			}
+			
 			configs = newConfigs
+			
+			
 		}
 		//*/
 		
@@ -405,13 +489,6 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 		run.execute("cd $GIalgorithmPath && dnc .")
 	}
 	
-	void updateRunCommands() {
-		//change so that don't issue tmux commands and so it blocks
-		runCommand1 = "tmux new-window 'cd $GIalgorithmPath && dana MainModular 1 MOGI $paramString >logfileMO1.txt 2>errorfileMO1.txt' \\; new-window 'cd $GIalgorithmPath && dana MainModular 2 MOGI $paramString >logfileMO2.txt 2>errorfileMO2.txt' \\; new-window 'cd $GIalgorithmPath && dana MainModular 3 MOGI $paramString >logfileMO3.txt 2>errorfileMO3.txt' \\; new-window 'cd $GIalgorithmPath && dana MainModular 4 MOGI $paramString >logfileMO4.txt 2>errorfileMO4.txt' \\; detach-client"
-		runCommand2 = "tmux new-window 'cd $GIalgorithmPath && dana MainModular 5 MOGI $paramString >logfileMO5.txt 2>errorfileMO5.txt' \\; new-window 'cd $GIalgorithmPath && dana MainModular 6 MOGI $paramString >logfileMO6.txt 2>errorfileMO6.txt' \\; new-window 'cd $GIalgorithmPath && dana MainModular 7 MOGI $paramString >logfileMO7.txt 2>errorfileMO7.txt' \\; new-window 'cd $GIalgorithmPath && dana MainModular 8 MOGI $paramString >logfileMO8.txt 2>errorfileMO8.txt' \\; detach-client"
-		runCommand3 = "tmux new-window 'cd $GIalgorithmPath && dana MainModular 9 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana MainModular 10 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana MainModular 11 MOGI $paramString' \\; new-window 'cd $GIalgorithmPath && dana MainModular 12 MOGI $paramString' \\; detach-client"
-	}
-	
 	void writeConfigsToFile(GiaConfig configs[], dec fitness[], int genNum) {
 		DateTime dt = cal.getTime()
 		int yr = dt.year
@@ -428,6 +505,26 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 		for(int i = 0; i < configs.arrayLength; i++) {
 			configFile.write("$(popInit.stringifyCommad(configs[i])), $(fitness[i])\n")
 			// configFile.write(popInit.stringifyCommad(configs[i]))
+		}
+		
+		configFile.close()
+	}
+	
+	void writeConfigsForPrediction(GiaConfig configs[], int genNum) {
+		DateTime dt = cal.getTime()
+		int yr = dt.year
+		int mn = dt.month
+		int day = dt.day
+		int milsec = dt.millisecond
+		int sec = dt.second
+		int min = dt.minute
+		int hr = dt.hour
+		char fName[] = "gen $genNum $hr$min$sec$milsec - $yr $mn $day"
+		
+		File configFile = new File("./DNN/queries/$fName.csv", File.WRITE)
+		
+		for(int i = 0; i < configs.arrayLength; i++) {
+			configFile.write(popInit.stringifyCommad(configs[i]))
 		}
 		
 		configFile.close()

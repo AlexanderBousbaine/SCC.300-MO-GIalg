@@ -48,6 +48,9 @@ interface PopulationInitialiser {
 	//returns an array of 'p' GiaConfig data objects containing the configuration of all membres of the population.
 	GiaConfig[] generateInitialPopConfigs(int popSize)
 	
+	//Returns a single randomly generated configuration
+	GiaConfig generateSingleConfig()
+	
 	//returns the diversity score of 'config' in relation to all the GiaConfigs in 'allConfigs'.
 	int evaluateConfig(GiaConfig config, GiaConfig allConfigs[], int numConfigs)
 	
