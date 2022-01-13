@@ -327,9 +327,9 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 				
 				//then add in the best fitness predictions
 				for(int i = elites; i < populationSize-elites; i++) {
-					bestFit = 0
-					idxBestFit = 0
-					for(int f = 0; f < predictions.arrayLength; p++) {
+					int bestFit = 0
+					int idxBestFit = 0
+					for(int f = 0; f < predictions.arrayLength; f++) {
 						if(predictions[f] > bestFit){
 							bestFit = predictions[f]
 							idxBestFit = f
