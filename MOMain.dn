@@ -26,51 +26,6 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 	
 	int App:main(AppParam params[])
 	{
-	
-		int tempSize = (populationSize + populationSize/2)
-	
-		//read in fitness predictions
-		if(fs.exists("./DNN/predictions/predictedFitness.csv")){
-			File file = new File("./DNN/predictions/predictedFitness.csv", File.READ)
-			char predictionChars[] = file.read(file.getSize())
-			char prediction[] = new char[15]
-			dec predictions[] = new dec[tempSize]
-			int cCounter = 0
-			int pCounter = 0
-				
-			//go through the string and extract the predictions
-			for(int ch = 0; ch < predictionChars.arrayLength; ch++) {
-				if(predictionChars[ch] != ",") {
-					prediction[cCounter] = predictionChars[ch]
-					cCounter++
-				}
-				else {
-					predictions[pCounter] = du.decFromString(prediction)
-					
-					prediction = new char[15]
-					cCounter = 0
-					pCounter++
-				}
-			}
-			
-			out.println("Results")
-			for(int pred = 0; pred < predictions.arrayLength; pred++) {
-				out.println("$(predictions[pred])")
-			}
-			
-			
-			file.close()
-			
-			fs.delete("./DNN/predictions/predictedFitness.csv")
-		}
-		else {
-			out.println("Could not find predicted fitness, using pure GI")
-		}
-	
-	
-		return 0
-	
-
 		//create configurations
 		GiaConfig configs[] = popInit.generateInitialPopConfigs(populationSize)
 		dec configFitness[] = new dec[populationSize]
