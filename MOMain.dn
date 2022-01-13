@@ -264,7 +264,7 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 			}
 				
 			//feed configs into predictor with fresh set of new ones.
-			//int tempSize = (populationSize + populationSize/2)
+			int tempSize = (populationSize + populationSize/2)
 			GiaConfig forPrediction[] = new GiaConfig[tempSize]()
 			
 			for(int pc = 0; pc < forPrediction.arrayLength; pc++) {
@@ -340,12 +340,10 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 				}
 			}
 			else {
-				out.println("Could not find predicted fitness, using pure GI")
+				out.println("Could not find predicted fitness values, using pure GI")
 			}
 			
-			configs = newConfigs
-			
-			
+			configs = newConfigs		
 		}
 		//*/
 		
