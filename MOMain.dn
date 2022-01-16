@@ -43,7 +43,7 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 		//THE GAME LOOP - SEE LATER
 		//Egg Layer 4
 		//For every generation of the meta-optimiser
-		for(int moGen = 0; moGen < moGenerations; moGen++) {
+		for(int moGen = 0; moGen < 1/*moGenerations*/; moGen++) {
 			out.println("----------------------------------------------------------------")
 			out.println("STARTING GENERATION: $moGen")
 			out.println("----------------------------------------------------------------")
@@ -264,7 +264,7 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 			}
 				
 			//feed configs into predictor with fresh set of new ones.
-			int tempSize = (populationSize + populationSize/2)
+			int tempSize = 2*populationSize
 			GiaConfig forPrediction[] = new GiaConfig[tempSize]()
 			
 			for(int pc = 0; pc < forPrediction.arrayLength; pc++) {
@@ -315,8 +315,9 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 				*/
 				
 				file.close()
-				
+
 				fs.delete("./DNN/predictions/predictedFitness.csv")
+				fs.delete("./DNN/queries/forPrediction.csv")
 				
 				//we have fitness predictions, now to extract the 'populationSize - elites' best predictions
 				
@@ -329,15 +330,22 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 				for(int i = elites; i < populationSize-elites; i++) {
 					int bestFit = 0
 					int idxBestFit = 0
-					for(int f = 0; f < predictions.arrayLength; f++) {
+					for(int f = 0; f < tempSize; f++) {
 						if(predictions[f] > bestFit){
 							bestFit = predictions[f]
 							idxBestFit = f
 						}
 					}
 					
-					newConfigs[i] = forPrediction[f]
+					out.println("prediction $(idxBestFit) of $(predictions.arrayLength)")
+					out.println("candidate $(idxBestFit) of (forPrediction.arrayLength)")
+					
+					newConfigs[i] = forPrediction[idxBestFit]
+					predictions[f] = 10
 				}
+				
+				//DELETE IN PROPER RUN
+				writeConfigsToFile(configs, predictions, moGen)
 			}
 			else {
 				out.println("Could not find predicted fitness values, using pure GI")
@@ -464,20 +472,10 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 	}
 	
 	void writeConfigsForPrediction(GiaConfig configs[], int genNum) {
-		DateTime dt = cal.getTime()
-		int yr = dt.year
-		int mn = dt.month
-		int day = dt.day
-		int milsec = dt.millisecond
-		int sec = dt.second
-		int min = dt.minute
-		int hr = dt.hour
-		char fName[] = "gen $genNum $hr$min$sec$milsec - $yr $mn $day"
-		
-		File configFile = new File("./DNN/queries/$fName.csv", File.WRITE)
+		File configFile = new File("./DNN/queries/forPrediction.csv", File.WRITE)
 		
 		for(int i = 0; i < configs.arrayLength; i++) {
-			configFile.write(popInit.stringifyCommad(configs[i]))
+			configFile.write("$(popInit.stringifyCommad(configs[i]))\n")
 		}
 		
 		configFile.close()
