@@ -22,31 +22,31 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 		
 		int numGoodConfigs = 0
 		int totalConfigs = 0
-		//maximum score is 18*num_configs, pass score is 9-num_configs?
-		int passValue = 2
+		int passValue = 3
 		int evalVal = 0
 		
 		GiaConfig configs[] = new GiaConfig[popSize]()
 		
 		while(numGoodConfigs < popSize) {
 		
-			dec mutPerc = roundTo2DP(rand.getDec(ConfigDomains.MUTPERC_LOWER, ConfigDomains.MUTPERC_UPPER))
+			dec mutPerc = restrictToMultFive(roundTo2DP(rand.getDec(ConfigDomains.MUTPERC_LOWER, ConfigDomains.MUTPERC_UPPER)))
 			
-			dec hgtPerc = roundTo2DP(rand.getDec(ConfigDomains.HGTPERC_LOWER, ConfigDomains.HGTPERC_UPPER))
+			dec hgtPerc = restrictToMultFive(roundTo2DP(rand.getDec(ConfigDomains.HGTPERC_LOWER, ConfigDomains.HGTPERC_UPPER)))
 			//0 to 15 (inclusive)
 			int elites = rand.getInt(ConfigDomains.ELITES_UPPER+1)
 			//1 to 15 (inclusive)
-			int mutLim = rand.getInt(ConfigDomains.MUTLIM_UPPER)+1
+			//int mutLim = rand.getInt(ConfigDomains.MUTLIM_UPPER)+1
+			int mutLim = 1
 			
 			int a
 			dec mutWeights[] = new dec[4]
 			for(a = 0; a < 4; a++) {
-				mutWeights[a] = roundTo2DP(rand.getDec(ConfigDomains.MUTWEIGHT_LOWER, ConfigDomains.MUTWEIGHT_UPPER))
+				mutWeights[a] = restrictToMultFive(roundTo2DP(rand.getDec(ConfigDomains.MUTWEIGHT_LOWER, ConfigDomains.MUTWEIGHT_UPPER)))
 			}
 
 			dec opWeights[] = new dec[numOpWeights]
 			for(a = 0; a < numOpWeights; a++) {
-				opWeights[a] = roundTo2DP(rand.getDec(ConfigDomains.OPWEIGHT_LOWER, ConfigDomains.OPWEIGHT_UPPER))
+				opWeights[a] = restrictToMultFive(roundTo2DP(rand.getDec(ConfigDomains.OPWEIGHT_LOWER, ConfigDomains.OPWEIGHT_UPPER)))
 			}
 			
 			GiaConfig c = new GiaConfig(mutPerc, hgtPerc, elites, mutLim, mutWeights, opWeights)
@@ -73,23 +73,24 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 	}
 	
 	GiaConfig PopulationInitialiser:generateSingleConfig() {
-		dec mutPerc = roundTo2DP(rand.getDec(ConfigDomains.MUTPERC_LOWER, ConfigDomains.MUTPERC_UPPER))
+		dec mutPerc = restrictToMultFive(roundTo2DP(rand.getDec(ConfigDomains.MUTPERC_LOWER, ConfigDomains.MUTPERC_UPPER)))
 			
-		dec hgtPerc = roundTo2DP(rand.getDec(ConfigDomains.HGTPERC_LOWER, ConfigDomains.HGTPERC_UPPER))
+		dec hgtPerc = restrictToMultFive(roundTo2DP(rand.getDec(ConfigDomains.HGTPERC_LOWER, ConfigDomains.HGTPERC_UPPER)))
 		//0 to 15 (inclusive)
 		int elites = rand.getInt(ConfigDomains.ELITES_UPPER+1)
 		//1 to 15 (inclusive)
-		int mutLim = rand.getInt(ConfigDomains.MUTLIM_UPPER)+1
+		//int mutLim = rand.getInt(ConfigDomains.MUTLIM_UPPER)+1
+		int mutLim = 1
 		
 		int a
 		dec mutWeights[] = new dec[4]
 		for(a = 0; a < 4; a++) {
-			mutWeights[a] = roundTo2DP(rand.getDec(ConfigDomains.MUTWEIGHT_LOWER, ConfigDomains.MUTWEIGHT_UPPER))
+			mutWeights[a] = restrictToMultFive(roundTo2DP(rand.getDec(ConfigDomains.MUTWEIGHT_LOWER, ConfigDomains.MUTWEIGHT_UPPER)))
 		}
 
 		dec opWeights[] = new dec[numOpWeights]
 		for(a = 0; a < numOpWeights; a++) {
-			opWeights[a] = roundTo2DP(rand.getDec(ConfigDomains.OPWEIGHT_LOWER, ConfigDomains.OPWEIGHT_UPPER))
+			opWeights[a] = restrictToMultFive(roundTo2DP(rand.getDec(ConfigDomains.OPWEIGHT_LOWER, ConfigDomains.OPWEIGHT_UPPER)))
 		}
 		
 		return new GiaConfig(mutPerc, hgtPerc, elites, mutLim, mutWeights, opWeights)
@@ -171,6 +172,12 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 	
 	dec PopulationInitialiser:roundTo2DP(dec d){
 		return (math.round(d*100)/100)
+	}
+	
+	dec PopulationInitialiser:restrictToMultFive(dec d) {
+		dec temp = d*100
+		temp = math.round(temp/5)*5
+		return temp/100		
 	}
 	
 	char[] PopulationInitialiser:stringify(GiaConfig c) {

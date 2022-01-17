@@ -19,7 +19,7 @@ data ConfigDomains {
 	const dec HGTPERC_UPPER = 1.0
 	const dec HGTPERC_LOWER = 0.01
 	
-	const int ELITES_UPPER = 15
+	const int ELITES_UPPER = 10
 	const int ELITES_LOWER = 0
 	
 	//lowered limit
@@ -56,6 +56,10 @@ interface PopulationInitialiser {
 	
 	//prints out the values in the given lGiaConfig'
 	void printConfig(GiaConfig c)
+	
+	//rounds input value to nearest 0.05 - e.g. 0.34 -> 0.35
+	// should take in a decimal value rounded to 2dp
+	dec restrictToMultFive(dec d)
 	
 	//rounds input decimal value to 2 decimal places
 	dec roundTo2DP(dec d)
