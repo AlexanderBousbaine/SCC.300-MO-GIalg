@@ -1,8 +1,7 @@
-import model
-import torch
 import glob
 import csv
 import pandas
+import os
 from csv import reader
 import joblib
 
@@ -26,7 +25,7 @@ if __name__ == "__main__":
     filePaths = glob.glob(queryPath)
     numFiles = len(filePaths)
     # DataFrame definition for new data
-    dataArray = pandas.DataFrame(columns = ["mp", "hgt", "elite", "limit", "mw1", "mw2", "mw3", "mw4", "ow1", "ow2", "ow3", "ow4", "ow5", "ow6", "ow7", "ow8", "ow9", "ow10", "ow11", "ow12", "ow13", "ow14", "ow15", "fitness"])
+    dataArray = pandas.DataFrame(columns = ["mp", "hgt", "elite", "limit", "mw1", "mw2", "mw3", "mw4", "ow1", "ow2", "ow3", "ow4", "ow5", "ow6", "ow7", "ow8", "ow9", "ow10", "ow11", "ow12", "ow13", "ow14", "ow15"]) 
     predictionFrame = pandas.DataFrame(columns = ["prediction"]) 
     
     print("got "+str(numFiles)+" files")
@@ -40,8 +39,9 @@ if __name__ == "__main__":
         for row in csvReader:
             # Convert each item in the row to a floating point value
             row = [float(i) for i in row]
-            # Assing row to the last row in the dataframe
-            dataArray.loc[len(dataArray)] = row
+            # Assign row to the last row in the dataframe
+            if(len(row) == len(dataArray.columns)):
+                dataArray.loc[len(dataArray)] = row
 
         dataFile.close()
 
@@ -68,7 +68,8 @@ if __name__ == "__main__":
     dataArray = dataArray.assign(prediction=predictionFrame["prediction"])
     print("Finished predicting, writing results")
     #dataArray.to_csv("./predictions/predictedFitness.csv")
-    predictionFrame.to_csv("./predictions/predictedFitness.csv", header=False, index=False, line_terminator=',')
+    saveLoc = os.getcwd() + "/predictions/predictedFitness.csv"
+    predictionFrame.to_csv(saveLoc, header=False, index=False, line_terminator=',')
             
         
         

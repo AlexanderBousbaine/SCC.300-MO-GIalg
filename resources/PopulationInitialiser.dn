@@ -57,12 +57,10 @@ interface PopulationInitialiser {
 	//prints out the values in the given lGiaConfig'
 	void printConfig(GiaConfig c)
 	
-	//rounds input value to nearest 0.05 - e.g. 0.34 -> 0.35
-	// should take in a decimal value rounded to 2dp
-	dec restrictToMultFive(dec d)
-	
 	//rounds input decimal value to 2 decimal places
 	dec roundTo2DP(dec d)
+	
+	dec restrictToMultFive(dec d)
 	
 	//turns a given GiaConfig into a string of values separated by spaces
 	char[] stringify(GiaConfig c)

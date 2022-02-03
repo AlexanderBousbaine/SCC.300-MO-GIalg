@@ -62,13 +62,13 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 				//passValue -= numGoodConfigs
 			}
 			else{
-				out.println("Config fails ($numGoodConfigs / $popSize); with $evalVal similar values")
+				out.println("Config fails ($numGoodConfigs / $popSize); with $evalVal similar values ($totalConfigs)")
 			}
 			
 			totalConfigs++
 			//out.println("Config attempt $totalConfigs")
 			
-			passValue = numGoodConfigs+math.round(totalConfigs/5)
+			passValue = numGoodConfigs+math.round(totalConfigs/10)
 		}
 		
 		return configs

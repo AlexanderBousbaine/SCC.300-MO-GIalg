@@ -7,7 +7,7 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 	dec crossoverChance = 0.2
 	int elites = 2
 
-	//must be a multiple of 3 for simplicity
+	//keep as a multiple of 3 for simplicity
 	int numRuns = 9
 	
 	char confirmPath[] = "./CompletionConfirmation"
@@ -43,7 +43,7 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 		//THE GAME LOOP - SEE LATER
 		//Egg Layer 4
 		//For every generation of the meta-optimiser
-		for(int moGen = 0; moGen < 1/*moGenerations*/; moGen++) {
+		for(int moGen = 0; moGen < moGenerations; moGen++) {
 			out.println("----------------------------------------------------------------")
 			out.println("STARTING GENERATION: $moGen")
 			out.println("----------------------------------------------------------------")
@@ -307,17 +307,12 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 					}
 				}
 				
-				/*
-				out.println("Results")
-				for(int pred = 0; pred < predictions.arrayLength; pred++) {
-					out.println("$(predictions[pred])")
-				}
-				*/
-				
 				file.close()
 
 				fs.delete("./DNN/predictions/predictedFitness.csv")
 				fs.delete("./DNN/queries/forPrediction.csv")
+				
+				writeConfigsWithPredictions(configs, predictions, moGen)
 				
 				//we have fitness predictions, now to extract the 'populationSize - elites' best predictions
 				
@@ -327,31 +322,49 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 				}
 				
 				//then add in the best fitness predictions
-				for(int i = elites; i < populationSize-elites; i++) {
-					int bestFit = 0
+				for(int i = elites; i < populationSize; i++) {
+					dec bestFit = 10
 					int idxBestFit = 0
 					for(int f = 0; f < tempSize; f++) {
-						if(predictions[f] > bestFit){
+						if(predictions[f] < bestFit){
 							bestFit = predictions[f]
+							out.println("New best fitness: $(du.makeString(predictions[f])) | $(du.makeString(bestFit))")
 							idxBestFit = f
 						}
 					}
+					/*
+					for(int o = 0; o < predictions.arrayLength; o++) {
+						out.print("$o: $(predictions[o]), ")
+					}
+					out.println(" ")
 					
+					out.println("prediction $(idxBestFit) = $(du.makeString(bestFit))")
 					out.println("prediction $(idxBestFit) of $(predictions.arrayLength)")
-					out.println("candidate $(idxBestFit) of (forPrediction.arrayLength)")
-					
+					out.println("candidate $(idxBestFit) of $(forPrediction.arrayLength)")
+					*/
 					newConfigs[i] = forPrediction[idxBestFit]
-					predictions[f] = 10
+					
+					//out.println("Setting prediction $idxBestFit of $(predictions.arrayLength) to 10")
+					predictions[idxBestFit] = 10
+					
+					/*
+					out.println("After:")
+					for(int o = 0; o < predictions.arrayLength; o++) {
+						out.print("$o: $(predictions[o]), ")
+					}
+					out.println(" ")
+					*/
 				}
-				
-				//DELETE IN PROPER RUN
-				writeConfigsToFile(configs, predictions, moGen)
 			}
 			else {
 				out.println("Could not find predicted fitness values, using pure GI")
+				char name[] = "predictionFailed $moGen"
+				File alertFile = new File(name, File.WRITE)
+				alertFile.write("sad")
+				alertFile.close()
 			}
 			
-			configs = newConfigs		
+			configs = newConfigs
 		}
 		//*/
 		
@@ -374,7 +387,9 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 			//0 to 15 inclusive
 			int validInt1 = rand.getInt(ConfigDomains.ELITES_UPPER+1)
 			//1 to 15 inclusive
-			int validInt2 = rand.getInt(ConfigDomains.MUTLIM_UPPER)+1
+			//int validInt2 = rand.getInt(ConfigDomains.MUTLIM_UPPER)+1
+			//Limit mutationLimit to 1
+			int validInt2 = 1
 			//0.01 to 1
 			dec validDec1 = popInit.roundTo2DP(rand.getDec(ConfigDomains.MUTPERC_LOWER, ConfigDomains.MUTPERC_UPPER))
 			//0 to 1
@@ -466,6 +481,26 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 		for(int i = 0; i < configs.arrayLength; i++) {
 			configFile.write("$(popInit.stringifyCommad(configs[i])), $(fitness[i])\n")
 			// configFile.write(popInit.stringifyCommad(configs[i]))
+		}
+		
+		configFile.close()
+	}
+	
+	void writeConfigsWithPredictions(GiaConfig configs[], dec predFitness[], int genNum) {
+		DateTime dt = cal.getTime()
+		int yr = dt.year
+		int mn = dt.month
+		int day = dt.day
+		int milsec = dt.millisecond
+		int sec = dt.second
+		int min = dt.minute
+		int hr = dt.hour
+		char fName[] = "gen $genNum $hr$min$sec$milsec - $yr $mn $day"
+		
+		File configFile = new File("./Configurations/predictions/$fName.csv", File.WRITE)
+		
+		for(int i = 0; i < configs.arrayLength; i++) {
+			configFile.write("$(popInit.stringifyCommad(configs[i])), $(predFitness[i])\n")
 		}
 		
 		configFile.close()
