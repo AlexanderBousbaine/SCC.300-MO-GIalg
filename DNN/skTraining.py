@@ -111,7 +111,7 @@ if __name__ == '__main__':
     
     # Remove all rows where fitness values are greater than 1
     bef = dataArray.size
-    dataArray = dataArray[dataArray.fitness <= 1.0];
+    dataArray = dataArray[dataArray.fitness <= 1.0]
     aft = dataArray.size
     print(f"Removed {bef - aft} rows")
     
