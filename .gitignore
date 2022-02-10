@@ -1,5 +1,6 @@
-#Results folder
+#Results
 Results/
+DNN/*.pdf
 
 #Saved Models
 DNN/*.pt
