@@ -40,13 +40,31 @@ component provides PopulationInitialiser requires util.Random rand, io.Output ou
 			
 			int a
 			dec mutWeights[] = new dec[4]
+			dec mwTotal = 0.0
 			for(a = 0; a < 4; a++) {
 				mutWeights[a] = restrictToMultFive(roundTo2DP(rand.getDec(ConfigDomains.MUTWEIGHT_LOWER, ConfigDomains.MUTWEIGHT_UPPER)))
+				mwTotal = mwTotal + mutWeights[a]
+			}
+			
+			//if all weights are 0, set them to 1 as it's functionally the same and won't cause problems
+			if(mwTotal == 0){
+				for(a = 0; a < 4; a++) {
+					mutWeights[a] = 1
+				}
 			}
 
 			dec opWeights[] = new dec[numOpWeights]
+			dec opTotal = 0.0
 			for(a = 0; a < numOpWeights; a++) {
 				opWeights[a] = restrictToMultFive(roundTo2DP(rand.getDec(ConfigDomains.OPWEIGHT_LOWER, ConfigDomains.OPWEIGHT_UPPER)))
+				opTotal = opTotal + opWeights[a]
+			}
+			
+			//if all weights are 0, set them to 1 as it's functionally the same and won't cause problems
+			if(opTotal == 0){
+				for(a = 0; a < numOpWeights; a++) {
+					opWeights[a] = 1
+				}
 			}
 			
 			GiaConfig c = new GiaConfig(mutPerc, hgtPerc, elites, mutLim, mutWeights, opWeights)

@@ -14,10 +14,10 @@ data ConfigDomains {
 // CHANGE DOMAINS TO ARRAYS OF DISCRETE VALUES ONCE I FIND OUT WHY IT WON'T LET ME DECLARE const ARRAYS
 //*
 	const dec MUTPERC_UPPER = 1.0
-	const dec MUTPERC_LOWER = 0.01
+	const dec MUTPERC_LOWER = 0.05
 	
 	const dec HGTPERC_UPPER = 1.0
-	const dec HGTPERC_LOWER = 0.01
+	const dec HGTPERC_LOWER = 0.05
 	
 	const int ELITES_UPPER = 10
 	const int ELITES_LOWER = 0
