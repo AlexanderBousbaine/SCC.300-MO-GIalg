@@ -52,9 +52,6 @@ def analysePredictions(dfRow):
     print(f"Average deviation from label: {round(avgDev, 4)}\n")
     '''
 
-#TODO: Command line arguments.
-#      Try using SKLearn LinearRegression.
-#      Try making distribution of input fitnesses more even.
 if __name__ == '__main__':
 
     train = True
@@ -110,9 +107,9 @@ if __name__ == '__main__':
     dataArray['limit'] = dataArray['limit'].apply(normaliseLimit)
     
     # Remove all rows where fitness values are greater than 1
-    bef = dataArray.size
+    bef = len(dataArray)
     dataArray = dataArray[dataArray.fitness <= 1.0]
-    aft = dataArray.size
+    aft = len(dataArray)
     print(f"Removed {bef - aft} rows")
     
     # Create Dataset and DataLoader instances
@@ -230,6 +227,8 @@ if __name__ == '__main__':
         
         print(f"Mean Absolute Mean-value Error: {round(avgMeanValueError, 6)}")
         print(f"Mean Absolute Median-value Error: {round(avgMedianValueError, 6)}")
+
+        oneEval.to_csv("trainingResults.csv")
     
     print(losses)
     #make sure to do 'model.eval()' before predicting
