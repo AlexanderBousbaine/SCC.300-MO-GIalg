@@ -16,14 +16,6 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 	//holds the parameters to be passed to the GIAlgorithm
 	char paramString[] = ""
 	
-	//run a configuration 12 times by running the following sequentially - Egg Layer 2
-	char runCommand1[] = ""
-	char runCommand2[] = ""
-	char runCommand3[] = ""
-	
-	//kills all windows but the 0th window in which the control script runs
-	char killCommand[] = "tmux kill-window -a -t 0"
-	
 	int App:main(AppParam params[])
 	{
 		//create configurations
@@ -323,12 +315,13 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 				
 				//then add in the best fitness predictions
 				for(int i = elites; i < populationSize; i++) {
+					out.println("Creating pop member $i")
 					dec bestFit = 10
 					int idxBestFit = 0
 					for(int f = 0; f < tempSize; f++) {
 						if(predictions[f] < bestFit){
+							out.println("New best fitness - new: $(du.makeString(predictions[f])) | old: $(du.makeString(bestFit))")
 							bestFit = predictions[f]
-							out.println("New best fitness: $(du.makeString(predictions[f])) | $(du.makeString(bestFit))")
 							idxBestFit = f
 						}
 					}

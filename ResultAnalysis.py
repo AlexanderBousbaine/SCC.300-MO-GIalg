@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy import stats
 from sklearn.linear_model import LinearRegression
+from matplotlib.backends.backend_pdf import PdfPages
 
 def load(files):
     li = []
@@ -19,7 +20,7 @@ def load(files):
     frame = pandas.concat(li, axis=1, ignore_index=True)
     return frame
 
-def plotDataFromFolder(folderName):
+def plotDataFromFolder(folderName, show = True):
     filesPath = foldersPath + folderName + "/*.csv"
                 
     # Loads fitness columns from all files
@@ -72,9 +73,12 @@ if __name__ == "__main__":
     folders = os.listdir(foldersPath)
     # Go through all folders (Runs of the algorithm) and create graphs of their data
     if(fileNum == 0):
+        numFolders = 0
         for folder in folders:
-            if(not folder.endswith(".png")):        
+            print(folder)
+            if(not folder.endswith(".png") and not folder.endswith(".txt")):
                 plotDataFromFolder(folder)
+
                 
     else:
         try:
