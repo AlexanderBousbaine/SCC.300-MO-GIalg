@@ -52,7 +52,6 @@ def plotDataFromFolder(folderName, show = True):
         #plot all datapoints
         allY = [i if i <= 2 else None for i in list(fitnesses.iloc[:, v])]
         allX = [v+1 for i in allY]
-        print(allY)
         if(show):
             plt.plot(allX, allY, 'go', alpha=0.15)
 
@@ -80,8 +79,7 @@ def plotDataFromFolder(folderName, show = True):
         plt.plot(xData, bfl, 'r', label="Best-fit of Best Fitness")
 
         #error bars of best fitness
-        print(errData)
-        plt.errorbar(xData, yData, yerr=errData, barsabove = True, fmt='_', c="orange", label="Best Fitness StdError")
+        plt.errorbar(xData, yData, yerr=errData, fmt='_', c="orange", label="Best Fitness StdError")
 
         #plot worst data
         yData2 = [y if y <= 2 else None for y in yData2]
