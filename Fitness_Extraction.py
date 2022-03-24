@@ -1,20 +1,14 @@
 import pandas as pd
-import seaborn as sb
 import glob
-import math
-import matplotlib.pyplot as plt
-
-import sys
 import os
 
 # adapted from GIalgorithm graph producing code
 
 def makeCsv(files):
-    li = []
     all_files = glob.glob(files)
     for filename in all_files:
         # print(filename)
-        pre, ext = os.path.splitext(filename)
+        pre, _ = os.path.splitext(filename)
         os.rename(filename, pre + ".csv")
         df = pd.read_csv(pre + ".csv")
 
@@ -51,35 +45,37 @@ def best_data(data):
 
 if __name__ == '__main__':
     # Load data in and add relative fitness and performance columns and remove the id 0 individuals
+    makeCsv("../GIalgorithm/output_files/MOGI/*/phyloLog")
     
-    makeCsv("/home/abousbaine/GIalgorithm/output_files/MOGI/*/phyloLog")
-    
-    outFolder ="/home/abousbaine/GIalgorithm/output_files/MOGI"
+    outFolder ="../GIalgorithm/output_files/MOGI"
     
     fullData = load(outFolder+"/*/phyloLog.csv")
     
     # Find number of folders in the output folder
     numRuns = len(next(os.walk(outFolder))[1])
-    
-    # lastGen = 99
-    # numRuns = 12
 
+    # remove all but best fitnesses for each generation
     bestData = best_data(fullData)
+    # remove all columns apart from 'generation', 'run_number', and 'relative fitness'
     relevantData = bestData[["generation", "run_number", "rel_fitness"]].copy()
+    # remove duplicate rows introduced by removal of contextual data
     relevantData = relevantData.drop_duplicates()
+    # sort data by 'generation' and 'run_number'
     relevantData.sort_values(by=["generation", "run_number"], inplace = True)
-    relevantData = relevantData.loc[relevantData["run_number"] == numRuns]
+    #print(relevantData)
     
     # finds the largest value in the 'generation' column and takes that as the largest generation the code reached 
     lastGen = relevantData["generation"].max()
     
-    relevantData = relevantData.loc[relevantData["generation"] >= lastGen-5]
+    # remove all data but the last five generations
+    relevantData = relevantData.loc[relevantData["generation"] > lastGen-5]
+    # remove all values but the fitness values at each generation
     fitnessVals = relevantData["rel_fitness"]
-    
-    #mean fitness of the last 5 generations from the last run
+    # mean fitness of the last 5 generations from the last run
     avg5Fitness = fitnessVals.mean()
     # endFitness = float(fitnessVals.tail(1))
     
+    # write fitness to file
     fFile = open("fitness.txt", "w")
     fFile.write(str(avg5Fitness))
     fFile.close()

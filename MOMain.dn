@@ -1,6 +1,7 @@
 
 component provides App requires io.Output out, PopulationInitialiser popInit, data.DecUtil du, data.IntUtil iu, os.Run run, time.Timer time, io.FileSystem fs, time.Calendar cal, util.Random rand, io.File, net.Stream stm, lang.Thread {
 	
+	//io.FileSystem fs,
 	int populationSize = 12
 	int moGenerations = 10
 	dec mutationChance = 0.8
@@ -9,9 +10,8 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 
 	//keep as a multiple of 3 for simplicity
 	int numRuns = 9
-	
-	char confirmPath[] = "./CompletionConfirmation"
-	char GIalgorithmPath[] = "/home/abousbaine/GIalgorithm"
+
+	char GIalgorithmPath[] = "../GIalgorithm"
 	
 	//holds the parameters to be passed to the GIAlgorithm
 	char paramString[] = ""
@@ -21,12 +21,7 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 		//create configurations
 		GiaConfig configs[] = popInit.generateInitialPopConfigs(populationSize)
 		dec configFitness[] = new dec[populationSize]
-		
-		//pass configurations into various instances of GIalgorithm
-		// - make GIalg write to some disk space when it's done or something
-		// - check every 10mins? for that thing 
-		FileEntry compDir[]
-		
+
 		if(!resetGIalgOutput()) { return 0 }
 		
 		out.println("compiling GIalgorithm codebase")
@@ -43,13 +38,6 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 			//Egg Layer 3
 			//For every population member of each generation - execute 
 			for(int pops = 0; pops < populationSize; pops++) {
-			
-				//empty confirmation folder
-				run.execute("rm -r $confirmPath")
-				if(!fs.createDirectory("$confirmPath")) {
-					out.println("failed to reset cc folder")
-					return 0
-				}	
 			
 				//empty result folder from GIalgorithm
 				if(!resetGIalgOutput()) { return 0 }
@@ -78,7 +66,7 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 					out.println("MainModular $(r)")
 					out.println("MainModular $(r+1)")
 					out.println("MainModular $(r+2)")
-					executions[0] = asynch::runCommand("cd $GIalgorithmPath && dana MainModular $(r) MOGI $paramString >logfileMO$(r).txt 2>errorfileMO1$(r).txt")
+					executions[0] = asynch::runCommand("cd 'C:/Users/atbou/Documents/Alexander's Work/University Stuff/Modules/SCC.300 - 3rd Year Project/Code/GIalgorithm' && dana MainModular $(r) MOGI $paramString >logfileMO$(r).txt 2>errorfileMO1$(r).txt")
 					executions[1] = asynch::runCommand("cd $GIalgorithmPath && dana MainModular $(r+1) MOGI $paramString >logfileMO$(r+1).txt 2>errorfileMO1$(r+1).txt")
 					executions[2] = asynch::runCommand("cd $GIalgorithmPath && dana MainModular $(r+2) MOGI $paramString >logfileMO$(r+2).txt 2>errorfileMO1$(r+2).txt")
 				
@@ -92,7 +80,7 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 
 				out.println("\nPop $(pops+1) of $populationSize in Generation $(moGen+1) Complete")
 				
-				out.println("Executing analysis script.")
+				out.println("Executing fitness extraction.")
 				//call evaluation script
 				run.execute("python3 $GIalgorithmPath/csv_script.py")
 				run.execute("python3 Fitness_Extraction.py $GIalgorithmPath/output_files/MOGI")
@@ -131,7 +119,6 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 			GiaConfig newConfigs[] = new GiaConfig[populationSize]
 			
 			//create new population for next generation
-			//-> Outsource to PopulationInitialiser
 			for(int i = 0; i < populationSize; i++) {
 				//Set elites in first 'elites' positions of array
 				if(i < elites) {
@@ -304,7 +291,7 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 				fs.delete("./DNN/predictions/predictedFitness.csv")
 				fs.delete("./DNN/queries/forPrediction.csv")
 				
-				writeConfigsWithPredictions(configs, predictions, moGen)
+				writeConfigsWithPredictions(forPrediction, predictions, moGen)
 				
 				//we have fitness predictions, now to extract the 'populationSize - elites' best predictions
 				
@@ -512,6 +499,7 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 	//return true if completion was found, otherwise false
 	//will wait at least an hour + input time (millisec)
 	//with an input of 20mins (1200000) entire wait time will be 1.5 hrs
+	//Deprecated in current algorithm's execution
 	bool checkBatchAfter(int complThresh, int waitTime) {
 		int fivesWaited = 0
 		while(true) {

@@ -161,7 +161,7 @@ if __name__ == '__main__':
         if(f == 0 or crossValidate):
             print("Init Model")
             # Model resets with every fold
-            mlp = MLPClassifier(max_iter = 1000, learning_rate = 'adaptive', early_stopping = True, n_iter_no_change = 100, tol = 1e-3)
+            mlp = MLPClassifier(max_iter = 1000, learning_rate = 'adaptive', early_stopping = True, n_iter_no_change = 100, tol = 1e-3, solver='lbfgs')
            
         if(train):  
             trainingData = trainingLoader
