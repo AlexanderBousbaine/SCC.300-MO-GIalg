@@ -1,7 +1,6 @@
 
 component provides App requires io.Output out, PopulationInitialiser popInit, data.DecUtil du, data.IntUtil iu, os.Run run, time.Timer time, io.FileSystem fs, time.Calendar cal, util.Random rand, io.File, net.Stream stm, lang.Thread {
 	
-	//io.FileSystem fs,
 	int populationSize = 12
 	int moGenerations = 10
 	dec mutationChance = 0.8
@@ -66,9 +65,9 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 					out.println("MainModular $(r)")
 					out.println("MainModular $(r+1)")
 					out.println("MainModular $(r+2)")
-					executions[0] = asynch::runCommand("cd 'C:/Users/atbou/Documents/Alexander's Work/University Stuff/Modules/SCC.300 - 3rd Year Project/Code/GIalgorithm' && dana MainModular $(r) MOGI $paramString >logfileMO$(r).txt 2>errorfileMO1$(r).txt")
-					executions[1] = asynch::runCommand("cd $GIalgorithmPath && dana MainModular $(r+1) MOGI $paramString >logfileMO$(r+1).txt 2>errorfileMO1$(r+1).txt")
-					executions[2] = asynch::runCommand("cd $GIalgorithmPath && dana MainModular $(r+2) MOGI $paramString >logfileMO$(r+2).txt 2>errorfileMO1$(r+2).txt")
+					executions[0] = asynch::runCommand("cd $GIAlgorithmPath && dana MainModular $(r) MOGI $paramString >logFileMO$(r).txt 2>errorFileMO1$(r).txt")
+					executions[1] = asynch::runCommand("cd $GIalgorithmPath && dana MainModular $(r+1) MOGI $paramString >logFileMO$(r+1).txt 2>errorFileMO1$(r+1).txt")
+					executions[2] = asynch::runCommand("cd $GIalgorithmPath && dana MainModular $(r+2) MOGI $paramString >logFileMO$(r+2).txt 2>errorFileMO1$(r+2).txt")
 				
 					out.println("Joining threads")
 					executions[0].join()

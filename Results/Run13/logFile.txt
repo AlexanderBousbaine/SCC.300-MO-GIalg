@@ -1,0 +1,6049 @@
+Config fails (2 / 12); with 5 similar values (2)
+Config fails (2 / 12); with 7 similar values (3)
+Config fails (3 / 12); with 4 similar values (5)
+Config fails (3 / 12); with 6 similar values (6)
+Config fails (4 / 12); with 6 similar values (8)
+Config fails (4 / 12); with 6 similar values (9)
+Config fails (5 / 12); with 11 similar values (11)
+Config fails (7 / 12); with 12 similar values (14)
+Config fails (7 / 12); with 11 similar values (15)
+Config fails (7 / 12); with 19 similar values (16)
+Config fails (7 / 12); with 10 similar values (17)
+Config fails (7 / 12); with 10 similar values (18)
+Config fails (7 / 12); with 15 similar values (19)
+Config fails (7 / 12); with 14 similar values (20)
+Config fails (7 / 12); with 13 similar values (21)
+Config fails (7 / 12); with 14 similar values (22)
+Config fails (7 / 12); with 15 similar values (23)
+Config fails (7 / 12); with 15 similar values (24)
+Config fails (7 / 12); with 12 similar values (25)
+Config fails (7 / 12); with 17 similar values (26)
+Config fails (7 / 12); with 13 similar values (27)
+Config fails (7 / 12); with 18 similar values (28)
+Config fails (7 / 12); with 10 similar values (29)
+Config fails (7 / 12); with 16 similar values (30)
+Config fails (7 / 12); with 14 similar values (31)
+Config fails (7 / 12); with 14 similar values (32)
+Config fails (7 / 12); with 15 similar values (33)
+Config fails (7 / 12); with 16 similar values (34)
+Config fails (7 / 12); with 17 similar values (35)
+Config fails (7 / 12); with 12 similar values (36)
+Config fails (7 / 12); with 18 similar values (37)
+Config fails (7 / 12); with 14 similar values (38)
+Config fails (7 / 12); with 16 similar values (39)
+Config fails (7 / 12); with 15 similar values (40)
+Config fails (7 / 12); with 14 similar values (41)
+Config fails (7 / 12); with 13 similar values (42)
+Config fails (8 / 12); with 16 similar values (44)
+Config fails (8 / 12); with 13 similar values (45)
+Config fails (8 / 12); with 18 similar values (46)
+Config fails (8 / 12); with 18 similar values (47)
+Config fails (8 / 12); with 18 similar values (48)
+Config fails (9 / 12); with 19 similar values (50)
+Config fails (9 / 12); with 17 similar values (51)
+Config fails (9 / 12); with 20 similar values (52)
+Config fails (9 / 12); with 21 similar values (53)
+Config fails (9 / 12); with 17 similar values (54)
+Config fails (9 / 12); with 16 similar values (55)
+Config fails (9 / 12); with 16 similar values (56)
+Config fails (9 / 12); with 18 similar values (57)
+Config fails (9 / 12); with 17 similar values (58)
+Config fails (9 / 12); with 20 similar values (59)
+Config fails (9 / 12); with 25 similar values (60)
+Config fails (9 / 12); with 18 similar values (61)
+Config fails (9 / 12); with 21 similar values (62)
+Config fails (9 / 12); with 18 similar values (63)
+Config fails (9 / 12); with 20 similar values (64)
+Config fails (9 / 12); with 16 similar values (65)
+Config fails (10 / 12); with 19 similar values (67)
+Config fails (11 / 12); with 26 similar values (69)
+Config fails (11 / 12); with 22 similar values (70)
+Config fails (11 / 12); with 26 similar values (71)
+Config fails (11 / 12); with 19 similar values (72)
+Config fails (11 / 12); with 22 similar values (73)
+Config fails (11 / 12); with 24 similar values (74)
+Config fails (11 / 12); with 25 similar values (75)
+Config fails (11 / 12); with 24 similar values (76)
+Config fails (11 / 12); with 21 similar values (77)
+Config fails (11 / 12); with 23 similar values (78)
+Config fails (11 / 12); with 24 similar values (79)
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+compiling GIalgorithm codebase
+----------------------------------------------------------------
+STARTING GENERATION: 0
+----------------------------------------------------------------
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 1 / 12
+Param String: 0.1 0.95 6 1 0.1 0.65 0.9 0.5 0.85 0.5 0.7 0.2 0.9 0.55 0.5 0.35 0.0 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 1 of 12 in Generation 1 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 2 / 12
+Param String: 0.3 0.8 1 1 0.25 0.0 0.25 0.35 0.85 0.45 0.55 0.95 0.55 0.45 0.75 0.2 0.5 0.95 0.05 0.5 0.6 0.75 0.1
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 2 of 12 in Generation 1 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 3 / 12
+Param String: 0.2 0.6 0 1 0.95 0.9 0.45 0.8 0.95 0.2 0.1 0.6 0.6 0.9 0.15 0.5 0.6 0.45 0.65 0.85 1.0 0.35 0.3
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 3 of 12 in Generation 1 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 4 / 12
+Param String: 1.0 0.55 8 1 0.05 0.1 0.35 0.45 0.35 0.05 0.9 0.0 0.2 0.95 0.95 0.35 0.1 0.15 0.8 0.9 0.4 0.95 0.95
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 4 of 12 in Generation 1 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 5 / 12
+Param String: 0.55 0.7 3 1 0.2 0.55 0.6 0.75 0.2 0.6 0.8 0.5 0.85 0.0 0.8 0.6 0.05 0.45 0.0 0.3 0.65 0.5 0.7
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 5 of 12 in Generation 1 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 6 / 12
+Param String: 0.95 0.9 4 1 0.55 0.7 0.4 0.15 0.4 0.95 0.95 0.15 0.1 0.85 0.05 0.55 0.05 0.4 0.55 0.2 0.45 0.15 0.5
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 6 of 12 in Generation 1 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 7 / 12
+Param String: 0.85 0.75 5 1 0.15 0.25 0.3 0.2 0.7 0.35 0.3 0.9 0.25 0.5 0.35 0.4 0.7 0.1 0.75 0.25 0.2 0.2 0.3
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 7 of 12 in Generation 1 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 8 / 12
+Param String: 0.35 0.85 2 1 0.45 0.85 0.65 0.3 0.05 0.05 0.15 0.1 0.1 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 8 of 12 in Generation 1 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 9 / 12
+Param String: 0.15 0.65 7 1 1.0 0.4 0.6 0.85 0.65 0.25 0.05 0.85 0.8 0.1 0.65 0.9 0.2 0.3 0.25 1.0 0.1 0.45 0.5
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 9 of 12 in Generation 1 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 10 / 12
+Param String: 0.15 0.45 6 1 0.3 0.45 0.7 0.1 0.2 0.25 0.35 0.7 0.35 0.5 0.1 0.0 0.8 0.7 0.6 0.1 0.75 0.75 0.4
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 10 of 12 in Generation 1 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 11 / 12
+Param String: 1.0 0.55 9 1 0.35 0.95 0.85 0.85 0.15 0.7 0.25 0.95 0.85 0.75 0.5 0.25 0.65 0.25 0.95 0.6 0.85 0.6 0.1
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 11 of 12 in Generation 1 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 12 / 12
+Param String: 0.75 0.5 3 1 0.45 0.8 0.1 1.0 0.45 0.6 0.0 0.8 0.55 0.8 0.85 0.15 0.7 0.65 0.95 0.6 0.85 0.45 0.05
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 12 of 12 in Generation 1 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+config and fitness written
+Mutation and Crossover
+Elite set!
+Elite set!
+mutating 3
+mutating 2
+mutating 8
+mutating 3
+mutating 14
+mutating 8
+mutating 6
+mutating 6
+mutating 16
+mutating 14
+Attempting fitness prediction
+in query script
+setting up dataset
+got 1 files
+Finished predicting, writing results
+Choosing pop 2!
+prediction 0 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 1 = 0.709362
+prediction 2 = 0.761826
+prediction 3 = 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.650847
+prediction 6 = 0.855664
+prediction 7 = 0.650847
+prediction 8 = 0.74567
+prediction 9 = 0.855664
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.709362
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 0.650847
+prediction 16 = 0.761448
+prediction 17 = 0.752947
+prediction 18 = 0.855664
+prediction 19 = 0.752947
+prediction 20 = 0.855664
+prediction 21 = 0.707006
+prediction 22 = 0.707006
+prediction 23 = 0.707006
+Choosing pop 3!
+prediction 0 = 10.0
+prediction 1 = 0.709362
+New best fitness: old 10.0 | new 0.709362
+prediction 2 = 0.761826
+prediction 3 = 0.650847
+New best fitness: old 0.709362 | new 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.650847
+prediction 6 = 0.855664
+prediction 7 = 0.650847
+prediction 8 = 0.74567
+prediction 9 = 0.855664
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.709362
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 0.650847
+prediction 16 = 0.761448
+prediction 17 = 0.752947
+prediction 18 = 0.855664
+prediction 19 = 0.752947
+prediction 20 = 0.855664
+prediction 21 = 0.707006
+prediction 22 = 0.707006
+prediction 23 = 0.707006
+Choosing pop 4!
+prediction 0 = 10.0
+prediction 1 = 0.709362
+New best fitness: old 10.0 | new 0.709362
+prediction 2 = 0.761826
+prediction 3 = 10.0
+prediction 4 = 0.650847
+New best fitness: old 0.709362 | new 0.650847
+prediction 5 = 0.650847
+prediction 6 = 0.855664
+prediction 7 = 0.650847
+prediction 8 = 0.74567
+prediction 9 = 0.855664
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.709362
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 0.650847
+prediction 16 = 0.761448
+prediction 17 = 0.752947
+prediction 18 = 0.855664
+prediction 19 = 0.752947
+prediction 20 = 0.855664
+prediction 21 = 0.707006
+prediction 22 = 0.707006
+prediction 23 = 0.707006
+Choosing pop 5!
+prediction 0 = 10.0
+prediction 1 = 0.709362
+New best fitness: old 10.0 | new 0.709362
+prediction 2 = 0.761826
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 0.650847
+New best fitness: old 0.709362 | new 0.650847
+prediction 6 = 0.855664
+prediction 7 = 0.650847
+prediction 8 = 0.74567
+prediction 9 = 0.855664
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.709362
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 0.650847
+prediction 16 = 0.761448
+prediction 17 = 0.752947
+prediction 18 = 0.855664
+prediction 19 = 0.752947
+prediction 20 = 0.855664
+prediction 21 = 0.707006
+prediction 22 = 0.707006
+prediction 23 = 0.707006
+Choosing pop 6!
+prediction 0 = 10.0
+prediction 1 = 0.709362
+New best fitness: old 10.0 | new 0.709362
+prediction 2 = 0.761826
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 10.0
+prediction 6 = 0.855664
+prediction 7 = 0.650847
+New best fitness: old 0.709362 | new 0.650847
+prediction 8 = 0.74567
+prediction 9 = 0.855664
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.709362
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 0.650847
+prediction 16 = 0.761448
+prediction 17 = 0.752947
+prediction 18 = 0.855664
+prediction 19 = 0.752947
+prediction 20 = 0.855664
+prediction 21 = 0.707006
+prediction 22 = 0.707006
+prediction 23 = 0.707006
+Choosing pop 7!
+prediction 0 = 10.0
+prediction 1 = 0.709362
+New best fitness: old 10.0 | new 0.709362
+prediction 2 = 0.761826
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 10.0
+prediction 6 = 0.855664
+prediction 7 = 10.0
+prediction 8 = 0.74567
+prediction 9 = 0.855664
+prediction 10 = 0.650847
+New best fitness: old 0.709362 | new 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.709362
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 0.650847
+prediction 16 = 0.761448
+prediction 17 = 0.752947
+prediction 18 = 0.855664
+prediction 19 = 0.752947
+prediction 20 = 0.855664
+prediction 21 = 0.707006
+prediction 22 = 0.707006
+prediction 23 = 0.707006
+Choosing pop 8!
+prediction 0 = 10.0
+prediction 1 = 0.709362
+New best fitness: old 10.0 | new 0.709362
+prediction 2 = 0.761826
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 10.0
+prediction 6 = 0.855664
+prediction 7 = 10.0
+prediction 8 = 0.74567
+prediction 9 = 0.855664
+prediction 10 = 10.0
+prediction 11 = 0.650847
+New best fitness: old 0.709362 | new 0.650847
+prediction 12 = 0.709362
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 0.650847
+prediction 16 = 0.761448
+prediction 17 = 0.752947
+prediction 18 = 0.855664
+prediction 19 = 0.752947
+prediction 20 = 0.855664
+prediction 21 = 0.707006
+prediction 22 = 0.707006
+prediction 23 = 0.707006
+Choosing pop 9!
+prediction 0 = 10.0
+prediction 1 = 0.709362
+New best fitness: old 10.0 | new 0.709362
+prediction 2 = 0.761826
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 10.0
+prediction 6 = 0.855664
+prediction 7 = 10.0
+prediction 8 = 0.74567
+prediction 9 = 0.855664
+prediction 10 = 10.0
+prediction 11 = 10.0
+prediction 12 = 0.709362
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 0.650847
+New best fitness: old 0.709362 | new 0.650847
+prediction 16 = 0.761448
+prediction 17 = 0.752947
+prediction 18 = 0.855664
+prediction 19 = 0.752947
+prediction 20 = 0.855664
+prediction 21 = 0.707006
+prediction 22 = 0.707006
+prediction 23 = 0.707006
+Choosing pop 10!
+prediction 0 = 10.0
+prediction 1 = 0.709362
+New best fitness: old 10.0 | new 0.709362
+prediction 2 = 0.761826
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 10.0
+prediction 6 = 0.855664
+prediction 7 = 10.0
+prediction 8 = 0.74567
+prediction 9 = 0.855664
+prediction 10 = 10.0
+prediction 11 = 10.0
+prediction 12 = 0.709362
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 10.0
+prediction 16 = 0.761448
+prediction 17 = 0.752947
+prediction 18 = 0.855664
+prediction 19 = 0.752947
+prediction 20 = 0.855664
+prediction 21 = 0.707006
+New best fitness: old 0.709362 | new 0.707006
+prediction 22 = 0.707006
+prediction 23 = 0.707006
+Choosing pop 11!
+prediction 0 = 10.0
+prediction 1 = 0.709362
+New best fitness: old 10.0 | new 0.709362
+prediction 2 = 0.761826
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 10.0
+prediction 6 = 0.855664
+prediction 7 = 10.0
+prediction 8 = 0.74567
+prediction 9 = 0.855664
+prediction 10 = 10.0
+prediction 11 = 10.0
+prediction 12 = 0.709362
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 10.0
+prediction 16 = 0.761448
+prediction 17 = 0.752947
+prediction 18 = 0.855664
+prediction 19 = 0.752947
+prediction 20 = 0.855664
+prediction 21 = 10.0
+prediction 22 = 0.707006
+New best fitness: old 0.709362 | new 0.707006
+prediction 23 = 0.707006
+----------------------------------------------------------------
+STARTING GENERATION: 1
+----------------------------------------------------------------
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 1 / 12
+Param String: 0.35 0.85 2 1 0.45 0.85 0.65 0.3 0.05 0.05 0.15 0.1 0.1 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 1 of 12 in Generation 2 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 2 / 12
+Param String: 1.0 0.55 8 1 0.05 0.1 0.35 0.45 0.35 0.05 0.9 0.0 0.2 0.95 0.95 0.35 0.1 0.15 0.8 0.9 0.4 0.95 0.95
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 2 of 12 in Generation 2 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 3 / 12
+Param String: 0.35 0.85 2 1 0.45 0.85 0.65 0.3 0.05 0.05 0.15 0.1 0.1 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 3 of 12 in Generation 2 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 4 / 12
+Param String: 0.1 0.95 3 1 0.1 0.65 0.9 0.5 0.85 0.2 0.7 0.2 0.9 0.55 0.5 0.35 0.0 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 4 of 12 in Generation 2 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 5 / 12
+Param String: 0.55 0.7 3 1 0.1 0.55 0.6 0.75 0.75 0.6 0.8 0.2 0.85 0.55 0.8 0.6 0.05 0.45 0.0 0.3 0.65 0.5 0.7
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 5 of 12 in Generation 2 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 6 / 12
+Param String: 0.1 0.95 6 1 0.2 0.65 0.9 0.5 0.85 0.5 0.7 0.5 0.9 0.0 0.5 0.35 0.0 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 6 of 12 in Generation 2 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 7 / 12
+Param String: 0.1 0.95 6 1 0.1 0.65 0.9 0.5 0.38 0.5 0.7 0.2 0.9 0.55 0.5 0.4 0.7 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 7 of 12 in Generation 2 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 8 / 12
+Param String: 1.0 0.55 6 1 0.35 0.95 0.85 0.85 0.15 0.7 0.25 0.95 0.85 0.75 0.5 0.25 0.82 0.25 0.95 0.6 0.85 0.6 0.1
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 8 of 12 in Generation 2 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 9 / 12
+Param String: 0.1 0.95 9 1 0.1 0.65 0.9 0.5 0.85 0.5 0.7 0.2 0.9 0.55 0.19 0.35 0.65 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 9 of 12 in Generation 2 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 10 / 12
+Param String: 0.5 0.55 3 1 0.2 0.2 0.05 0.5 0.75 0.9 0.7 0.2 0.85 0.75 0.6 0.7 0.3 0.15 0.2 0.0 0.3 0.25 0.8
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 10 of 12 in Generation 2 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 11 / 12
+Param String: 0.8 0.65 0 1 0.15 0.9 0.45 0.25 0.8 0.65 0.1 0.05 0.65 0.95 0.1 0.5 0.75 0.55 0.2 0.65 0.5 0.0 0.35
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 11 of 12 in Generation 2 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 12 / 12
+Param String: 0.95 0.85 6 1 0.5 0.15 0.95 0.15 0.6 0.55 0.75 0.65 0.75 0.5 0.15 0.8 0.95 0.5 0.45 0.0 0.8 0.55 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 12 of 12 in Generation 2 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+config and fitness written
+Mutation and Crossover
+Elite set!
+Elite set!
+mutating 11
+mutating 0
+mutating 12
+mutating 6
+mutating 3
+mutating 9
+mutating 5
+mutating 11
+Attempting fitness prediction
+in query script
+setting up dataset
+got 1 files
+Finished predicting, writing results
+Choosing pop 2!
+prediction 0 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 1 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 2 = 0.650847
+prediction 3 = 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.650847
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.707006
+prediction 11 = 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 0.855664
+prediction 16 = 0.752947
+prediction 17 = 0.755913
+prediction 18 = 0.641382
+New best fitness: old 0.650847 | new 0.641382
+prediction 19 = 0.752947
+prediction 20 = 0.707006
+prediction 21 = 0.752947
+prediction 22 = 0.752947
+prediction 23 = 0.752947
+Choosing pop 3!
+prediction 0 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 1 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 2 = 0.650847
+prediction 3 = 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.650847
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.707006
+prediction 11 = 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 0.855664
+prediction 16 = 0.752947
+prediction 17 = 0.755913
+prediction 18 = 10.0
+prediction 19 = 0.752947
+prediction 20 = 0.707006
+prediction 21 = 0.752947
+prediction 22 = 0.752947
+prediction 23 = 0.752947
+Choosing pop 4!
+prediction 0 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 1 = 10.0
+prediction 2 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 3 = 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.650847
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.707006
+prediction 11 = 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 0.855664
+prediction 16 = 0.752947
+prediction 17 = 0.755913
+prediction 18 = 10.0
+prediction 19 = 0.752947
+prediction 20 = 0.707006
+prediction 21 = 0.752947
+prediction 22 = 0.752947
+prediction 23 = 0.752947
+Choosing pop 5!
+prediction 0 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.650847
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.707006
+prediction 11 = 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 0.855664
+prediction 16 = 0.752947
+prediction 17 = 0.755913
+prediction 18 = 10.0
+prediction 19 = 0.752947
+prediction 20 = 0.707006
+prediction 21 = 0.752947
+prediction 22 = 0.752947
+prediction 23 = 0.752947
+Choosing pop 6!
+prediction 0 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 5 = 0.650847
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.707006
+prediction 11 = 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 0.855664
+prediction 16 = 0.752947
+prediction 17 = 0.755913
+prediction 18 = 10.0
+prediction 19 = 0.752947
+prediction 20 = 0.707006
+prediction 21 = 0.752947
+prediction 22 = 0.752947
+prediction 23 = 0.752947
+Choosing pop 7!
+prediction 0 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.707006
+prediction 11 = 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 0.855664
+prediction 16 = 0.752947
+prediction 17 = 0.755913
+prediction 18 = 10.0
+prediction 19 = 0.752947
+prediction 20 = 0.707006
+prediction 21 = 0.752947
+prediction 22 = 0.752947
+prediction 23 = 0.752947
+Choosing pop 8!
+prediction 0 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 10.0
+prediction 6 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.707006
+prediction 11 = 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 0.855664
+prediction 16 = 0.752947
+prediction 17 = 0.755913
+prediction 18 = 10.0
+prediction 19 = 0.752947
+prediction 20 = 0.707006
+prediction 21 = 0.752947
+prediction 22 = 0.752947
+prediction 23 = 0.752947
+Choosing pop 9!
+prediction 0 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 10.0
+prediction 6 = 10.0
+prediction 7 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.707006
+prediction 11 = 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 0.855664
+prediction 16 = 0.752947
+prediction 17 = 0.755913
+prediction 18 = 10.0
+prediction 19 = 0.752947
+prediction 20 = 0.707006
+prediction 21 = 0.752947
+prediction 22 = 0.752947
+prediction 23 = 0.752947
+Choosing pop 10!
+prediction 0 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 10.0
+prediction 6 = 10.0
+prediction 7 = 10.0
+prediction 8 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.707006
+prediction 11 = 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 0.855664
+prediction 16 = 0.752947
+prediction 17 = 0.755913
+prediction 18 = 10.0
+prediction 19 = 0.752947
+prediction 20 = 0.707006
+prediction 21 = 0.752947
+prediction 22 = 0.752947
+prediction 23 = 0.752947
+Choosing pop 11!
+prediction 0 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 10.0
+prediction 6 = 10.0
+prediction 7 = 10.0
+prediction 8 = 10.0
+prediction 9 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 10 = 0.707006
+prediction 11 = 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 0.855664
+prediction 16 = 0.752947
+prediction 17 = 0.755913
+prediction 18 = 10.0
+prediction 19 = 0.752947
+prediction 20 = 0.707006
+prediction 21 = 0.752947
+prediction 22 = 0.752947
+prediction 23 = 0.752947
+----------------------------------------------------------------
+STARTING GENERATION: 2
+----------------------------------------------------------------
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 1 / 12
+Param String: 0.8 0.65 0 1 0.15 0.9 0.45 0.25 0.8 0.65 0.1 0.05 0.65 0.95 0.1 0.5 0.75 0.55 0.2 0.65 0.5 0.0 0.35
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 1 of 12 in Generation 3 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 2 / 12
+Param String: 0.1 0.95 6 1 0.1 0.65 0.9 0.5 0.38 0.5 0.7 0.2 0.9 0.55 0.5 0.4 0.7 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 2 of 12 in Generation 3 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 3 / 12
+Param String: 0.05 0.35 2 1 0.7 0.5 0.45 0.2 0.05 0.5 0.25 0.6 0.3 0.75 0.75 0.85 0.0 0.5 0.65 0.8 0.5 0.3 0.95
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 3 of 12 in Generation 3 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 4 / 12
+Param String: 0.1 0.95 6 1 0.1 0.65 0.9 0.5 0.38 0.5 0.7 0.2 0.9 0.55 0.5 0.4 0.7 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 4 of 12 in Generation 3 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 5 / 12
+Param String: 0.35 0.85 2 1 0.45 0.85 0.65 0.3 0.05 0.05 0.15 0.1 0.1 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 5 of 12 in Generation 3 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 6 / 12
+Param String: 0.35 0.85 2 1 0.45 0.85 0.65 0.3 0.05 0.05 0.15 0.73 0.1 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 6 of 12 in Generation 3 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 7 / 12
+Param String: 0.7 0.7 3 1 0.1 0.55 0.6 0.75 0.75 0.05 0.8 0.1 0.85 0.55 0.8 0.6 0.5 0.45 0.0 0.3 0.65 0.5 0.7
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 7 of 12 in Generation 3 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 8 / 12
+Param String: 0.55 0.85 2 1 0.45 0.85 0.65 0.3 0.05 0.6 0.15 0.2 0.09 0.4 0.9 0.5 0.05 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 8 of 12 in Generation 3 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 9 / 12
+Param String: 0.35 0.95 6 1 0.1 0.85 0.65 0.5 0.38 0.5 0.7 0.1 0.9 0.55 0.5 0.4 0.7 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 9 of 12 in Generation 3 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 10 / 12
+Param String: 0.1 0.85 2 1 0.45 0.65 0.55 0.3 0.05 0.05 0.15 0.2 0.1 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 10 of 12 in Generation 3 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 11 / 12
+Param String: 0.1 0.85 9 1 0.1 0.65 0.9 0.3 0.85 0.05 0.7 0.1 0.9 0.55 0.19 0.35 0.65 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 11 of 12 in Generation 3 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 12 / 12
+Param String: 0.35 0.95 2 1 0.45 0.85 0.65 0.5 0.05 0.09 0.15 0.2 0.1 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 12 of 12 in Generation 3 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+config and fitness written
+Mutation and Crossover
+Elite set!
+Elite set!
+mutating 16
+mutating 8
+mutating 14
+mutating 12
+mutating 1
+mutating 13
+mutating 14
+mutating 7
+mutating 11
+mutating 8
+Attempting fitness prediction
+in query script
+setting up dataset
+got 1 files
+Finished predicting, writing results
+Choosing pop 2!
+prediction 0 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 1 = 0.650847
+prediction 2 = 0.707006
+prediction 3 = 0.707006
+prediction 4 = 0.650847
+prediction 5 = 0.707006
+prediction 6 = 0.650847
+prediction 7 = 0.707006
+prediction 8 = 0.650847
+prediction 9 = 0.707006
+prediction 10 = 0.707006
+prediction 11 = 0.707006
+prediction 12 = 0.650847
+prediction 13 = 0.855664
+prediction 14 = 0.707006
+prediction 15 = 0.707006
+prediction 16 = 0.752947
+prediction 17 = 0.650847
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 0.650847
+prediction 21 = 0.752947
+prediction 22 = 0.707006
+prediction 23 = 0.855664
+Choosing pop 3!
+prediction 0 = 10.0
+prediction 1 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 2 = 0.707006
+prediction 3 = 0.707006
+prediction 4 = 0.650847
+prediction 5 = 0.707006
+prediction 6 = 0.650847
+prediction 7 = 0.707006
+prediction 8 = 0.650847
+prediction 9 = 0.707006
+prediction 10 = 0.707006
+prediction 11 = 0.707006
+prediction 12 = 0.650847
+prediction 13 = 0.855664
+prediction 14 = 0.707006
+prediction 15 = 0.707006
+prediction 16 = 0.752947
+prediction 17 = 0.650847
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 0.650847
+prediction 21 = 0.752947
+prediction 22 = 0.707006
+prediction 23 = 0.855664
+Choosing pop 4!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 3 = 0.707006
+prediction 4 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 5 = 0.707006
+prediction 6 = 0.650847
+prediction 7 = 0.707006
+prediction 8 = 0.650847
+prediction 9 = 0.707006
+prediction 10 = 0.707006
+prediction 11 = 0.707006
+prediction 12 = 0.650847
+prediction 13 = 0.855664
+prediction 14 = 0.707006
+prediction 15 = 0.707006
+prediction 16 = 0.752947
+prediction 17 = 0.650847
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 0.650847
+prediction 21 = 0.752947
+prediction 22 = 0.707006
+prediction 23 = 0.855664
+Choosing pop 5!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 3 = 0.707006
+prediction 4 = 10.0
+prediction 5 = 0.707006
+prediction 6 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 7 = 0.707006
+prediction 8 = 0.650847
+prediction 9 = 0.707006
+prediction 10 = 0.707006
+prediction 11 = 0.707006
+prediction 12 = 0.650847
+prediction 13 = 0.855664
+prediction 14 = 0.707006
+prediction 15 = 0.707006
+prediction 16 = 0.752947
+prediction 17 = 0.650847
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 0.650847
+prediction 21 = 0.752947
+prediction 22 = 0.707006
+prediction 23 = 0.855664
+Choosing pop 6!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 3 = 0.707006
+prediction 4 = 10.0
+prediction 5 = 0.707006
+prediction 6 = 10.0
+prediction 7 = 0.707006
+prediction 8 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 9 = 0.707006
+prediction 10 = 0.707006
+prediction 11 = 0.707006
+prediction 12 = 0.650847
+prediction 13 = 0.855664
+prediction 14 = 0.707006
+prediction 15 = 0.707006
+prediction 16 = 0.752947
+prediction 17 = 0.650847
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 0.650847
+prediction 21 = 0.752947
+prediction 22 = 0.707006
+prediction 23 = 0.855664
+Choosing pop 7!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 3 = 0.707006
+prediction 4 = 10.0
+prediction 5 = 0.707006
+prediction 6 = 10.0
+prediction 7 = 0.707006
+prediction 8 = 10.0
+prediction 9 = 0.707006
+prediction 10 = 0.707006
+prediction 11 = 0.707006
+prediction 12 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 13 = 0.855664
+prediction 14 = 0.707006
+prediction 15 = 0.707006
+prediction 16 = 0.752947
+prediction 17 = 0.650847
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 0.650847
+prediction 21 = 0.752947
+prediction 22 = 0.707006
+prediction 23 = 0.855664
+Choosing pop 8!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 3 = 0.707006
+prediction 4 = 10.0
+prediction 5 = 0.707006
+prediction 6 = 10.0
+prediction 7 = 0.707006
+prediction 8 = 10.0
+prediction 9 = 0.707006
+prediction 10 = 0.707006
+prediction 11 = 0.707006
+prediction 12 = 10.0
+prediction 13 = 0.855664
+prediction 14 = 0.707006
+prediction 15 = 0.707006
+prediction 16 = 0.752947
+prediction 17 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 0.650847
+prediction 21 = 0.752947
+prediction 22 = 0.707006
+prediction 23 = 0.855664
+Choosing pop 9!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 3 = 0.707006
+prediction 4 = 10.0
+prediction 5 = 0.707006
+prediction 6 = 10.0
+prediction 7 = 0.707006
+prediction 8 = 10.0
+prediction 9 = 0.707006
+prediction 10 = 0.707006
+prediction 11 = 0.707006
+prediction 12 = 10.0
+prediction 13 = 0.855664
+prediction 14 = 0.707006
+prediction 15 = 0.707006
+prediction 16 = 0.752947
+prediction 17 = 10.0
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 21 = 0.752947
+prediction 22 = 0.707006
+prediction 23 = 0.855664
+Choosing pop 10!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 3 = 0.707006
+prediction 4 = 10.0
+prediction 5 = 0.707006
+prediction 6 = 10.0
+prediction 7 = 0.707006
+prediction 8 = 10.0
+prediction 9 = 0.707006
+prediction 10 = 0.707006
+prediction 11 = 0.707006
+prediction 12 = 10.0
+prediction 13 = 0.855664
+prediction 14 = 0.707006
+prediction 15 = 0.707006
+prediction 16 = 0.752947
+prediction 17 = 10.0
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 10.0
+prediction 21 = 0.752947
+prediction 22 = 0.707006
+prediction 23 = 0.855664
+Choosing pop 11!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 4 = 10.0
+prediction 5 = 0.707006
+prediction 6 = 10.0
+prediction 7 = 0.707006
+prediction 8 = 10.0
+prediction 9 = 0.707006
+prediction 10 = 0.707006
+prediction 11 = 0.707006
+prediction 12 = 10.0
+prediction 13 = 0.855664
+prediction 14 = 0.707006
+prediction 15 = 0.707006
+prediction 16 = 0.752947
+prediction 17 = 10.0
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 10.0
+prediction 21 = 0.752947
+prediction 22 = 0.707006
+prediction 23 = 0.855664
+----------------------------------------------------------------
+STARTING GENERATION: 3
+----------------------------------------------------------------
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 1 / 12
+Param String: 0.35 0.95 2 1 0.45 0.85 0.65 0.5 0.05 0.09 0.15 0.2 0.1 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 1 of 12 in Generation 4 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 2 / 12
+Param String: 0.1 0.85 2 1 0.45 0.65 0.55 0.3 0.05 0.05 0.15 0.2 0.1 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 2 of 12 in Generation 4 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 3 / 12
+Param String: 0.35 0.95 2 1 0.45 0.85 0.65 0.5 0.05 0.09 0.15 0.2 0.1 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 3 of 12 in Generation 4 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 4 / 12
+Param String: 0.1 0.85 2 1 0.45 0.65 0.55 0.3 0.05 0.05 0.15 0.2 0.1 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 4 of 12 in Generation 4 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 5 / 12
+Param String: 0.35 0.85 2 1 0.15 0.85 0.65 0.3 0.05 0.05 0.15 0.1 0.1 0.4 0.59 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 5 of 12 in Generation 4 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 6 / 12
+Param String: 0.7 0.5 3 1 0.1 0.55 0.6 0.75 0.75 0.05 0.8 0.1 0.85 0.55 0.8 0.6 0.5 0.45 0.0 0.3 0.65 0.5 0.7
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 6 of 12 in Generation 4 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 7 / 12
+Param String: 0.35 0.95 6 1 0.1 0.85 0.45 0.5 0.38 0.5 0.1 0.1 0.9 0.55 0.39 0.4 0.7 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 7 of 12 in Generation 4 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 8 / 12
+Param String: 0.75 0.05 5 1 0.85 0.6 0.55 0.0 0.8 0.2 0.55 0.8 0.5 1.0 0.65 0.95 0.95 0.85 0.25 0.95 0.6 0.2 0.95
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 8 of 12 in Generation 4 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 9 / 12
+Param String: 0.05 0.25 2 1 0.35 0.95 0.4 0.7 0.8 0.75 0.45 0.75 0.75 0.85 0.25 0.65 0.35 0.45 0.05 0.15 0.4 0.6 1.0
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 9 of 12 in Generation 4 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 10 / 12
+Param String: 0.75 0.55 9 1 0.35 0.8 0.7 0.6 0.35 0.95 0.05 0.55 0.55 0.95 0.9 0.35 0.15 0.45 0.5 0.85 0.15 0.45 0.95
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 10 of 12 in Generation 4 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 11 / 12
+Param String: 0.05 0.35 0 1 0.7 0.5 0.45 0.2 0.05 0.65 0.25 0.05 0.3 0.75 0.75 0.85 0.65 0.5 0.65 0.8 0.5 0.3 0.95
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 11 of 12 in Generation 4 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 12 / 12
+Param String: 0.8 0.65 2 1 0.15 0.9 0.45 0.25 0.84 0.5 0.1 0.6 0.65 0.95 0.1 0.5 0.75 0.55 0.2 0.65 0.5 0.0 0.35
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 12 of 12 in Generation 4 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+config and fitness written
+Mutation and Crossover
+Elite set!
+Elite set!
+mutating 2
+mutating 3
+mutating 16
+mutating 14
+mutating 9
+mutating 7
+mutating 17
+mutating 12
+Attempting fitness prediction
+in query script
+setting up dataset
+got 1 files
+Finished predicting, writing results
+Choosing pop 2!
+prediction 0 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 1 = 0.650847
+prediction 2 = 0.650847
+prediction 3 = 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.650847
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.855664
+prediction 9 = 0.650847
+prediction 10 = 0.707006
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.855664
+prediction 14 = 0.855664
+prediction 15 = 0.707006
+prediction 16 = 0.650847
+prediction 17 = 0.752947
+prediction 18 = 0.752947
+prediction 19 = 0.752947
+prediction 20 = 0.650847
+prediction 21 = 0.707006
+prediction 22 = 0.650847
+prediction 23 = 0.752947
+Choosing pop 3!
+prediction 0 = 10.0
+prediction 1 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 2 = 0.650847
+prediction 3 = 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.650847
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.855664
+prediction 9 = 0.650847
+prediction 10 = 0.707006
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.855664
+prediction 14 = 0.855664
+prediction 15 = 0.707006
+prediction 16 = 0.650847
+prediction 17 = 0.752947
+prediction 18 = 0.752947
+prediction 19 = 0.752947
+prediction 20 = 0.650847
+prediction 21 = 0.707006
+prediction 22 = 0.650847
+prediction 23 = 0.752947
+Choosing pop 4!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 3 = 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.650847
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.855664
+prediction 9 = 0.650847
+prediction 10 = 0.707006
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.855664
+prediction 14 = 0.855664
+prediction 15 = 0.707006
+prediction 16 = 0.650847
+prediction 17 = 0.752947
+prediction 18 = 0.752947
+prediction 19 = 0.752947
+prediction 20 = 0.650847
+prediction 21 = 0.707006
+prediction 22 = 0.650847
+prediction 23 = 0.752947
+Choosing pop 5!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.650847
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.855664
+prediction 9 = 0.650847
+prediction 10 = 0.707006
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.855664
+prediction 14 = 0.855664
+prediction 15 = 0.707006
+prediction 16 = 0.650847
+prediction 17 = 0.752947
+prediction 18 = 0.752947
+prediction 19 = 0.752947
+prediction 20 = 0.650847
+prediction 21 = 0.707006
+prediction 22 = 0.650847
+prediction 23 = 0.752947
+Choosing pop 6!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 5 = 0.650847
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.855664
+prediction 9 = 0.650847
+prediction 10 = 0.707006
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.855664
+prediction 14 = 0.855664
+prediction 15 = 0.707006
+prediction 16 = 0.650847
+prediction 17 = 0.752947
+prediction 18 = 0.752947
+prediction 19 = 0.752947
+prediction 20 = 0.650847
+prediction 21 = 0.707006
+prediction 22 = 0.650847
+prediction 23 = 0.752947
+Choosing pop 7!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.855664
+prediction 9 = 0.650847
+prediction 10 = 0.707006
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.855664
+prediction 14 = 0.855664
+prediction 15 = 0.707006
+prediction 16 = 0.650847
+prediction 17 = 0.752947
+prediction 18 = 0.752947
+prediction 19 = 0.752947
+prediction 20 = 0.650847
+prediction 21 = 0.707006
+prediction 22 = 0.650847
+prediction 23 = 0.752947
+Choosing pop 8!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 10.0
+prediction 6 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.855664
+prediction 9 = 0.650847
+prediction 10 = 0.707006
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.855664
+prediction 14 = 0.855664
+prediction 15 = 0.707006
+prediction 16 = 0.650847
+prediction 17 = 0.752947
+prediction 18 = 0.752947
+prediction 19 = 0.752947
+prediction 20 = 0.650847
+prediction 21 = 0.707006
+prediction 22 = 0.650847
+prediction 23 = 0.752947
+Choosing pop 9!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 10.0
+prediction 6 = 10.0
+prediction 7 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 8 = 0.855664
+prediction 9 = 0.650847
+prediction 10 = 0.707006
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.855664
+prediction 14 = 0.855664
+prediction 15 = 0.707006
+prediction 16 = 0.650847
+prediction 17 = 0.752947
+prediction 18 = 0.752947
+prediction 19 = 0.752947
+prediction 20 = 0.650847
+prediction 21 = 0.707006
+prediction 22 = 0.650847
+prediction 23 = 0.752947
+Choosing pop 10!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 10.0
+prediction 6 = 10.0
+prediction 7 = 10.0
+prediction 8 = 0.855664
+New best fitness: old 10.0 | new 0.855664
+prediction 9 = 0.650847
+New best fitness: old 0.855664 | new 0.650847
+prediction 10 = 0.707006
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.855664
+prediction 14 = 0.855664
+prediction 15 = 0.707006
+prediction 16 = 0.650847
+prediction 17 = 0.752947
+prediction 18 = 0.752947
+prediction 19 = 0.752947
+prediction 20 = 0.650847
+prediction 21 = 0.707006
+prediction 22 = 0.650847
+prediction 23 = 0.752947
+Choosing pop 11!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 10.0
+prediction 6 = 10.0
+prediction 7 = 10.0
+prediction 8 = 0.855664
+New best fitness: old 10.0 | new 0.855664
+prediction 9 = 10.0
+prediction 10 = 0.707006
+New best fitness: old 0.855664 | new 0.707006
+prediction 11 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.855664
+prediction 14 = 0.855664
+prediction 15 = 0.707006
+prediction 16 = 0.650847
+prediction 17 = 0.752947
+prediction 18 = 0.752947
+prediction 19 = 0.752947
+prediction 20 = 0.650847
+prediction 21 = 0.707006
+prediction 22 = 0.650847
+prediction 23 = 0.752947
+----------------------------------------------------------------
+STARTING GENERATION: 4
+----------------------------------------------------------------
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 1 / 12
+Param String: 0.1 0.85 2 1 0.45 0.65 0.55 0.3 0.05 0.05 0.15 0.2 0.1 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 1 of 12 in Generation 5 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 2 / 12
+Param String: 0.35 0.95 6 1 0.1 0.85 0.45 0.5 0.38 0.5 0.1 0.1 0.9 0.55 0.39 0.4 0.7 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 2 of 12 in Generation 5 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 3 / 12
+Param String: 0.1 0.85 2 1 0.45 0.65 0.55 0.3 0.05 0.05 0.15 0.2 0.1 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 3 of 12 in Generation 5 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 4 / 12
+Param String: 0.35 0.95 6 1 0.1 0.85 0.45 0.5 0.38 0.5 0.1 0.1 0.9 0.55 0.39 0.4 0.7 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 4 of 12 in Generation 5 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 5 / 12
+Param String: 0.35 0.95 9 1 0.45 0.85 0.65 0.5 0.05 0.09 0.15 0.2 0.1 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 5 of 12 in Generation 5 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 6 / 12
+Param String: 0.35 0.95 2 1 0.45 0.85 0.65 0.5 0.05 0.09 0.15 0.2 0.1 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 6 of 12 in Generation 5 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 7 / 12
+Param String: 0.35 0.85 2 1 0.15 0.85 0.65 0.3 0.05 0.05 0.15 0.1 0.1 0.4 0.59 0.5 0.82 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 7 of 12 in Generation 5 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 8 / 12
+Param String: 0.35 0.95 2 1 0.45 0.85 0.65 0.5 0.05 0.09 0.15 0.2 0.1 0.4 0.19 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 8 of 12 in Generation 5 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 9 / 12
+Param String: 0.35 0.95 6 1 0.1 0.85 0.45 0.5 0.05 0.69 0.1 0.2 0.9 0.55 0.39 0.4 0.7 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 9 of 12 in Generation 5 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 10 / 12
+Param String: 0.35 0.95 2 1 0.45 0.85 0.65 0.27 0.38 0.09 0.15 0.1 0.1 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 10 of 12 in Generation 5 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 11 / 12
+Param String: 0.35 0.25 2 1 0.45 0.85 0.4 0.5 0.05 0.09 0.15 0.75 0.1 0.85 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 11 of 12 in Generation 5 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 12 / 12
+Param String: 0.35 0.95 2 1 0.45 0.5 0.65 0.2 0.05 0.09 0.25 0.2 0.35 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 12 of 12 in Generation 5 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+config and fitness written
+Mutation and Crossover
+Elite set!
+Elite set!
+mutating 17
+mutating 16
+mutating 16
+mutating 5
+mutating 7
+mutating 14
+mutating 1
+mutating 10
+mutating 14
+Attempting fitness prediction
+in query script
+setting up dataset
+got 1 files
+Finished predicting, writing results
+Choosing pop 2!
+prediction 0 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 1 = 0.650847
+prediction 2 = 0.650847
+prediction 3 = 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.650847
+prediction 6 = 0.707006
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.707006
+prediction 14 = 0.752947
+prediction 15 = 0.734899
+prediction 16 = 0.740149
+prediction 17 = 0.743953
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.707006
+prediction 22 = 0.707006
+prediction 23 = 0.650847
+Choosing pop 3!
+prediction 0 = 10.0
+prediction 1 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 2 = 0.650847
+prediction 3 = 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.650847
+prediction 6 = 0.707006
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.707006
+prediction 14 = 0.752947
+prediction 15 = 0.734899
+prediction 16 = 0.740149
+prediction 17 = 0.743953
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.707006
+prediction 22 = 0.707006
+prediction 23 = 0.650847
+Choosing pop 4!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 3 = 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.650847
+prediction 6 = 0.707006
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.707006
+prediction 14 = 0.752947
+prediction 15 = 0.734899
+prediction 16 = 0.740149
+prediction 17 = 0.743953
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.707006
+prediction 22 = 0.707006
+prediction 23 = 0.650847
+Choosing pop 5!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.650847
+prediction 6 = 0.707006
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.707006
+prediction 14 = 0.752947
+prediction 15 = 0.734899
+prediction 16 = 0.740149
+prediction 17 = 0.743953
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.707006
+prediction 22 = 0.707006
+prediction 23 = 0.650847
+Choosing pop 6!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 5 = 0.650847
+prediction 6 = 0.707006
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.707006
+prediction 14 = 0.752947
+prediction 15 = 0.734899
+prediction 16 = 0.740149
+prediction 17 = 0.743953
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.707006
+prediction 22 = 0.707006
+prediction 23 = 0.650847
+Choosing pop 7!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 6 = 0.707006
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.707006
+prediction 14 = 0.752947
+prediction 15 = 0.734899
+prediction 16 = 0.740149
+prediction 17 = 0.743953
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.707006
+prediction 22 = 0.707006
+prediction 23 = 0.650847
+Choosing pop 8!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 10.0
+prediction 6 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 7 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.707006
+prediction 14 = 0.752947
+prediction 15 = 0.734899
+prediction 16 = 0.740149
+prediction 17 = 0.743953
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.707006
+prediction 22 = 0.707006
+prediction 23 = 0.650847
+Choosing pop 9!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 10.0
+prediction 6 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 7 = 10.0
+prediction 8 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.707006
+prediction 14 = 0.752947
+prediction 15 = 0.734899
+prediction 16 = 0.740149
+prediction 17 = 0.743953
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.707006
+prediction 22 = 0.707006
+prediction 23 = 0.650847
+Choosing pop 10!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 10.0
+prediction 6 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 7 = 10.0
+prediction 8 = 10.0
+prediction 9 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.707006
+prediction 14 = 0.752947
+prediction 15 = 0.734899
+prediction 16 = 0.740149
+prediction 17 = 0.743953
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.707006
+prediction 22 = 0.707006
+prediction 23 = 0.650847
+Choosing pop 11!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 10.0
+prediction 6 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 7 = 10.0
+prediction 8 = 10.0
+prediction 9 = 10.0
+prediction 10 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.707006
+prediction 14 = 0.752947
+prediction 15 = 0.734899
+prediction 16 = 0.740149
+prediction 17 = 0.743953
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.707006
+prediction 22 = 0.707006
+prediction 23 = 0.650847
+----------------------------------------------------------------
+STARTING GENERATION: 5
+----------------------------------------------------------------
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 1 / 12
+Param String: 0.35 0.95 6 1 0.1 0.85 0.45 0.5 0.38 0.5 0.1 0.1 0.9 0.55 0.39 0.4 0.7 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 1 of 12 in Generation 6 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 2 / 12
+Param String: 0.35 0.95 2 1 0.45 0.85 0.65 0.27 0.38 0.09 0.15 0.1 0.1 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 2 of 12 in Generation 6 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 3 / 12
+Param String: 0.35 0.95 6 1 0.1 0.85 0.45 0.5 0.38 0.5 0.1 0.1 0.9 0.55 0.39 0.4 0.7 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 3 of 12 in Generation 6 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 4 / 12
+Param String: 0.35 0.95 2 1 0.45 0.85 0.65 0.27 0.38 0.09 0.15 0.1 0.1 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 4 of 12 in Generation 6 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 5 / 12
+Param String: 0.1 0.85 2 1 0.45 0.65 0.55 0.3 0.05 0.05 0.15 0.2 0.1 0.4 0.9 0.5 0.5 0.48 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 5 of 12 in Generation 6 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 6 / 12
+Param String: 0.1 0.85 2 1 0.45 0.65 0.55 0.3 0.05 0.05 0.15 0.2 0.1 0.4 0.9 0.5 0.67 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 6 of 12 in Generation 6 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 7 / 12
+Param String: 0.35 0.95 2 1 0.45 0.65 0.65 0.5 0.05 0.09 0.15 0.2 0.1 0.4 0.9 0.5 0.78 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 7 of 12 in Generation 6 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 8 / 12
+Param String: 0.1 0.85 9 1 0.45 0.91 0.55 0.3 0.05 0.05 0.15 0.2 0.1 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 8 of 12 in Generation 6 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 9 / 12
+Param String: 0.1 0.85 2 1 0.15 0.65 0.55 0.7 0.05 0.05 0.15 0.2 0.1 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 9 of 12 in Generation 6 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 10 / 12
+Param String: 0.35 0.95 6 1 0.1 0.65 0.45 0.5 0.05 0.69 0.15 0.2 0.1 0.55 0.76 0.4 0.7 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 10 of 12 in Generation 6 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 11 / 12
+Param String: 0.1 0.96 2 1 0.45 0.85 0.55 0.3 0.05 0.05 0.1 0.2 0.9 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 11 of 12 in Generation 6 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 12 / 12
+Param String: 0.35 0.85 2 1 0.45 0.65 0.4 0.5 0.05 0.09 0.34 0.75 0.1 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 12 of 12 in Generation 6 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+config and fitness written
+Mutation and Crossover
+Elite set!
+Elite set!
+mutating 3
+mutating 17
+mutating 16
+mutating 5
+mutating 8
+mutating 8
+mutating 2
+mutating 2
+Attempting fitness prediction
+in query script
+setting up dataset
+got 1 files
+Finished predicting, writing results
+Choosing pop 2!
+prediction 0 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 1 = 0.650847
+prediction 2 = 0.650847
+prediction 3 = 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.855664
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.707006
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.798565
+prediction 14 = 0.752947
+prediction 15 = 0.650847
+prediction 16 = 0.752947
+prediction 17 = 0.650847
+prediction 18 = 0.650847
+prediction 19 = 0.650847
+prediction 20 = 0.650847
+prediction 21 = 0.650847
+prediction 22 = 0.650847
+prediction 23 = 0.752947
+Choosing pop 3!
+prediction 0 = 10.0
+prediction 1 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 2 = 0.650847
+prediction 3 = 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.855664
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.707006
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.798565
+prediction 14 = 0.752947
+prediction 15 = 0.650847
+prediction 16 = 0.752947
+prediction 17 = 0.650847
+prediction 18 = 0.650847
+prediction 19 = 0.650847
+prediction 20 = 0.650847
+prediction 21 = 0.650847
+prediction 22 = 0.650847
+prediction 23 = 0.752947
+Choosing pop 4!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 3 = 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.855664
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.707006
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.798565
+prediction 14 = 0.752947
+prediction 15 = 0.650847
+prediction 16 = 0.752947
+prediction 17 = 0.650847
+prediction 18 = 0.650847
+prediction 19 = 0.650847
+prediction 20 = 0.650847
+prediction 21 = 0.650847
+prediction 22 = 0.650847
+prediction 23 = 0.752947
+Choosing pop 5!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.855664
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.707006
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.798565
+prediction 14 = 0.752947
+prediction 15 = 0.650847
+prediction 16 = 0.752947
+prediction 17 = 0.650847
+prediction 18 = 0.650847
+prediction 19 = 0.650847
+prediction 20 = 0.650847
+prediction 21 = 0.650847
+prediction 22 = 0.650847
+prediction 23 = 0.752947
+Choosing pop 6!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 5 = 0.855664
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.707006
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.798565
+prediction 14 = 0.752947
+prediction 15 = 0.650847
+prediction 16 = 0.752947
+prediction 17 = 0.650847
+prediction 18 = 0.650847
+prediction 19 = 0.650847
+prediction 20 = 0.650847
+prediction 21 = 0.650847
+prediction 22 = 0.650847
+prediction 23 = 0.752947
+Choosing pop 7!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 0.855664
+New best fitness: old 10.0 | new 0.855664
+prediction 6 = 0.650847
+New best fitness: old 0.855664 | new 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.707006
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.798565
+prediction 14 = 0.752947
+prediction 15 = 0.650847
+prediction 16 = 0.752947
+prediction 17 = 0.650847
+prediction 18 = 0.650847
+prediction 19 = 0.650847
+prediction 20 = 0.650847
+prediction 21 = 0.650847
+prediction 22 = 0.650847
+prediction 23 = 0.752947
+Choosing pop 8!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 0.855664
+New best fitness: old 10.0 | new 0.855664
+prediction 6 = 10.0
+prediction 7 = 0.650847
+New best fitness: old 0.855664 | new 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.707006
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.798565
+prediction 14 = 0.752947
+prediction 15 = 0.650847
+prediction 16 = 0.752947
+prediction 17 = 0.650847
+prediction 18 = 0.650847
+prediction 19 = 0.650847
+prediction 20 = 0.650847
+prediction 21 = 0.650847
+prediction 22 = 0.650847
+prediction 23 = 0.752947
+Choosing pop 9!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 0.855664
+New best fitness: old 10.0 | new 0.855664
+prediction 6 = 10.0
+prediction 7 = 10.0
+prediction 8 = 0.650847
+New best fitness: old 0.855664 | new 0.650847
+prediction 9 = 0.707006
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.798565
+prediction 14 = 0.752947
+prediction 15 = 0.650847
+prediction 16 = 0.752947
+prediction 17 = 0.650847
+prediction 18 = 0.650847
+prediction 19 = 0.650847
+prediction 20 = 0.650847
+prediction 21 = 0.650847
+prediction 22 = 0.650847
+prediction 23 = 0.752947
+Choosing pop 10!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 0.855664
+New best fitness: old 10.0 | new 0.855664
+prediction 6 = 10.0
+prediction 7 = 10.0
+prediction 8 = 10.0
+prediction 9 = 0.707006
+New best fitness: old 0.855664 | new 0.707006
+prediction 10 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.798565
+prediction 14 = 0.752947
+prediction 15 = 0.650847
+prediction 16 = 0.752947
+prediction 17 = 0.650847
+prediction 18 = 0.650847
+prediction 19 = 0.650847
+prediction 20 = 0.650847
+prediction 21 = 0.650847
+prediction 22 = 0.650847
+prediction 23 = 0.752947
+Choosing pop 11!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 0.855664
+New best fitness: old 10.0 | new 0.855664
+prediction 6 = 10.0
+prediction 7 = 10.0
+prediction 8 = 10.0
+prediction 9 = 0.707006
+New best fitness: old 0.855664 | new 0.707006
+prediction 10 = 10.0
+prediction 11 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.798565
+prediction 14 = 0.752947
+prediction 15 = 0.650847
+prediction 16 = 0.752947
+prediction 17 = 0.650847
+prediction 18 = 0.650847
+prediction 19 = 0.650847
+prediction 20 = 0.650847
+prediction 21 = 0.650847
+prediction 22 = 0.650847
+prediction 23 = 0.752947
+----------------------------------------------------------------
+STARTING GENERATION: 6
+----------------------------------------------------------------
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 1 / 12
+Param String: 0.35 0.95 2 1 0.45 0.85 0.65 0.27 0.38 0.09 0.15 0.1 0.1 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 1 of 12 in Generation 7 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 2 / 12
+Param String: 0.35 0.95 6 1 0.1 0.65 0.45 0.5 0.05 0.69 0.15 0.2 0.1 0.55 0.76 0.4 0.7 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 2 of 12 in Generation 7 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 3 / 12
+Param String: 0.35 0.95 2 1 0.45 0.85 0.65 0.27 0.38 0.09 0.15 0.1 0.1 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 3 of 12 in Generation 7 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 4 / 12
+Param String: 0.35 0.95 6 1 0.1 0.65 0.45 0.5 0.05 0.69 0.15 0.2 0.1 0.55 0.76 0.4 0.7 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 4 of 12 in Generation 7 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 5 / 12
+Param String: 0.35 0.95 6 1 0.1 0.85 0.45 0.5 0.38 0.5 0.1 0.1 0.9 0.55 0.39 0.4 0.7 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 5 of 12 in Generation 7 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 6 / 12
+Param String: 0.35 0.95 6 1 0.1 0.85 0.45 0.5 0.38 0.5 0.1 0.1 0.9 0.55 0.39 0.4 0.7 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 6 of 12 in Generation 7 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 7 / 12
+Param String: 0.1 0.85 2 1 0.45 0.65 0.45 0.5 0.05 0.05 0.15 0.2 0.1 0.55 0.9 0.5 0.5 0.91 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 7 of 12 in Generation 7 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 8 / 12
+Param String: 0.35 0.95 2 1 0.45 0.65 0.65 0.5 0.05 0.09 0.1 0.2 0.1 0.4 0.9 0.5 0.78 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 8 of 12 in Generation 7 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 9 / 12
+Param String: 0.35 0.95 6 1 0.1 0.84 0.45 0.5 0.38 0.5 0.15 0.1 0.9 0.55 0.39 0.4 0.7 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 9 of 12 in Generation 7 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 10 / 12
+Param String: 0.35 0.85 6 1 0.15 0.65 0.55 0.7 0.37 0.05 0.15 0.1 0.1 0.55 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 10 of 12 in Generation 7 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 11 / 12
+Param String: 0.1 0.96 7 1 0.45 0.85 0.55 0.3 0.38 0.05 0.1 0.1 0.9 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 11 of 12 in Generation 7 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 12 / 12
+Param String: 0.35 0.95 9 1 0.1 0.85 0.45 0.5 0.05 0.5 0.1 0.2 0.9 0.55 0.39 0.4 0.7 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 12 of 12 in Generation 7 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+config and fitness written
+Mutation and Crossover
+Elite set!
+Elite set!
+mutating 10
+mutating 8
+mutating 12
+mutating 14
+mutating 17
+mutating 0
+mutating 3
+mutating 2
+mutating 0
+Attempting fitness prediction
+in query script
+setting up dataset
+got 1 files
+Finished predicting, writing results
+Choosing pop 2!
+prediction 0 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 1 = 0.650847
+prediction 2 = 0.650847
+prediction 3 = 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.707006
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.650847
+prediction 14 = 0.707006
+prediction 15 = 0.752947
+prediction 16 = 0.650847
+prediction 17 = 0.752947
+prediction 18 = 0.707006
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.650847
+prediction 22 = 0.752947
+prediction 23 = 0.752947
+Choosing pop 3!
+prediction 0 = 10.0
+prediction 1 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 2 = 0.650847
+prediction 3 = 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.707006
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.650847
+prediction 14 = 0.707006
+prediction 15 = 0.752947
+prediction 16 = 0.650847
+prediction 17 = 0.752947
+prediction 18 = 0.707006
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.650847
+prediction 22 = 0.752947
+prediction 23 = 0.752947
+Choosing pop 4!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 3 = 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.707006
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.650847
+prediction 14 = 0.707006
+prediction 15 = 0.752947
+prediction 16 = 0.650847
+prediction 17 = 0.752947
+prediction 18 = 0.707006
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.650847
+prediction 22 = 0.752947
+prediction 23 = 0.752947
+Choosing pop 5!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.707006
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.650847
+prediction 14 = 0.707006
+prediction 15 = 0.752947
+prediction 16 = 0.650847
+prediction 17 = 0.752947
+prediction 18 = 0.707006
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.650847
+prediction 22 = 0.752947
+prediction 23 = 0.752947
+Choosing pop 6!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 5 = 0.707006
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.650847
+prediction 14 = 0.707006
+prediction 15 = 0.752947
+prediction 16 = 0.650847
+prediction 17 = 0.752947
+prediction 18 = 0.707006
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.650847
+prediction 22 = 0.752947
+prediction 23 = 0.752947
+Choosing pop 7!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 6 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.650847
+prediction 14 = 0.707006
+prediction 15 = 0.752947
+prediction 16 = 0.650847
+prediction 17 = 0.752947
+prediction 18 = 0.707006
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.650847
+prediction 22 = 0.752947
+prediction 23 = 0.752947
+Choosing pop 8!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 6 = 10.0
+prediction 7 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.650847
+prediction 14 = 0.707006
+prediction 15 = 0.752947
+prediction 16 = 0.650847
+prediction 17 = 0.752947
+prediction 18 = 0.707006
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.650847
+prediction 22 = 0.752947
+prediction 23 = 0.752947
+Choosing pop 9!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 6 = 10.0
+prediction 7 = 10.0
+prediction 8 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.650847
+prediction 14 = 0.707006
+prediction 15 = 0.752947
+prediction 16 = 0.650847
+prediction 17 = 0.752947
+prediction 18 = 0.707006
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.650847
+prediction 22 = 0.752947
+prediction 23 = 0.752947
+Choosing pop 10!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 6 = 10.0
+prediction 7 = 10.0
+prediction 8 = 10.0
+prediction 9 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.650847
+prediction 14 = 0.707006
+prediction 15 = 0.752947
+prediction 16 = 0.650847
+prediction 17 = 0.752947
+prediction 18 = 0.707006
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.650847
+prediction 22 = 0.752947
+prediction 23 = 0.752947
+Choosing pop 11!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 6 = 10.0
+prediction 7 = 10.0
+prediction 8 = 10.0
+prediction 9 = 10.0
+prediction 10 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.650847
+prediction 14 = 0.707006
+prediction 15 = 0.752947
+prediction 16 = 0.650847
+prediction 17 = 0.752947
+prediction 18 = 0.707006
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.650847
+prediction 22 = 0.752947
+prediction 23 = 0.752947
+----------------------------------------------------------------
+STARTING GENERATION: 7
+----------------------------------------------------------------
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 1 / 12
+Param String: 0.35 0.95 6 1 0.1 0.65 0.45 0.5 0.05 0.69 0.15 0.2 0.1 0.55 0.76 0.4 0.7 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 1 of 12 in Generation 8 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 2 / 12
+Param String: 0.35 0.85 6 1 0.15 0.65 0.55 0.7 0.37 0.05 0.15 0.1 0.1 0.55 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 2 of 12 in Generation 8 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 3 / 12
+Param String: 0.35 0.95 6 1 0.1 0.65 0.45 0.5 0.05 0.69 0.15 0.2 0.1 0.55 0.76 0.4 0.7 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 3 of 12 in Generation 8 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 4 / 12
+Param String: 0.35 0.85 6 1 0.15 0.65 0.55 0.7 0.37 0.05 0.15 0.1 0.1 0.55 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 4 of 12 in Generation 8 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 5 / 12
+Param String: 0.35 0.95 2 1 0.45 0.85 0.65 0.27 0.38 0.09 0.94 0.1 0.1 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 5 of 12 in Generation 8 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 6 / 12
+Param String: 0.35 0.95 2 1 0.45 0.85 0.65 0.27 0.44 0.09 0.15 0.1 0.1 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 6 of 12 in Generation 8 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 7 / 12
+Param String: 0.35 0.95 6 1 0.1 0.85 0.45 0.5 0.38 0.5 0.1 0.1 0.49 0.55 0.39 0.4 0.7 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 7 of 12 in Generation 8 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 8 / 12
+Param String: 0.1 0.85 2 1 0.45 0.65 0.45 0.27 0.05 0.05 0.15 0.2 0.1 0.55 0.9 0.5 0.5 0.38 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 8 of 12 in Generation 8 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 9 / 12
+Param String: 0.21 0.95 2 1 0.45 0.85 0.65 0.5 0.38 0.09 0.15 0.1 0.1 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 9 of 12 in Generation 8 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 10 / 12
+Param String: 0.35 0.95 6 1 0.1 0.84 0.45 0.5 0.38 0.09 0.15 0.1 0.9 0.55 0.39 0.4 0.7 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 10 of 12 in Generation 8 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 11 / 12
+Param String: 0.35 0.95 3 1 0.45 0.85 0.65 0.27 0.38 0.5 0.15 0.1 0.1 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 11 of 12 in Generation 8 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 12 / 12
+Param String: 0.47 0.96 2 1 0.45 0.85 0.55 0.27 0.38 0.09 0.1 0.1 0.9 0.4 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 12 of 12 in Generation 8 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+config and fitness written
+Mutation and Crossover
+Elite set!
+Elite set!
+mutating 1
+mutating 1
+mutating 9
+mutating 17
+mutating 1
+Attempting fitness prediction
+in query script
+setting up dataset
+got 1 files
+Finished predicting, writing results
+Choosing pop 2!
+prediction 0 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 1 = 0.650847
+prediction 2 = 0.650847
+prediction 3 = 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.707006
+prediction 6 = 0.650847
+prediction 7 = 0.707006
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 0.641382
+New best fitness: old 0.650847 | new 0.641382
+prediction 16 = 0.707006
+prediction 17 = 0.755913
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.752947
+prediction 22 = 0.707006
+prediction 23 = 0.752947
+Choosing pop 3!
+prediction 0 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 1 = 0.650847
+prediction 2 = 0.650847
+prediction 3 = 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.707006
+prediction 6 = 0.650847
+prediction 7 = 0.707006
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 10.0
+prediction 16 = 0.707006
+prediction 17 = 0.755913
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.752947
+prediction 22 = 0.707006
+prediction 23 = 0.752947
+Choosing pop 4!
+prediction 0 = 10.0
+prediction 1 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 2 = 0.650847
+prediction 3 = 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.707006
+prediction 6 = 0.650847
+prediction 7 = 0.707006
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 10.0
+prediction 16 = 0.707006
+prediction 17 = 0.755913
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.752947
+prediction 22 = 0.707006
+prediction 23 = 0.752947
+Choosing pop 5!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 3 = 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.707006
+prediction 6 = 0.650847
+prediction 7 = 0.707006
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 10.0
+prediction 16 = 0.707006
+prediction 17 = 0.755913
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.752947
+prediction 22 = 0.707006
+prediction 23 = 0.752947
+Choosing pop 6!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.707006
+prediction 6 = 0.650847
+prediction 7 = 0.707006
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 10.0
+prediction 16 = 0.707006
+prediction 17 = 0.755913
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.752947
+prediction 22 = 0.707006
+prediction 23 = 0.752947
+Choosing pop 7!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 5 = 0.707006
+prediction 6 = 0.650847
+prediction 7 = 0.707006
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 10.0
+prediction 16 = 0.707006
+prediction 17 = 0.755913
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.752947
+prediction 22 = 0.707006
+prediction 23 = 0.752947
+Choosing pop 8!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 6 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 7 = 0.707006
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 10.0
+prediction 16 = 0.707006
+prediction 17 = 0.755913
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.752947
+prediction 22 = 0.707006
+prediction 23 = 0.752947
+Choosing pop 9!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 6 = 10.0
+prediction 7 = 0.707006
+prediction 8 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 10.0
+prediction 16 = 0.707006
+prediction 17 = 0.755913
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.752947
+prediction 22 = 0.707006
+prediction 23 = 0.752947
+Choosing pop 10!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 6 = 10.0
+prediction 7 = 0.707006
+prediction 8 = 10.0
+prediction 9 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 10.0
+prediction 16 = 0.707006
+prediction 17 = 0.755913
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.752947
+prediction 22 = 0.707006
+prediction 23 = 0.752947
+Choosing pop 11!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 0.707006
+New best fitness: old 10.0 | new 0.707006
+prediction 6 = 10.0
+prediction 7 = 0.707006
+prediction 8 = 10.0
+prediction 9 = 10.0
+prediction 10 = 0.650847
+New best fitness: old 0.707006 | new 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.707006
+prediction 13 = 0.752947
+prediction 14 = 0.752947
+prediction 15 = 10.0
+prediction 16 = 0.707006
+prediction 17 = 0.755913
+prediction 18 = 0.752947
+prediction 19 = 0.707006
+prediction 20 = 0.752947
+prediction 21 = 0.752947
+prediction 22 = 0.707006
+prediction 23 = 0.752947
+----------------------------------------------------------------
+STARTING GENERATION: 8
+----------------------------------------------------------------
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 1 / 12
+Param String: 0.35 0.85 6 1 0.15 0.65 0.55 0.7 0.37 0.05 0.15 0.1 0.1 0.55 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 1 of 12 in Generation 9 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 2 / 12
+Param String: 0.35 0.85 6 1 0.15 0.65 0.55 0.7 0.37 0.05 0.15 0.1 0.1 0.55 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 2 of 12 in Generation 9 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 3 / 12
+Param String: 0.45 0.4 3 1 0.85 0.1 0.3 0.7 0.15 0.7 0.45 0.6 0.9 0.65 0.2 0.5 0.2 0.05 0.75 0.95 0.5 0.95 0.15
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 3 of 12 in Generation 9 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 4 / 12
+Param String: 0.35 0.85 6 1 0.15 0.65 0.55 0.7 0.37 0.05 0.15 0.1 0.1 0.55 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 4 of 12 in Generation 9 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 5 / 12
+Param String: 0.35 0.85 6 1 0.15 0.65 0.55 0.7 0.37 0.05 0.15 0.1 0.1 0.55 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 5 of 12 in Generation 9 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 6 / 12
+Param String: 0.35 0.95 6 1 0.1 0.65 0.45 0.5 0.05 0.69 0.15 0.2 0.1 0.55 0.76 0.4 0.7 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 6 of 12 in Generation 9 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 7 / 12
+Param String: 0.35 0.14 6 1 0.1 0.65 0.45 0.5 0.05 0.69 0.15 0.2 0.1 0.55 0.76 0.4 0.7 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 7 of 12 in Generation 9 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 8 / 12
+Param String: 0.35 0.52 6 1 0.45 0.85 0.65 0.5 0.38 0.09 0.94 0.2 0.1 0.4 0.9 0.5 0.7 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 8 of 12 in Generation 9 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 9 / 12
+Param String: 0.35 0.95 6 1 0.1 0.85 0.45 0.5 0.05 0.5 0.1 0.2 0.49 0.55 0.39 0.4 0.7 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 9 of 12 in Generation 9 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 10 / 12
+Param String: 0.21 0.95 2 1 0.45 0.85 0.65 0.5 0.38 0.09 0.15 0.1 0.1 0.4 0.9 0.4 0.5 0.5 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 10 of 12 in Generation 9 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 11 / 12
+Param String: 0.35 0.44 6 1 0.1 0.65 0.45 0.5 0.05 0.69 0.15 0.2 0.1 0.55 0.76 0.5 0.7 0.05 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 11 of 12 in Generation 9 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 12 / 12
+Param String: 0.35 0.95 3 1 0.1 0.85 0.65 0.27 0.38 0.5 0.15 0.1 0.1 0.4 0.9 0.5 0.7 0.5 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 12 of 12 in Generation 9 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+config and fitness written
+Mutation and Crossover
+Elite set!
+Elite set!
+mutating 5
+mutating 7
+mutating 14
+mutating 1
+mutating 14
+mutating 5
+mutating 0
+mutating 14
+Attempting fitness prediction
+in query script
+setting up dataset
+got 1 files
+Finished predicting, writing results
+Choosing pop 2!
+prediction 0 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 1 = 0.650847
+prediction 2 = 0.641382
+New best fitness: old 0.650847 | new 0.641382
+prediction 3 = 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.650847
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.650847
+prediction 14 = 0.650847
+prediction 15 = 0.650847
+prediction 16 = 0.761826
+prediction 17 = 0.752947
+prediction 18 = 0.641382
+prediction 19 = 0.752947
+prediction 20 = 0.752947
+prediction 21 = 0.752947
+prediction 22 = 0.650847
+prediction 23 = 0.650847
+Choosing pop 3!
+prediction 0 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 1 = 0.650847
+prediction 2 = 10.0
+prediction 3 = 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.650847
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.650847
+prediction 14 = 0.650847
+prediction 15 = 0.650847
+prediction 16 = 0.761826
+prediction 17 = 0.752947
+prediction 18 = 0.641382
+New best fitness: old 0.650847 | new 0.641382
+prediction 19 = 0.752947
+prediction 20 = 0.752947
+prediction 21 = 0.752947
+prediction 22 = 0.650847
+prediction 23 = 0.650847
+Choosing pop 4!
+prediction 0 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 1 = 0.650847
+prediction 2 = 10.0
+prediction 3 = 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.650847
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.650847
+prediction 14 = 0.650847
+prediction 15 = 0.650847
+prediction 16 = 0.761826
+prediction 17 = 0.752947
+prediction 18 = 10.0
+prediction 19 = 0.752947
+prediction 20 = 0.752947
+prediction 21 = 0.752947
+prediction 22 = 0.650847
+prediction 23 = 0.650847
+Choosing pop 5!
+prediction 0 = 10.0
+prediction 1 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 2 = 10.0
+prediction 3 = 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.650847
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.650847
+prediction 14 = 0.650847
+prediction 15 = 0.650847
+prediction 16 = 0.761826
+prediction 17 = 0.752947
+prediction 18 = 10.0
+prediction 19 = 0.752947
+prediction 20 = 0.752947
+prediction 21 = 0.752947
+prediction 22 = 0.650847
+prediction 23 = 0.650847
+Choosing pop 6!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.650847
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.650847
+prediction 14 = 0.650847
+prediction 15 = 0.650847
+prediction 16 = 0.761826
+prediction 17 = 0.752947
+prediction 18 = 10.0
+prediction 19 = 0.752947
+prediction 20 = 0.752947
+prediction 21 = 0.752947
+prediction 22 = 0.650847
+prediction 23 = 0.650847
+Choosing pop 7!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 5 = 0.650847
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.650847
+prediction 14 = 0.650847
+prediction 15 = 0.650847
+prediction 16 = 0.761826
+prediction 17 = 0.752947
+prediction 18 = 10.0
+prediction 19 = 0.752947
+prediction 20 = 0.752947
+prediction 21 = 0.752947
+prediction 22 = 0.650847
+prediction 23 = 0.650847
+Choosing pop 8!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.650847
+prediction 14 = 0.650847
+prediction 15 = 0.650847
+prediction 16 = 0.761826
+prediction 17 = 0.752947
+prediction 18 = 10.0
+prediction 19 = 0.752947
+prediction 20 = 0.752947
+prediction 21 = 0.752947
+prediction 22 = 0.650847
+prediction 23 = 0.650847
+Choosing pop 9!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 10.0
+prediction 6 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.650847
+prediction 14 = 0.650847
+prediction 15 = 0.650847
+prediction 16 = 0.761826
+prediction 17 = 0.752947
+prediction 18 = 10.0
+prediction 19 = 0.752947
+prediction 20 = 0.752947
+prediction 21 = 0.752947
+prediction 22 = 0.650847
+prediction 23 = 0.650847
+Choosing pop 10!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 10.0
+prediction 6 = 10.0
+prediction 7 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.650847
+prediction 14 = 0.650847
+prediction 15 = 0.650847
+prediction 16 = 0.761826
+prediction 17 = 0.752947
+prediction 18 = 10.0
+prediction 19 = 0.752947
+prediction 20 = 0.752947
+prediction 21 = 0.752947
+prediction 22 = 0.650847
+prediction 23 = 0.650847
+Choosing pop 11!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 10.0
+prediction 6 = 10.0
+prediction 7 = 10.0
+prediction 8 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.752947
+prediction 13 = 0.650847
+prediction 14 = 0.650847
+prediction 15 = 0.650847
+prediction 16 = 0.761826
+prediction 17 = 0.752947
+prediction 18 = 10.0
+prediction 19 = 0.752947
+prediction 20 = 0.752947
+prediction 21 = 0.752947
+prediction 22 = 0.650847
+prediction 23 = 0.650847
+----------------------------------------------------------------
+STARTING GENERATION: 9
+----------------------------------------------------------------
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 1 / 12
+Param String: 0.35 0.85 6 1 0.15 0.65 0.55 0.7 0.37 0.05 0.15 0.1 0.1 0.55 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 1 of 12 in Generation 10 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 2 / 12
+Param String: 0.35 0.44 6 1 0.1 0.65 0.45 0.5 0.05 0.69 0.15 0.2 0.1 0.55 0.76 0.5 0.7 0.05 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 2 of 12 in Generation 10 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 3 / 12
+Param String: 0.45 0.4 3 1 0.85 0.77 0.3 0.7 0.15 0.7 0.15 0.1 0.9 0.65 0.2 0.5 0.2 0.05 0.75 0.95 0.5 0.95 0.15
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 3 of 12 in Generation 10 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 4 / 12
+Param String: 0.65 0.8 2 1 0.65 0.6 0.35 0.45 0.55 0.8 0.15 0.35 0.5 0.65 0.5 0.1 0.1 0.5 0.7 0.95 0.65 0.4 0.1
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 4 of 12 in Generation 10 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 5 / 12
+Param String: 0.35 0.85 6 1 0.15 0.65 0.55 0.7 0.37 0.05 0.15 0.1 0.1 0.55 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 5 of 12 in Generation 10 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 6 / 12
+Param String: 0.35 0.44 6 1 0.1 0.65 0.45 0.5 0.05 0.69 0.15 0.2 0.1 0.55 0.76 0.5 0.7 0.05 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 6 of 12 in Generation 10 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 7 / 12
+Param String: 0.35 0.85 6 1 0.15 0.65 0.55 0.27 0.37 0.05 0.45 0.6 0.1 0.55 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 7 of 12 in Generation 10 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 8 / 12
+Param String: 0.35 0.85 6 1 0.15 0.65 0.55 0.7 0.37 0.05 0.15 0.1 0.1 0.55 0.04 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 8 of 12 in Generation 10 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 9 / 12
+Param String: 0.35 0.85 6 1 0.15 0.65 0.55 0.7 0.37 0.05 0.15 0.1 0.1 0.55 0.9 0.5 0.5 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 9 of 12 in Generation 10 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 10 / 12
+Param String: 0.35 0.14 6 1 0.1 0.65 0.45 0.5 0.05 0.69 0.15 0.1 0.1 0.55 0.9 0.4 0.5 0.5 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 10 of 12 in Generation 10 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 11 / 12
+Param String: 0.35 0.17 6 1 0.15 0.65 0.55 0.7 0.37 0.05 0.15 0.2 0.1 0.55 0.76 0.5 0.7 0.05 0.7 0.3 0.3 0.1 0.85
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 11 of 12 in Generation 10 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 12 / 12
+Param String: 0.35 0.95 6 1 0.1 0.85 0.45 0.7 0.05 0.5 0.1 0.1 0.49 0.55 0.89 0.4 0.7 0.05 0.25 0.45 0.8 0.15 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 12 of 12 in Generation 10 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+config and fitness written
+Mutation and Crossover
+Elite set!
+Elite set!
+mutating 16
+mutating 3
+mutating 8
+mutating 1
+mutating 17
+mutating 6
+mutating 8
+mutating 9
+mutating 16
+Attempting fitness prediction
+in query script
+setting up dataset
+got 1 files
+Finished predicting, writing results
+Choosing pop 2!
+prediction 0 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 1 = 0.650847
+prediction 2 = 0.641382
+New best fitness: old 0.650847 | new 0.641382
+prediction 3 = 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.650847
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.650847
+prediction 13 = 0.707006
+prediction 14 = 0.707006
+prediction 15 = 0.752947
+prediction 16 = 0.650847
+prediction 17 = 0.650847
+prediction 18 = 0.752947
+prediction 19 = 0.650847
+prediction 20 = 0.707006
+prediction 21 = 0.855664
+prediction 22 = 0.752947
+prediction 23 = 0.707006
+Choosing pop 3!
+prediction 0 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 1 = 0.650847
+prediction 2 = 10.0
+prediction 3 = 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.650847
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.650847
+prediction 13 = 0.707006
+prediction 14 = 0.707006
+prediction 15 = 0.752947
+prediction 16 = 0.650847
+prediction 17 = 0.650847
+prediction 18 = 0.752947
+prediction 19 = 0.650847
+prediction 20 = 0.707006
+prediction 21 = 0.855664
+prediction 22 = 0.752947
+prediction 23 = 0.707006
+Choosing pop 4!
+prediction 0 = 10.0
+prediction 1 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 2 = 10.0
+prediction 3 = 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.650847
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.650847
+prediction 13 = 0.707006
+prediction 14 = 0.707006
+prediction 15 = 0.752947
+prediction 16 = 0.650847
+prediction 17 = 0.650847
+prediction 18 = 0.752947
+prediction 19 = 0.650847
+prediction 20 = 0.707006
+prediction 21 = 0.855664
+prediction 22 = 0.752947
+prediction 23 = 0.707006
+Choosing pop 5!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 4 = 0.650847
+prediction 5 = 0.650847
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.650847
+prediction 13 = 0.707006
+prediction 14 = 0.707006
+prediction 15 = 0.752947
+prediction 16 = 0.650847
+prediction 17 = 0.650847
+prediction 18 = 0.752947
+prediction 19 = 0.650847
+prediction 20 = 0.707006
+prediction 21 = 0.855664
+prediction 22 = 0.752947
+prediction 23 = 0.707006
+Choosing pop 6!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 5 = 0.650847
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.650847
+prediction 13 = 0.707006
+prediction 14 = 0.707006
+prediction 15 = 0.752947
+prediction 16 = 0.650847
+prediction 17 = 0.650847
+prediction 18 = 0.752947
+prediction 19 = 0.650847
+prediction 20 = 0.707006
+prediction 21 = 0.855664
+prediction 22 = 0.752947
+prediction 23 = 0.707006
+Choosing pop 7!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 6 = 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.650847
+prediction 13 = 0.707006
+prediction 14 = 0.707006
+prediction 15 = 0.752947
+prediction 16 = 0.650847
+prediction 17 = 0.650847
+prediction 18 = 0.752947
+prediction 19 = 0.650847
+prediction 20 = 0.707006
+prediction 21 = 0.855664
+prediction 22 = 0.752947
+prediction 23 = 0.707006
+Choosing pop 8!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 10.0
+prediction 6 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 7 = 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.650847
+prediction 13 = 0.707006
+prediction 14 = 0.707006
+prediction 15 = 0.752947
+prediction 16 = 0.650847
+prediction 17 = 0.650847
+prediction 18 = 0.752947
+prediction 19 = 0.650847
+prediction 20 = 0.707006
+prediction 21 = 0.855664
+prediction 22 = 0.752947
+prediction 23 = 0.707006
+Choosing pop 9!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 10.0
+prediction 6 = 10.0
+prediction 7 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 8 = 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.650847
+prediction 13 = 0.707006
+prediction 14 = 0.707006
+prediction 15 = 0.752947
+prediction 16 = 0.650847
+prediction 17 = 0.650847
+prediction 18 = 0.752947
+prediction 19 = 0.650847
+prediction 20 = 0.707006
+prediction 21 = 0.855664
+prediction 22 = 0.752947
+prediction 23 = 0.707006
+Choosing pop 10!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 10.0
+prediction 6 = 10.0
+prediction 7 = 10.0
+prediction 8 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 9 = 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.650847
+prediction 13 = 0.707006
+prediction 14 = 0.707006
+prediction 15 = 0.752947
+prediction 16 = 0.650847
+prediction 17 = 0.650847
+prediction 18 = 0.752947
+prediction 19 = 0.650847
+prediction 20 = 0.707006
+prediction 21 = 0.855664
+prediction 22 = 0.752947
+prediction 23 = 0.707006
+Choosing pop 11!
+prediction 0 = 10.0
+prediction 1 = 10.0
+prediction 2 = 10.0
+prediction 3 = 10.0
+prediction 4 = 10.0
+prediction 5 = 10.0
+prediction 6 = 10.0
+prediction 7 = 10.0
+prediction 8 = 10.0
+prediction 9 = 0.650847
+New best fitness: old 10.0 | new 0.650847
+prediction 10 = 0.650847
+prediction 11 = 0.650847
+prediction 12 = 0.650847
+prediction 13 = 0.707006
+prediction 14 = 0.707006
+prediction 15 = 0.752947
+prediction 16 = 0.650847
+prediction 17 = 0.650847
+prediction 18 = 0.752947
+prediction 19 = 0.650847
+prediction 20 = 0.707006
+prediction 21 = 0.855664
+prediction 22 = 0.752947
+prediction 23 = 0.707006

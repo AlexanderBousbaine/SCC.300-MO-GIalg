@@ -1,0 +1,3690 @@
+Config fails (2 / 12); with 4 similar values (2)
+Config fails (3 / 12); with 4 similar values (4)
+Config fails (4 / 12); with 8 similar values (6)
+Config fails (4 / 12); with 6 similar values (7)
+Config fails (4 / 12); with 6 similar values (8)
+Config fails (4 / 12); with 8 similar values (9)
+Config fails (4 / 12); with 9 similar values (10)
+Config fails (4 / 12); with 11 similar values (11)
+Config fails (5 / 12); with 12 similar values (13)
+Config fails (5 / 12); with 10 similar values (14)
+Config fails (5 / 12); with 13 similar values (15)
+Config fails (5 / 12); with 11 similar values (16)
+Config fails (5 / 12); with 11 similar values (17)
+Config fails (5 / 12); with 7 similar values (18)
+Config fails (5 / 12); with 10 similar values (19)
+Config fails (6 / 12); with 12 similar values (21)
+Config fails (6 / 12); with 10 similar values (22)
+Config fails (6 / 12); with 10 similar values (23)
+Config fails (6 / 12); with 11 similar values (24)
+Config fails (6 / 12); with 11 similar values (25)
+Config fails (6 / 12); with 9 similar values (26)
+Config fails (6 / 12); with 13 similar values (27)
+Config fails (6 / 12); with 14 similar values (28)
+Config fails (6 / 12); with 11 similar values (29)
+Config fails (6 / 12); with 13 similar values (30)
+Config fails (6 / 12); with 12 similar values (31)
+Config fails (6 / 12); with 10 similar values (32)
+Config fails (6 / 12); with 11 similar values (33)
+Config fails (6 / 12); with 12 similar values (34)
+Config fails (6 / 12); with 12 similar values (35)
+Config fails (6 / 12); with 11 similar values (36)
+Config fails (6 / 12); with 12 similar values (37)
+Config fails (6 / 12); with 12 similar values (38)
+Config fails (7 / 12); with 13 similar values (40)
+Config fails (7 / 12); with 15 similar values (41)
+Config fails (8 / 12); with 21 similar values (43)
+Config fails (8 / 12); with 15 similar values (44)
+Config fails (8 / 12); with 14 similar values (45)
+Config fails (8 / 12); with 18 similar values (46)
+Config fails (8 / 12); with 15 similar values (47)
+Config fails (8 / 12); with 15 similar values (48)
+Config fails (8 / 12); with 17 similar values (49)
+Config fails (8 / 12); with 15 similar values (50)
+Config fails (8 / 12); with 16 similar values (51)
+Config fails (8 / 12); with 15 similar values (52)
+Config fails (8 / 12); with 16 similar values (53)
+Config fails (8 / 12); with 17 similar values (54)
+Config fails (8 / 12); with 17 similar values (55)
+Config fails (10 / 12); with 23 similar values (58)
+Config fails (10 / 12); with 20 similar values (59)
+Config fails (10 / 12); with 18 similar values (60)
+Config fails (10 / 12); with 20 similar values (61)
+Config fails (10 / 12); with 17 similar values (62)
+Config fails (10 / 12); with 20 similar values (63)
+Config fails (10 / 12); with 24 similar values (64)
+Config fails (10 / 12); with 20 similar values (65)
+Config fails (10 / 12); with 17 similar values (66)
+Config fails (10 / 12); with 20 similar values (67)
+Config fails (10 / 12); with 20 similar values (68)
+Config fails (10 / 12); with 21 similar values (69)
+Config fails (11 / 12); with 24 similar values (71)
+Config fails (11 / 12); with 25 similar values (72)
+Config fails (11 / 12); with 24 similar values (73)
+Config fails (11 / 12); with 22 similar values (74)
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+compiling GIalgorithm codebase
+----------------------------------------------------------------
+STARTING GENERATION: 0
+----------------------------------------------------------------
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 1 / 12
+Param String: 0.2 0.9 8 1 0.75 0.2 0.95 1.0 0.55 0.45 0.7 0.9 0.15 0.9 0.1 0.45 0.4 0.7 0.3 0.25 0.95 0.75 0.05
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 1 of 12 in Generation 1 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 2 / 12
+Param String: 0.1 0.75 9 1 0.3 0.6 0.8 0.1 0.1 0.35 0.05 0.95 0.05 0.5 0.6 0.55 0.9 0.5 0.7 0.1 0.15 0.15 0.6
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 2 of 12 in Generation 1 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 3 / 12
+Param String: 0.25 0.25 10 1 0.8 0.95 0.05 0.35 0.35 0.65 0.95 0.2 0.85 0.55 0.5 0.8 0.65 0.8 0.6 0.2 0.3 0.2 0.1
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 3 of 12 in Generation 1 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 4 / 12
+Param String: 0.6 0.6 2 1 0.85 0.6 0.9 0.5 0.4 0.05 0.0 0.65 0.1 0.7 0.65 0.3 0.8 0.15 0.75 0.35 0.1 0.35 0.55
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 4 of 12 in Generation 1 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 5 / 12
+Param String: 0.7 0.7 3 1 0.8 0.85 0.3 0.75 0.65 0.5 0.35 0.5 0.8 0.2 0.95 0.0 0.65 0.55 0.5 0.15 0.5 0.45 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 5 of 12 in Generation 1 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 6 / 12
+Param String: 0.05 0.1 0 1 0.1 0.9 0.45 0.7 0.55 0.85 0.5 0.3 0.75 0.65 0.95 0.25 0.95 0.9 0.5 0.95 0.55 0.8 0.9
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 6 of 12 in Generation 1 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 7 / 12
+Param String: 0.8 0.7 8 1 1.0 0.5 0.85 0.65 0.8 0.55 0.3 0.8 0.6 0.65 0.4 0.65 0.7 0.65 0.55 0.7 0.5 0.3 0.95
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 7 of 12 in Generation 1 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 8 / 12
+Param String: 0.5 0.4 0 1 1.0 0.15 0.4 0.2 0.15 0.25 0.1 0.65 0.95 0.25 0.6 0.85 0.3 0.05 0.4 0.1 0.45 0.1 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 8 of 12 in Generation 1 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 9 / 12
+Param String: 0.35 0.5 7 1 0.15 0.25 0.7 0.5 0.25 0.6 0.1 0.3 0.35 0.1 0.3 0.1 0.85 0.55 0.25 0.3 0.4 0.55 0.8
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 9 of 12 in Generation 1 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 10 / 12
+Param String: 0.3 0.05 1 1 0.45 0.7 0.65 0.15 0.45 0.95 0.05 0.15 0.05 0.4 0.7 0.95 0.25 0.15 0.35 0.6 0.4 0.45 0.55
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 10 of 12 in Generation 1 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 11 / 12
+Param String: 0.55 0.25 6 1 0.05 0.3 0.35 0.65 0.1 0.8 0.45 0.55 0.65 0.8 0.75 0.6 0.4 0.85 0.95 0.9 0.25 0.4 0.35
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 11 of 12 in Generation 1 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 12 / 12
+Param String: 0.4 0.45 5 1 0.65 0.5 0.05 0.55 0.2 1.0 0.6 0.05 0.75 0.35 0.0 0.2 0.75 0.65 0.45 0.75 0.85 0.85 0.0
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 12 of 12 in Generation 1 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+config and fitness written
+Mutation and Crossover
+Elite set!
+Elite set!
+mutating 10
+mutating 17
+mutating 17
+mutating 8
+mutating 15
+mutating 3
+mutating 15
+Attempting fitness prediction
+in query script
+setting up dataset
+got 1 files
+Finished predicting, writing results
+Filling pop 2
+New best fitness: old 10.0 | new 0.687692
+New best fitness: old 0.687692 | new 0.632336
+Filling pop 3
+New best fitness: old 10.0 | new 0.687692
+New best fitness: old 0.687692 | new 0.685758
+New best fitness: old 0.685758 | new 0.632336
+Filling pop 4
+New best fitness: old 10.0 | new 0.687692
+New best fitness: old 0.687692 | new 0.685758
+New best fitness: old 0.685758 | new 0.632336
+Filling pop 5
+New best fitness: old 10.0 | new 0.687692
+New best fitness: old 0.687692 | new 0.685758
+Filling pop 6
+New best fitness: old 10.0 | new 0.687692
+Filling pop 7
+New best fitness: old 10.0 | new 0.687692
+Filling pop 8
+New best fitness: old 10.0 | new 0.776677
+New best fitness: old 0.776677 | new 0.687692
+Filling pop 9
+New best fitness: old 10.0 | new 0.776677
+New best fitness: old 0.776677 | new 0.693581
+New best fitness: old 0.693581 | new 0.687692
+Filling pop 10
+New best fitness: old 10.0 | new 0.776677
+New best fitness: old 0.776677 | new 0.693581
+New best fitness: old 0.693581 | new 0.687692
+Filling pop 11
+New best fitness: old 10.0 | new 0.776677
+New best fitness: old 0.776677 | new 0.693581
+New best fitness: old 0.693581 | new 0.687692
+----------------------------------------------------------------
+STARTING GENERATION: 1
+----------------------------------------------------------------
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 1 / 12
+Param String: 0.55 0.25 6 1 0.05 0.3 0.35 0.65 0.1 0.8 0.45 0.55 0.65 0.8 0.75 0.6 0.4 0.85 0.95 0.9 0.25 0.4 0.35
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 1 of 12 in Generation 2 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 2 / 12
+Param String: 0.35 0.5 7 1 0.15 0.25 0.7 0.5 0.25 0.6 0.1 0.3 0.35 0.1 0.3 0.1 0.85 0.55 0.25 0.3 0.4 0.55 0.8
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 2 of 12 in Generation 2 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 3 / 12
+Param String: 0.7 0.7 3 1 0.8 0.2 0.3 0.75 0.65 0.5 0.7 0.5 0.8 0.9 0.95 0.0 0.65 0.18 0.5 0.15 0.5 0.45 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 3 of 12 in Generation 2 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 4 / 12
+Param String: 0.1 0.7 8 1 0.35 0.85 0.95 0.65 0.45 0.25 1.0 0.65 0.7 0.3 1.0 0.2 0.4 0.1 0.85 0.9 0.9 0.0 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 4 of 12 in Generation 2 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 5 / 12
+Param String: 0.25 0.45 6 1 0.5 0.65 0.15 0.95 0.05 0.7 0.95 0.25 0.8 0.65 0.15 0.35 0.4 0.9 0.85 0.35 0.45 0.3 0.7
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 5 of 12 in Generation 2 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 6 / 12
+Param String: 0.2 0.9 6 1 0.05 0.2 0.35 0.65 0.55 0.8 0.45 0.9 0.65 0.8 0.75 0.6 0.4 0.85 0.95 0.9 0.25 0.4 0.35
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 6 of 12 in Generation 2 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 7 / 12
+Param String: 0.55 0.25 6 1 0.05 0.3 0.35 0.65 0.1 0.8 0.45 0.55 0.65 0.8 0.75 0.6 0.4 0.85 0.95 0.9 0.25 0.4 0.35
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 7 of 12 in Generation 2 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 8 / 12
+Param String: 0.35 0.5 7 1 0.15 0.25 0.7 0.5 0.25 0.6 0.1 0.3 0.35 0.1 0.3 0.1 0.85 0.55 0.25 0.3 0.4 0.55 0.8
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 8 of 12 in Generation 2 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 9 / 12
+Param String: 0.2 0.9 8 1 0.75 0.2 0.95 1.0 0.55 0.45 0.7 0.9 0.15 0.9 0.5 0.45 0.65 0.7 0.3 0.25 0.95 0.75 0.05
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 9 of 12 in Generation 2 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 10 / 12
+Param String: 0.2 0.9 8 1 0.75 0.5 0.95 1.0 0.55 0.45 0.7 0.9 0.15 0.9 0.4 0.45 0.7 0.7 0.3 0.25 0.95 0.75 0.05
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 10 of 12 in Generation 2 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 11 / 12
+Param String: 0.35 0.5 7 1 0.75 0.25 0.7 0.5 0.25 0.45 0.1 0.3 0.35 0.1 0.3 0.88 0.4 0.55 0.25 0.3 0.4 0.55 0.8
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 11 of 12 in Generation 2 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 12 / 12
+Param String: 0.2 0.9 8 1 0.15 0.2 0.95 1.0 0.55 0.6 0.7 0.9 0.15 0.9 0.1 0.45 0.85 0.7 0.3 0.25 0.95 0.75 0.05
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 12 of 12 in Generation 2 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+config and fitness written
+Mutation and Crossover
+Elite set!
+Elite set!
+mutating 8
+mutating 9
+mutating 3
+mutating 5
+mutating 13
+mutating 0
+mutating 6
+mutating 0
+mutating 13
+mutating 4
+Attempting fitness prediction
+in query script
+setting up dataset
+got 1 files
+Finished predicting, writing results
+Filling pop 2
+New best fitness: old 10.0 | new 0.632336
+New best fitness: old 0.632336 | new 0.601709
+Filling pop 3
+New best fitness: old 10.0 | new 0.632336
+New best fitness: old 0.632336 | new 0.620967
+Filling pop 4
+New best fitness: old 10.0 | new 0.632336
+New best fitness: old 0.632336 | new 0.620967
+Filling pop 5
+New best fitness: old 10.0 | new 0.632336
+Filling pop 6
+New best fitness: old 10.0 | new 0.687692
+New best fitness: old 0.687692 | new 0.632336
+Filling pop 7
+New best fitness: old 10.0 | new 0.687692
+New best fitness: old 0.687692 | new 0.632336
+Filling pop 8
+New best fitness: old 10.0 | new 0.687692
+Filling pop 9
+New best fitness: old 10.0 | new 0.687692
+Filling pop 10
+New best fitness: old 10.0 | new 0.720689
+New best fitness: old 0.720689 | new 0.687692
+Filling pop 11
+New best fitness: old 10.0 | new 0.720689
+New best fitness: old 0.720689 | new 0.687692
+----------------------------------------------------------------
+STARTING GENERATION: 2
+----------------------------------------------------------------
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 1 / 12
+Param String: 0.1 0.7 8 1 0.35 0.85 0.95 0.65 0.45 0.25 1.0 0.65 0.7 0.3 1.0 0.2 0.4 0.1 0.85 0.9 0.9 0.0 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 1 of 12 in Generation 3 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 2 / 12
+Param String: 0.35 0.5 7 1 0.15 0.25 0.7 0.5 0.25 0.6 0.1 0.3 0.35 0.1 0.3 0.1 0.85 0.55 0.25 0.3 0.4 0.55 0.8
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 2 of 12 in Generation 3 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 3 / 12
+Param String: 0.7 0.95 3 1 0.5 0.95 0.9 0.25 0.8 0.4 0.3 0.25 0.4 0.3 0.35 0.9 0.1 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 3 of 12 in Generation 3 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 4 / 12
+Param String: 0.5 0.6 8 1 0.1 0.3 0.05 0.5 0.45 0.35 0.55 0.9 0.7 0.0 0.55 0.05 0.6 0.95 0.3 0.05 0.8 0.7 0.0
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 4 of 12 in Generation 3 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 5 / 12
+Param String: 0.55 0.85 1 1 0.85 0.25 0.05 0.2 1.0 0.3 0.05 1.0 0.4 0.0 0.9 0.9 1.0 0.05 0.55 0.6 0.55 0.9 0.1
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 5 of 12 in Generation 3 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 6 / 12
+Param String: 0.1 0.7 8 1 0.35 0.85 0.95 0.65 0.45 0.25 1.0 0.65 0.7 0.3 1.0 0.2 0.4 0.1 0.85 0.9 0.9 0.0 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 6 of 12 in Generation 3 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 7 / 12
+Param String: 0.25 0.45 6 1 0.5 0.65 0.15 0.95 0.05 0.7 0.95 0.55 0.8 0.65 0.15 0.35 0.4 0.9 0.85 0.35 0.45 0.3 0.7
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 7 of 12 in Generation 3 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 8 / 12
+Param String: 0.25 0.6 9 1 0.8 0.2 0.3 0.55 0.15 0.45 0.95 0.15 0.15 0.5 0.1 0.1 0.25 0.85 0.95 1.0 0.65 0.65 0.0
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 8 of 12 in Generation 3 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 9 / 12
+Param String: 0.35 0.5 7 1 0.15 0.25 0.7 0.5 0.25 0.6 0.1 0.3 0.35 0.1 0.3 0.1 0.85 0.55 0.25 0.3 0.4 0.55 0.8
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 9 of 12 in Generation 3 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 10 / 12
+Param String: 0.7 0.25 3 1 0.8 0.2 0.3 0.75 0.51 0.5 0.7 0.5 0.8 0.9 0.95 0.6 0.65 0.18 0.5 0.15 0.5 0.45 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 10 of 12 in Generation 3 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 11 / 12
+Param String: 0.55 0.25 6 1 0.05 0.92 0.35 0.65 0.1 0.8 0.45 0.25 0.65 0.8 0.75 0.6 0.4 0.85 0.95 0.9 0.25 0.4 0.35
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 11 of 12 in Generation 3 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 12 / 12
+Param String: 0.55 0.25 6 1 0.05 0.3 0.35 0.65 0.1 0.8 0.45 0.55 0.65 0.14 0.75 0.6 0.4 0.85 0.95 0.9 0.25 0.4 0.35
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 12 of 12 in Generation 3 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+config and fitness written
+Mutation and Crossover
+Elite set!
+Elite set!
+mutating 7
+mutating 9
+mutating 5
+mutating 0
+mutating 17
+mutating 5
+mutating 0
+Attempting fitness prediction
+in query script
+setting up dataset
+got 1 files
+Finished predicting, writing results
+Filling pop 2
+New best fitness: old 10.0 | new 0.687692
+New best fitness: old 0.687692 | new 0.632336
+New best fitness: old 0.632336 | new 0.601709
+Filling pop 3
+New best fitness: old 10.0 | new 0.687692
+New best fitness: old 0.687692 | new 0.632336
+New best fitness: old 0.632336 | new 0.629153
+New best fitness: old 0.629153 | new 0.601709
+Filling pop 4
+New best fitness: old 10.0 | new 0.687692
+New best fitness: old 0.687692 | new 0.632336
+New best fitness: old 0.632336 | new 0.629153
+Filling pop 5
+New best fitness: old 10.0 | new 0.687692
+New best fitness: old 0.687692 | new 0.632336
+Filling pop 6
+New best fitness: old 10.0 | new 0.687692
+New best fitness: old 0.687692 | new 0.632336
+Filling pop 7
+New best fitness: old 10.0 | new 0.687692
+New best fitness: old 0.687692 | new 0.632336
+Filling pop 8
+New best fitness: old 10.0 | new 0.687692
+Filling pop 9
+New best fitness: old 10.0 | new 0.687692
+Filling pop 10
+New best fitness: old 10.0 | new 0.687692
+Filling pop 11
+New best fitness: old 10.0 | new 0.687692
+----------------------------------------------------------------
+STARTING GENERATION: 3
+----------------------------------------------------------------
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 1 / 12
+Param String: 0.7 0.25 3 1 0.8 0.2 0.3 0.75 0.51 0.5 0.7 0.5 0.8 0.9 0.95 0.6 0.65 0.18 0.5 0.15 0.5 0.45 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 1 of 12 in Generation 4 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 2 / 12
+Param String: 0.25 0.45 6 1 0.5 0.65 0.15 0.95 0.05 0.7 0.95 0.55 0.8 0.65 0.15 0.35 0.4 0.9 0.85 0.35 0.45 0.3 0.7
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 2 of 12 in Generation 4 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 3 / 12
+Param String: 0.7 0.95 3 1 0.5 0.95 0.9 0.25 0.8 0.25 0.3 0.25 0.4 0.3 0.35 0.9 0.1 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 3 of 12 in Generation 4 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 4 / 12
+Param String: 0.45 0.75 3 1 0.3 0.5 0.85 0.55 0.7 0.45 0.4 0.85 0.35 0.15 0.9 0.5 0.05 0.25 0.5 0.95 0.55 0.4 0.0
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 4 of 12 in Generation 4 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 5 / 12
+Param String: 0.65 0.35 7 1 0.2 0.5 0.1 0.6 0.35 0.05 0.4 0.35 0.6 0.2 0.15 0.05 0.2 0.85 0.75 0.2 0.2 0.9 0.65
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 5 of 12 in Generation 4 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 6 / 12
+Param String: 0.25 0.45 6 1 0.5 0.65 0.15 0.95 0.05 0.7 0.95 0.55 0.8 0.65 0.15 0.35 0.4 0.9 0.85 0.35 0.45 0.3 0.7
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 6 of 12 in Generation 4 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 7 / 12
+Param String: 0.1 0.7 8 1 0.35 0.84 0.05 0.65 0.45 0.25 1.0 0.65 0.4 0.3 0.9 0.2 0.4 0.1 0.85 0.9 0.9 0.0 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 7 of 12 in Generation 4 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 8 / 12
+Param String: 0.62 0.7 8 1 0.35 0.65 0.95 0.65 0.45 0.25 1.0 0.65 0.7 0.65 0.15 0.2 0.4 0.1 0.85 0.9 0.9 0.0 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 8 of 12 in Generation 4 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 9 / 12
+Param String: 0.7 0.25 3 1 0.8 0.2 0.3 0.75 0.51 0.5 0.7 0.5 0.8 0.9 0.95 0.6 0.65 0.18 0.5 0.15 0.5 0.45 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 9 of 12 in Generation 4 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 10 / 12
+Param String: 0.1 0.7 8 1 0.35 0.85 0.95 0.39 0.45 0.4 1.0 0.65 0.7 0.3 1.0 0.2 0.4 0.1 0.85 0.9 0.9 0.0 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 10 of 12 in Generation 4 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 11 / 12
+Param String: 0.55 0.85 1 1 0.85 0.25 0.95 0.2 1.0 0.73 0.05 1.0 0.7 0.0 1.0 0.9 1.0 0.05 0.55 0.6 0.55 0.9 0.1
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 11 of 12 in Generation 4 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 12 / 12
+Param String: 0.25 0.45 6 1 0.5 0.85 0.15 0.95 0.05 0.7 0.95 0.55 0.8 0.3 1.0 0.35 0.4 0.9 0.85 0.35 0.45 0.3 0.7
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 12 of 12 in Generation 4 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+config and fitness written
+Mutation and Crossover
+Elite set!
+Elite set!
+mutating 3
+mutating 15
+mutating 13
+mutating 15
+mutating 13
+mutating 6
+mutating 4
+mutating 2
+mutating 11
+Attempting fitness prediction
+in query script
+setting up dataset
+got 1 files
+Finished predicting, writing results
+Filling pop 2
+New best fitness: old 10.0 | new 0.601709
+Filling pop 3
+New best fitness: old 10.0 | new 0.601709
+Filling pop 4
+New best fitness: old 10.0 | new 0.601709
+Filling pop 5
+New best fitness: old 10.0 | new 0.790525
+New best fitness: old 0.790525 | new 0.687692
+New best fitness: old 0.687692 | new 0.632336
+New best fitness: old 0.632336 | new 0.620967
+Filling pop 6
+New best fitness: old 10.0 | new 0.790525
+New best fitness: old 0.790525 | new 0.687692
+New best fitness: old 0.687692 | new 0.632336
+Filling pop 7
+New best fitness: old 10.0 | new 0.790525
+New best fitness: old 0.790525 | new 0.687692
+New best fitness: old 0.687692 | new 0.632336
+Filling pop 8
+New best fitness: old 10.0 | new 0.790525
+New best fitness: old 0.790525 | new 0.687692
+New best fitness: old 0.687692 | new 0.671081
+Filling pop 9
+New best fitness: old 10.0 | new 0.790525
+New best fitness: old 0.790525 | new 0.687692
+Filling pop 10
+New best fitness: old 10.0 | new 0.790525
+New best fitness: old 0.790525 | new 0.687692
+Filling pop 11
+New best fitness: old 10.0 | new 0.790525
+New best fitness: old 0.790525 | new 0.687692
+----------------------------------------------------------------
+STARTING GENERATION: 4
+----------------------------------------------------------------
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 1 / 12
+Param String: 0.7 0.95 3 1 0.5 0.95 0.9 0.25 0.8 0.25 0.3 0.25 0.4 0.3 0.35 0.9 0.1 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 1 of 12 in Generation 5 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 2 / 12
+Param String: 0.45 0.75 3 1 0.3 0.5 0.85 0.55 0.7 0.45 0.4 0.85 0.35 0.15 0.9 0.5 0.05 0.25 0.5 0.95 0.55 0.4 0.0
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 2 of 12 in Generation 5 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 3 / 12
+Param String: 0.7 0.95 3 1 0.5 0.95 0.9 0.25 0.8 0.25 0.3 0.25 0.4 0.3 0.35 0.9 0.1 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 3 of 12 in Generation 5 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 4 / 12
+Param String: 0.45 0.75 3 1 0.3 0.5 0.85 0.55 0.7 0.45 0.4 0.85 0.35 0.15 0.9 0.5 0.05 0.25 0.5 0.95 0.55 0.4 0.0
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 4 of 12 in Generation 5 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 5 / 12
+Param String: 0.7 0.95 3 1 0.8 0.2 0.9 0.75 0.8 0.5 0.3 0.25 0.4 0.3 0.95 0.9 0.1 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 5 of 12 in Generation 5 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 6 / 12
+Param String: 0.3 0.4 6 1 0.3 0.05 0.6 0.8 0.1 0.25 0.3 0.15 0.25 0.1 0.1 0.15 1.0 0.75 0.35 0.65 0.2 0.7 0.55
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 6 of 12 in Generation 5 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 7 / 12
+Param String: 0.1 0.7 8 1 0.35 0.2 0.05 0.65 0.45 0.25 0.7 0.65 0.4 0.47 0.9 0.2 0.4 0.1 0.85 0.9 0.9 0.0 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 7 of 12 in Generation 5 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 8 / 12
+Param String: 0.75 0.8 9 1 0.8 0.25 0.15 0.6 0.85 0.75 0.85 0.3 0.95 0.25 0.75 0.2 0.4 0.05 1.0 1.0 0.4 0.0 0.15
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 8 of 12 in Generation 5 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 9 / 12
+Param String: 0.95 0.85 7 1 0.0 0.4 0.25 1.0 0.5 0.5 0.7 0.6 0.65 0.1 0.1 0.85 0.35 0.05 0.3 0.7 0.95 0.15 0.5
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 9 of 12 in Generation 5 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 10 / 12
+Param String: 0.65 0.35 3 1 0.2 0.2 0.1 0.6 0.35 0.05 0.4 0.5 0.6 0.11 0.15 0.6 0.2 0.18 0.75 0.2 0.2 0.9 0.65
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 10 of 12 in Generation 5 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 11 / 12
+Param String: 0.7 0.25 7 1 0.8 0.5 0.3 0.75 0.51 0.5 0.7 0.35 0.8 0.9 0.95 0.93 0.65 0.85 0.5 0.15 0.5 0.45 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 11 of 12 in Generation 5 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 12 / 12
+Param String: 0.7 0.25 3 1 0.8 0.84 0.53 0.75 0.51 0.5 1.0 0.5 0.8 0.9 0.95 0.6 0.65 0.18 0.5 0.15 0.5 0.45 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 12 of 12 in Generation 5 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+config and fitness written
+Mutation and Crossover
+Elite set!
+Elite set!
+mutating 5
+mutating 11
+mutating 7
+mutating 2
+mutating 7
+mutating 13
+mutating 12
+mutating 1
+Attempting fitness prediction
+in query script
+setting up dataset
+got 1 files
+Finished predicting, writing results
+Filling pop 2
+New best fitness: old 10.0 | new 0.671081
+New best fitness: old 0.671081 | new 0.601709
+Filling pop 3
+New best fitness: old 10.0 | new 0.671081
+New best fitness: old 0.671081 | new 0.601709
+Filling pop 4
+New best fitness: old 10.0 | new 0.671081
+New best fitness: old 0.671081 | new 0.601709
+Filling pop 5
+New best fitness: old 10.0 | new 0.671081
+New best fitness: old 0.671081 | new 0.601709
+Filling pop 6
+New best fitness: old 10.0 | new 0.671081
+New best fitness: old 0.671081 | new 0.601709
+Filling pop 7
+New best fitness: old 10.0 | new 0.671081
+New best fitness: old 0.671081 | new 0.632336
+New best fitness: old 0.632336 | new 0.601709
+Filling pop 8
+New best fitness: old 10.0 | new 0.671081
+New best fitness: old 0.671081 | new 0.632336
+New best fitness: old 0.632336 | new 0.601709
+Filling pop 9
+New best fitness: old 10.0 | new 0.671081
+New best fitness: old 0.671081 | new 0.632336
+New best fitness: old 0.632336 | new 0.601709
+Filling pop 10
+New best fitness: old 10.0 | new 0.671081
+New best fitness: old 0.671081 | new 0.632336
+Filling pop 11
+New best fitness: old 10.0 | new 0.671081
+New best fitness: old 0.671081 | new 0.632336
+----------------------------------------------------------------
+STARTING GENERATION: 5
+----------------------------------------------------------------
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 1 / 12
+Param String: 0.95 0.85 7 1 0.0 0.4 0.25 1.0 0.5 0.5 0.7 0.6 0.65 0.1 0.1 0.85 0.35 0.05 0.3 0.7 0.95 0.15 0.5
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 1 of 12 in Generation 6 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 2 / 12
+Param String: 0.45 0.75 3 1 0.3 0.5 0.85 0.55 0.7 0.45 0.4 0.85 0.35 0.15 0.9 0.5 0.05 0.25 0.5 0.95 0.55 0.4 0.0
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 2 of 12 in Generation 6 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 3 / 12
+Param String: 0.45 0.75 3 1 0.3 0.5 0.85 0.55 0.7 0.45 0.4 0.85 0.35 0.15 0.9 0.5 0.05 0.25 0.5 0.95 0.55 0.4 0.0
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 3 of 12 in Generation 6 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 4 / 12
+Param String: 0.7 0.95 3 1 0.5 0.04 0.9 0.25 0.8 0.25 0.3 0.25 0.4 0.3 0.35 0.9 0.1 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 4 of 12 in Generation 6 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 5 / 12
+Param String: 0.7 0.95 3 1 0.5 0.95 0.9 0.25 0.8 0.25 0.3 0.35 0.4 0.3 0.35 0.9 0.1 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 5 of 12 in Generation 6 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 6 / 12
+Param String: 0.7 0.95 3 1 0.8 0.2 0.9 0.95 0.8 0.5 0.3 0.25 0.4 0.3 0.95 0.9 0.1 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 6 of 12 in Generation 6 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 7 / 12
+Param String: 0.7 0.95 3 1 0.5 0.95 0.9 0.25 0.8 0.25 0.3 0.25 0.4 0.3 0.35 0.9 0.1 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 7 of 12 in Generation 6 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 8 / 12
+Param String: 0.1 0.7 3 1 0.35 0.2 0.9 0.25 0.8 0.25 0.3 0.65 0.4 0.3 0.35 0.9 0.1 0.1 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 8 of 12 in Generation 6 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 9 / 12
+Param String: 0.7 0.95 3 1 0.5 0.95 0.9 0.25 0.8 0.5 0.3 0.25 0.4 0.09 0.35 0.9 0.35 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 9 of 12 in Generation 6 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 10 / 12
+Param String: 0.7 0.4 3 1 0.5 0.95 0.9 0.25 0.8 0.5 0.3 0.25 0.4 0.9 0.35 0.9 0.1 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 10 of 12 in Generation 6 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 11 / 12
+Param String: 0.7 0.95 6 1 0.5 0.95 0.05 0.65 0.45 0.25 0.7 0.25 0.4 0.47 0.9 0.2 0.4 0.05 0.85 0.9 0.9 0.0 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 11 of 12 in Generation 6 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 12 / 12
+Param String: 0.6 0.3 0 1 0.25 0.2 0.55 0.95 0.05 0.0 0.25 0.0 0.85 0.4 0.65 0.2 0.4 0.85 0.25 0.6 0.9 0.3 0.15
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 12 of 12 in Generation 6 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+config and fitness written
+Mutation and Crossover
+Elite set!
+Elite set!
+mutating 14
+mutating 15
+mutating 2
+mutating 14
+mutating 3
+mutating 14
+mutating 15
+mutating 12
+Attempting fitness prediction
+in query script
+setting up dataset
+got 1 files
+Finished predicting, writing results
+Filling pop 2
+New best fitness: old 10.0 | new 0.601709
+Filling pop 3
+New best fitness: old 10.0 | new 0.601709
+Filling pop 4
+New best fitness: old 10.0 | new 0.685758
+New best fitness: old 0.685758 | new 0.671081
+New best fitness: old 0.671081 | new 0.601709
+Filling pop 5
+New best fitness: old 10.0 | new 0.685758
+New best fitness: old 0.685758 | new 0.671081
+New best fitness: old 0.671081 | new 0.601709
+Filling pop 6
+New best fitness: old 10.0 | new 0.685758
+New best fitness: old 0.685758 | new 0.671081
+New best fitness: old 0.671081 | new 0.632336
+New best fitness: old 0.632336 | new 0.601709
+Filling pop 7
+New best fitness: old 10.0 | new 0.685758
+New best fitness: old 0.685758 | new 0.671081
+New best fitness: old 0.671081 | new 0.632336
+Filling pop 8
+New best fitness: old 10.0 | new 0.685758
+New best fitness: old 0.685758 | new 0.671081
+Filling pop 9
+New best fitness: old 10.0 | new 0.685758
+New best fitness: old 0.685758 | new 0.671081
+Filling pop 10
+New best fitness: old 10.0 | new 0.685758
+New best fitness: old 0.685758 | new 0.671081
+Filling pop 11
+New best fitness: old 10.0 | new 0.685758
+New best fitness: old 0.685758 | new 0.671081
+----------------------------------------------------------------
+STARTING GENERATION: 6
+----------------------------------------------------------------
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 1 / 12
+Param String: 0.7 0.95 3 1 0.5 0.95 0.9 0.25 0.8 0.25 0.3 0.25 0.4 0.3 0.35 0.9 0.1 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 1 of 12 in Generation 7 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 2 / 12
+Param String: 0.45 0.75 3 1 0.3 0.5 0.85 0.55 0.7 0.45 0.4 0.85 0.35 0.15 0.9 0.5 0.05 0.25 0.5 0.95 0.55 0.4 0.0
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 2 of 12 in Generation 7 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 3 / 12
+Param String: 0.7 0.95 3 1 0.5 0.95 0.9 0.25 0.8 0.25 0.3 0.25 0.4 0.3 0.35 0.9 0.1 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 3 of 12 in Generation 7 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 4 / 12
+Param String: 0.45 0.75 3 1 0.3 0.5 0.85 0.55 0.7 0.45 0.4 0.85 0.35 0.15 0.9 0.5 0.05 0.25 0.5 0.95 0.55 0.4 0.0
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 4 of 12 in Generation 7 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 5 / 12
+Param String: 0.95 0.95 7 1 0.5 0.95 0.9 0.25 0.8 0.25 0.3 0.25 0.4 0.3 0.35 0.9 0.1 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 5 of 12 in Generation 7 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 6 / 12
+Param String: 0.7 0.95 3 1 0.5 0.95 0.9 0.25 0.8 0.5 0.3 0.25 0.4 0.09 0.35 0.9 0.35 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 6 of 12 in Generation 7 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 7 / 12
+Param String: 0.35 0.45 1 1 0.4 0.05 0.7 0.2 0.15 0.6 0.75 0.1 0.7 0.2 0.05 0.55 0.4 0.2 0.85 0.9 0.9 1.0 0.6
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 7 of 12 in Generation 7 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 8 / 12
+Param String: 0.7 0.85 6 1 0.5 0.95 0.05 0.65 0.45 0.25 0.7 0.25 0.4 0.47 0.9 0.56 0.35 0.05 0.85 0.9 0.9 0.0 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 8 of 12 in Generation 7 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 9 / 12
+Param String: 0.95 0.85 3 1 0.0 0.4 0.25 1.0 0.7 0.5 0.7 0.6 0.35 0.1 0.2 0.85 0.35 0.05 0.3 0.7 0.95 0.15 0.5
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 9 of 12 in Generation 7 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 10 / 12
+Param String: 0.95 0.85 0 1 0.0 0.4 0.25 0.25 0.5 0.5 0.7 0.6 0.65 0.3 0.1 0.85 0.1 0.05 0.3 0.7 0.95 0.15 0.5
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 10 of 12 in Generation 7 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 11 / 12
+Param String: 0.7 0.85 3 1 0.0 0.4 0.25 1.0 0.5 0.5 0.7 0.6 0.65 0.1 0.1 0.85 0.35 0.05 0.3 0.7 0.95 0.15 0.5
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 11 of 12 in Generation 7 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 12 / 12
+Param String: 0.95 0.85 7 1 0.0 0.4 0.25 1.0 0.5 0.5 0.7 0.6 0.65 0.1 0.8 0.85 0.35 0.05 0.3 0.7 0.95 0.15 0.5
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 12 of 12 in Generation 7 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+config and fitness written
+Mutation and Crossover
+Elite set!
+Elite set!
+mutating 17
+mutating 15
+mutating 3
+mutating 16
+mutating 17
+mutating 7
+mutating 8
+mutating 11
+Attempting fitness prediction
+in query script
+setting up dataset
+got 1 files
+Finished predicting, writing results
+Filling pop 2
+New best fitness: old 10.0 | new 0.671081
+New best fitness: old 0.671081 | new 0.601709
+Filling pop 3
+New best fitness: old 10.0 | new 0.671081
+New best fitness: old 0.671081 | new 0.601709
+Filling pop 4
+New best fitness: old 10.0 | new 0.671081
+New best fitness: old 0.671081 | new 0.601709
+Filling pop 5
+New best fitness: old 10.0 | new 0.671081
+New best fitness: old 0.671081 | new 0.601709
+Filling pop 6
+New best fitness: old 10.0 | new 0.671081
+New best fitness: old 0.671081 | new 0.601709
+Filling pop 7
+New best fitness: old 10.0 | new 0.671081
+New best fitness: old 0.671081 | new 0.601709
+Filling pop 8
+New best fitness: old 10.0 | new 0.671081
+New best fitness: old 0.671081 | new 0.601709
+Filling pop 9
+New best fitness: old 10.0 | new 0.671081
+New best fitness: old 0.671081 | new 0.601709
+Filling pop 10
+New best fitness: old 10.0 | new 0.671081
+New best fitness: old 0.671081 | new 0.601709
+Filling pop 11
+New best fitness: old 10.0 | new 0.671081
+New best fitness: old 0.671081 | new 0.632336
+----------------------------------------------------------------
+STARTING GENERATION: 7
+----------------------------------------------------------------
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 1 / 12
+Param String: 0.7 0.85 3 1 0.0 0.4 0.25 1.0 0.5 0.5 0.7 0.6 0.65 0.1 0.1 0.85 0.35 0.05 0.3 0.7 0.95 0.15 0.5
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 1 of 12 in Generation 8 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 2 / 12
+Param String: 0.45 0.75 3 1 0.3 0.5 0.85 0.55 0.7 0.45 0.4 0.85 0.35 0.15 0.9 0.5 0.05 0.25 0.5 0.95 0.55 0.4 0.0
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 2 of 12 in Generation 8 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 3 / 12
+Param String: 0.45 0.75 3 1 0.3 0.5 0.85 0.55 0.7 0.45 0.4 0.85 0.35 0.15 0.9 0.5 0.05 0.25 0.5 0.95 0.55 0.4 0.0
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 3 of 12 in Generation 8 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 4 / 12
+Param String: 0.7 0.95 3 1 0.5 0.95 0.9 0.25 0.8 0.25 0.3 0.25 0.4 0.3 0.35 0.9 0.1 0.51 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 4 of 12 in Generation 8 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 5 / 12
+Param String: 0.7 0.95 3 1 0.5 0.95 0.9 0.25 0.8 0.25 0.3 0.25 0.4 0.3 0.35 0.08 0.1 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 5 of 12 in Generation 8 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 6 / 12
+Param String: 0.95 0.95 7 1 0.5 0.95 0.9 0.25 0.8 0.25 0.3 0.25 0.4 0.3 0.35 0.9 0.1 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 6 of 12 in Generation 8 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 7 / 12
+Param String: 0.7 0.95 3 1 0.5 0.95 0.9 0.25 0.8 0.25 0.3 0.25 0.4 0.3 0.35 0.9 0.1 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 7 of 12 in Generation 8 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 8 / 12
+Param String: 0.35 0.95 1 1 0.5 0.95 0.9 0.25 0.8 0.6 0.3 0.25 0.4 0.3 0.35 0.55 0.4 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 8 of 12 in Generation 8 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 9 / 12
+Param String: 0.7 0.95 3 1 0.5 0.95 0.9 0.16 0.8 0.25 0.3 0.25 0.4 0.1 0.35 0.85 0.1 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 9 of 12 in Generation 8 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 10 / 12
+Param String: 0.7 0.95 3 1 0.5 0.95 0.9 0.25 0.5 0.5 0.3 0.44 0.4 0.3 0.35 0.9 0.1 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 10 of 12 in Generation 8 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 11 / 12
+Param String: 0.65 0.75 0 1 0.65 0.8 0.95 0.85 0.45 0.25 0.35 0.45 0.05 1.0 0.65 0.85 0.1 0.85 0.4 0.95 0.9 0.8 0.55
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 11 of 12 in Generation 8 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 12 / 12
+Param String: 0.95 0.25 2 1 0.6 0.2 0.1 0.7 0.95 0.95 0.85 0.5 0.9 0.9 0.2 0.8 0.6 0.85 0.6 0.15 0.65 0.9 0.45
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 12 of 12 in Generation 8 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+config and fitness written
+Mutation and Crossover
+Elite set!
+Elite set!
+mutating 0
+mutating 14
+mutating 4
+mutating 17
+Attempting fitness prediction
+in query script
+setting up dataset
+got 1 files
+Finished predicting, writing results
+Filling pop 2
+New best fitness: old 10.0 | new 0.601709
+Filling pop 3
+New best fitness: old 10.0 | new 0.601709
+Filling pop 4
+New best fitness: old 10.0 | new 0.685758
+New best fitness: old 0.685758 | new 0.671081
+New best fitness: old 0.671081 | new 0.601709
+Filling pop 5
+New best fitness: old 10.0 | new 0.685758
+New best fitness: old 0.685758 | new 0.671081
+New best fitness: old 0.671081 | new 0.601709
+Filling pop 6
+New best fitness: old 10.0 | new 0.685758
+New best fitness: old 0.685758 | new 0.671081
+New best fitness: old 0.671081 | new 0.601709
+Filling pop 7
+New best fitness: old 10.0 | new 0.685758
+New best fitness: old 0.685758 | new 0.671081
+New best fitness: old 0.671081 | new 0.632336
+New best fitness: old 0.632336 | new 0.620967
+New best fitness: old 0.620967 | new 0.601709
+Filling pop 8
+New best fitness: old 10.0 | new 0.685758
+New best fitness: old 0.685758 | new 0.671081
+New best fitness: old 0.671081 | new 0.632336
+New best fitness: old 0.632336 | new 0.620967
+Filling pop 9
+New best fitness: old 10.0 | new 0.685758
+New best fitness: old 0.685758 | new 0.671081
+New best fitness: old 0.671081 | new 0.632336
+Filling pop 10
+New best fitness: old 10.0 | new 0.685758
+New best fitness: old 0.685758 | new 0.671081
+New best fitness: old 0.671081 | new 0.632336
+Filling pop 11
+New best fitness: old 10.0 | new 0.685758
+New best fitness: old 0.685758 | new 0.671081
+New best fitness: old 0.671081 | new 0.632336
+----------------------------------------------------------------
+STARTING GENERATION: 8
+----------------------------------------------------------------
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 1 / 12
+Param String: 0.35 0.95 1 1 0.5 0.95 0.9 0.25 0.8 0.6 0.3 0.25 0.4 0.3 0.35 0.55 0.4 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 1 of 12 in Generation 9 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 2 / 12
+Param String: 0.7 0.95 3 1 0.5 0.95 0.9 0.16 0.8 0.25 0.3 0.25 0.4 0.1 0.35 0.85 0.1 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 2 of 12 in Generation 9 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 3 / 12
+Param String: 0.35 0.95 1 1 0.5 0.95 0.9 0.25 0.8 0.6 0.3 0.25 0.4 0.3 0.35 0.55 0.4 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 3 of 12 in Generation 9 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 4 / 12
+Param String: 0.7 0.95 3 1 0.5 0.95 0.9 0.16 0.8 0.25 0.3 0.25 0.4 0.1 0.35 0.85 0.1 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 4 of 12 in Generation 9 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 5 / 12
+Param String: 0.7 0.95 3 1 0.0 0.95 0.25 0.25 0.5 0.25 0.3 0.25 0.65 0.3 0.35 0.08 0.1 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 5 of 12 in Generation 9 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 6 / 12
+Param String: 0.7 0.95 3 1 0.5 0.95 0.9 0.25 0.8 0.25 0.3 0.6 0.65 0.1 0.35 0.9 0.1 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 6 of 12 in Generation 9 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 7 / 12
+Param String: 0.65 0.85 0 1 0.65 0.8 0.25 0.85 0.45 0.25 0.35 0.45 0.65 1.0 0.65 0.85 0.1 0.85 0.4 0.95 0.9 0.8 0.55
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 7 of 12 in Generation 9 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 8 / 12
+Param String: 0.55 0.45 1 1 0.1 0.95 0.9 0.5 0.75 0.35 0.5 0.3 0.6 1.0 0.65 0.4 0.1 0.5 0.2 0.95 0.8 0.6 0.65
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 8 of 12 in Generation 9 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 9 / 12
+Param String: 0.9 0.9 8 1 0.3 0.2 0.15 0.15 0.9 0.2 0.2 0.85 0.65 0.25 0.25 0.9 0.8 0.85 0.4 0.5 0.3 0.25 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 9 of 12 in Generation 9 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 10 / 12
+Param String: 0.85 0.95 4 1 0.55 0.8 0.4 0.9 0.65 0.2 0.65 0.7 0.4 0.55 0.95 0.1 0.2 0.75 0.95 0.85 0.85 0.6 0.8
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 10 of 12 in Generation 9 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 11 / 12
+Param String: 0.9 0.4 8 1 0.95 0.1 0.15 0.9 0.9 0.25 0.6 0.15 0.0 0.8 0.65 0.05 0.8 0.85 0.85 0.45 0.05 1.0 0.2
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 11 of 12 in Generation 9 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 12 / 12
+Param String: 0.85 0.25 1 1 0.85 0.2 0.15 0.5 0.7 0.4 0.65 0.85 0.95 0.25 0.6 0.55 0.8 0.75 0.95 0.85 0.15 0.9 0.65
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 12 of 12 in Generation 9 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+config and fitness written
+Mutation and Crossover
+Elite set!
+Elite set!
+mutating 17
+mutating 7
+mutating 8
+mutating 0
+mutating 3
+mutating 8
+mutating 17
+mutating 13
+mutating 7
+mutating 2
+Attempting fitness prediction
+in query script
+setting up dataset
+got 1 files
+Finished predicting, writing results
+Filling pop 2
+New best fitness: old 10.0 | new 0.601709
+Filling pop 3
+New best fitness: old 10.0 | new 0.601709
+Filling pop 4
+New best fitness: old 10.0 | new 0.601709
+Filling pop 5
+New best fitness: old 10.0 | new 0.601709
+Filling pop 6
+New best fitness: old 10.0 | new 0.601709
+Filling pop 7
+New best fitness: old 10.0 | new 0.601709
+Filling pop 8
+New best fitness: old 10.0 | new 0.601709
+Filling pop 9
+New best fitness: old 10.0 | new 0.601709
+Filling pop 10
+New best fitness: old 10.0 | new 0.687692
+New best fitness: old 0.687692 | new 0.601709
+Filling pop 11
+New best fitness: old 10.0 | new 0.687692
+New best fitness: old 0.687692 | new 0.601709
+----------------------------------------------------------------
+STARTING GENERATION: 9
+----------------------------------------------------------------
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 1 / 12
+Param String: 0.7 0.95 3 1 0.5 0.95 0.9 0.16 0.8 0.25 0.3 0.25 0.4 0.1 0.35 0.85 0.1 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 1 of 12 in Generation 10 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 2 / 12
+Param String: 0.7 0.95 3 1 0.5 0.95 0.9 0.25 0.8 0.25 0.3 0.6 0.65 0.1 0.35 0.9 0.1 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 2 of 12 in Generation 10 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 3 / 12
+Param String: 0.7 0.95 3 1 0.5 0.95 0.9 0.16 0.8 0.25 0.3 0.25 0.4 0.1 0.35 0.85 0.1 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 3 of 12 in Generation 10 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 4 / 12
+Param String: 0.7 0.95 3 1 0.5 0.95 0.9 0.25 0.8 0.25 0.3 0.6 0.65 0.1 0.35 0.9 0.1 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 4 of 12 in Generation 10 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 5 / 12
+Param String: 0.35 0.95 1 1 0.5 0.95 0.9 0.25 0.8 0.6 0.3 0.25 0.4 0.3 0.35 0.55 0.4 0.63 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 5 of 12 in Generation 10 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 6 / 12
+Param String: 0.35 0.95 1 1 0.5 0.95 0.9 0.16 0.8 0.6 0.3 0.25 0.4 0.3 0.35 0.55 0.4 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 6 of 12 in Generation 10 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 7 / 12
+Param String: 0.35 0.95 3 1 0.0 0.95 0.25 0.25 0.58 0.25 0.3 0.25 0.65 0.3 0.35 0.08 0.1 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 7 of 12 in Generation 10 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 8 / 12
+Param String: 0.21 0.95 1 1 0.5 0.95 0.9 0.25 0.8 0.6 0.3 0.25 0.4 0.3 0.35 0.55 0.4 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 8 of 12 in Generation 10 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 9 / 12
+Param String: 0.35 0.85 0 1 0.5 0.8 0.25 0.85 0.45 0.6 0.35 0.45 0.65 0.3 0.65 0.85 0.4 0.85 0.4 0.95 0.9 0.8 0.55
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 9 of 12 in Generation 10 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 10 / 12
+Param String: 0.65 0.95 1 1 0.65 0.95 0.9 0.25 0.74 0.25 0.3 0.25 0.4 1.0 0.35 0.55 0.1 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 10 of 12 in Generation 10 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 11 / 12
+Param String: 0.9 0.95 1 1 0.5 0.95 0.15 0.15 0.9 0.6 0.3 0.25 0.65 0.08 0.35 0.55 0.4 0.05 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 11 of 12 in Generation 10 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+GIalgorithm output folder deleted
+GIalg output folders successfully prepared
+Pop number: 12 / 12
+Param String: 0.35 0.4 1 1 0.5 0.95 0.9 0.25 0.8 0.6 0.3 0.15 0.4 0.3 0.35 0.55 0.4 0.85 0.95 0.35 0.7 0.95 0.25
+Starting GIalgorithm execution
+Running threads:
+MainModular 1
+MainModular 2
+MainModular 3
+Joining threads
+Running threads:
+MainModular 4
+MainModular 5
+MainModular 6
+Joining threads
+Running threads:
+MainModular 7
+MainModular 8
+MainModular 9
+Joining threads
+GIalgorithm execution finished
+
+Pop 12 of 12 in Generation 10 Complete
+Executing analysis script.
+Setting fitness
+pop cycle ended
+config and fitness written
+Mutation and Crossover
+Elite set!
+Elite set!
+mutating 1
+mutating 14
+mutating 7
+mutating 3
+mutating 11
+mutating 7
+mutating 6
+Attempting fitness prediction
+in query script
+setting up dataset
+got 1 files
+Finished predicting, writing results
+Filling pop 2
+New best fitness: old 10.0 | new 0.601709
+Filling pop 3
+New best fitness: old 10.0 | new 0.601709
+Filling pop 4
+New best fitness: old 10.0 | new 0.601709
+Filling pop 5
+New best fitness: old 10.0 | new 0.601709
+Filling pop 6
+New best fitness: old 10.0 | new 0.601709
+Filling pop 7
+New best fitness: old 10.0 | new 0.601709
+Filling pop 8
+New best fitness: old 10.0 | new 0.601709
+Filling pop 9
+New best fitness: old 10.0 | new 0.719846
+New best fitness: old 0.719846 | new 0.687692
+New best fitness: old 0.687692 | new 0.601709
+Filling pop 10
+New best fitness: old 10.0 | new 0.719846
+New best fitness: old 0.719846 | new 0.687692
+New best fitness: old 0.687692 | new 0.601709
+Filling pop 11
+New best fitness: old 10.0 | new 0.719846
+New best fitness: old 0.719846 | new 0.687692
+New best fitness: old 0.687692 | new 0.632336

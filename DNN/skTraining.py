@@ -95,8 +95,8 @@ if __name__ == '__main__':
 
         # Go through each row in the csv file
         for row in csvReader:
-            # Convert each item in the row to a floating point value
-            row = [float(i) for i in row]
+             # Convert each item in the row to a floating point value - check for strange case where empty strings appear
+            row = [float(i) if len(i) > 0 else None for i in row]
             # Assing row to the last row in the dataframe
             dataArray.loc[len(dataArray)] = row
 
@@ -107,8 +107,9 @@ if __name__ == '__main__':
     dataArray['limit'] = dataArray['limit'].apply(normaliseLimit)
     
     # Remove all rows where fitness values are greater than 1
+    # Keep some of those greater than 1 as it is possible for that to occur normally if a chromosome just performs really badly.
     bef = len(dataArray)
-    dataArray = dataArray[dataArray.fitness <= 1.0]
+    dataArray = dataArray[dataArray.fitness <= 2.0]
     aft = len(dataArray)
     print(f"Removed {bef - aft} rows")
     
@@ -161,7 +162,7 @@ if __name__ == '__main__':
         if(f == 0 or crossValidate):
             print("Init Model")
             # Model resets with every fold
-            mlp = MLPClassifier(max_iter = 1000, learning_rate = 'adaptive', early_stopping = True, n_iter_no_change = 100, tol = 1e-3, solver='lbfgs')
+            mlp = MLPClassifier(max_iter = 1000, learning_rate = 'adaptive', early_stopping = True, n_iter_no_change = 100, tol = 1e-3)
            
         if(train):  
             trainingData = trainingLoader

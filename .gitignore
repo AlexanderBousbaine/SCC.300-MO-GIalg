@@ -1,9 +1,3 @@
-#Results
-Results/
-DNN/*.pdf
-
-#Saved Models
-DNN/*.pt
 
 #dana object files
 *.o

@@ -32,18 +32,19 @@ if __name__ == '__main__':
 
         # Go through each row in the csv file
         for row in csvReader:
-            # Convert each item in the row to a floating point value
-            row = [float(i) for i in row]
+            # Convert each item in the row to a floating point value - check for strange case where empty strings appear
+            row = [float(i) if len(i) > 0 else None for i in row]
             # Assing row to the last row in the dataframe
             dataArray.loc[len(dataArray)] = row
 
         dataFile.close()
     
-    # Remove all rows where fitness values are greater than 1
+    # Remove all rows where fitness values are greater than 2
+    # Keep some of those greater than 1 as it is possible for that to occur normally if a chromosome just performs really badly.
     bef = len(dataArray)
-    dataArray = dataArray[dataArray.fitness <= 1.0]
+    dataArray = dataArray[dataArray.fitness <= 2.0]
     aft = len(dataArray)
-    print(f"Removed {bef - aft} row(s)")
+    print(f"Removed {bef - aft} row(s) for abnormal fitness values")
 
     print(f"Size of all data: {len(dataArray)}")
 
