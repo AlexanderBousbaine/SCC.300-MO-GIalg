@@ -65,7 +65,7 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 					out.println("MainModular $(r)")
 					out.println("MainModular $(r+1)")
 					out.println("MainModular $(r+2)")
-					executions[0] = asynch::runCommand("cd $GIAlgorithmPath && dana MainModular $(r) MOGI $paramString >logFileMO$(r).txt 2>errorFileMO1$(r).txt")
+					executions[0] = asynch::runCommand("cd $GIalgorithmPath && dana MainModular $(r) MOGI $paramString >logFileMO$(r).txt 2>errorFileMO1$(r).txt")
 					executions[1] = asynch::runCommand("cd $GIalgorithmPath && dana MainModular $(r+1) MOGI $paramString >logFileMO$(r+1).txt 2>errorFileMO1$(r+1).txt")
 					executions[2] = asynch::runCommand("cd $GIalgorithmPath && dana MainModular $(r+2) MOGI $paramString >logFileMO$(r+2).txt 2>errorFileMO1$(r+2).txt")
 				
@@ -499,6 +499,7 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 	//will wait at least an hour + input time (millisec)
 	//with an input of 20mins (1200000) entire wait time will be 1.5 hrs
 	//Deprecated in current algorithm's execution
+	/*
 	bool checkBatchAfter(int complThresh, int waitTime) {
 		int fivesWaited = 0
 		while(true) {
@@ -529,4 +530,5 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 		out.println("The wait and check function 'checkBatchAfter' has gotten out of it's forever loop in an unexpected fashion.")
 		return false
 	}
+	*/
 }

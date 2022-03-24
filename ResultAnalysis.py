@@ -1,5 +1,3 @@
-from cProfile import label
-from turtle import title
 import pandas
 import glob
 import os
@@ -8,11 +6,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy import stats
 from sklearn.linear_model import LinearRegression
-from matplotlib.backends.backend_pdf import PdfPages
 
 def load(files):
     li = []
     all_files = glob.glob(files)
+    all_files.sort()
     for filename in all_files:
         # print(filename)
         df = pandas.read_csv(filename, header=None)
@@ -54,6 +52,7 @@ def plotDataFromFolder(folderName, show = True):
         #plot all datapoints
         allY = [i if i <= 2 else None for i in list(fitnesses.iloc[:, v])]
         allX = [v+1 for i in allY]
+        print(allY)
         if(show):
             plt.plot(allX, allY, 'go', alpha=0.15)
 
@@ -81,7 +80,8 @@ def plotDataFromFolder(folderName, show = True):
         plt.plot(xData, bfl, 'r', label="Best-fit of Best Fitness")
 
         #error bars of best fitness
-        plt.errorbar(xData, yData, yerr=errData, fmt='_', c="orange", label="Best Fitness StdError")
+        print(errData)
+        plt.errorbar(xData, yData, yerr=errData, barsabove = True, fmt='_', c="orange", label="Best Fitness StdError")
 
         #plot worst data
         yData2 = [y if y <= 2 else None for y in yData2]
@@ -107,6 +107,7 @@ if __name__ == "__main__":
     # Read in results
     foldersPath = "./Results/"
     folders = os.listdir(foldersPath)
+    folders.sort()
     coefficients = {}
     # Go through all folders (Runs of the algorithm) and create graphs of their data
     if(fileNum == 0):
