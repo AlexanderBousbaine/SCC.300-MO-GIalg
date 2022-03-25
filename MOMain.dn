@@ -176,7 +176,7 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 					//do crossover - uniform crossover
 					bool crossed
 					//go through all genes
-					for(int v = 0; v < 18; v++) {
+					for(int v = 0; v < 23; v++) {
 						crossed = false
 						//if chance achieved, perform crossover
 						if(rand.getDec(0, 1) < crossoverChance) {
@@ -358,7 +358,7 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 		GiaConfig conf = clone c
 		if(rand.getDec(0, 1) < mutationChance) {
 			//do mutation - simply select random variable and generate random valid value
-			int varNum = rand.getInt(18)
+			int varNum = rand.getInt(23)
 			bool mutated = false
 			
 			out.println("mutating $varNum")
@@ -370,9 +370,9 @@ component provides App requires io.Output out, PopulationInitialiser popInit, da
 			//Limit mutationLimit to 1
 			int validInt2 = 1
 			//0.01 to 1
-			dec validDec1 = popInit.roundTo2DP(rand.getDec(ConfigDomains.MUTPERC_LOWER, ConfigDomains.MUTPERC_UPPER))
+			dec validDec1 = popInit.restrictToMultFive(roundTo2DP(rand.getDec(ConfigDomains.MUTPERC_LOWER, ConfigDomains.MUTPERC_UPPER)))
 			//0 to 1
-			dec validDec2 = popInit.roundTo2DP(rand.getDec(ConfigDomains.MUTWEIGHT_LOWER, ConfigDomains.MUTWEIGHT_UPPER))
+			dec validDec2 = popInit.restrictToMultFive(roundTo2DP(rand.getDec(ConfigDomains.MUTWEIGHT_LOWER, ConfigDomains.MUTWEIGHT_UPPER)))
 					
 			if(varNum < 2 && !mutated) {
 				conf:.varNum = validDec1
